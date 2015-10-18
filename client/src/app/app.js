@@ -41,6 +41,8 @@
       'seminars',
       'hackathons',
       'student-projects',
+      'ubcIO',
+      'the-developers',
       'common.header',
       'common.services.data',
       'common.directives.version',
