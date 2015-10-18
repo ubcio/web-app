@@ -30,8 +30,10 @@
 
   angular.module('app', [
       'ui.router',
-      'home',
-      'getting-started',
+      'courses',
+      'professors',
+      'tutors',
+      'degree-requirements',
       'common.header',
       'common.services.data',
       'common.directives.version',

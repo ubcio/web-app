@@ -12,7 +12,7 @@
     beforeEach(inject(function($rootScope, $controller) {
       rootScope = $rootScope;
       scope = $rootScope.$new();
-      ctrl = $controller('HomeCtrl as home', {
+      ctrl = $controller('HomeCtrl as courses', {
         $scope: scope,
         data: {
           data: fakeData

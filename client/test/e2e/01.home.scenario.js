@@ -20,7 +20,7 @@
     });
 
     it('should navigate to the docs page when clicking', function() {
-      element(by.css('a[ui-sref="root.getting-started"]')).click();
+      element(by.css('a[ui-sref="root.professors"]')).click();
       expect(browser.getCurrentUrl()).toMatch(/\/getting-started/);
     });
 
