@@ -15,10 +15,6 @@
           'header': {
             templateUrl: 'src/common/header.tpl.html',
             controller: 'HeaderCtrl'
-          },
-          'footer': {
-            templateUrl: 'src/common/footer.tpl.html',
-            controller: 'FooterCtrl'
           }
         }
       });
@@ -37,7 +33,6 @@
       'home',
       'getting-started',
       'common.header',
-      'common.footer',
       'common.services.data',
       'common.directives.version',
       'common.filters.uppercase',
