@@ -1,9 +1,42 @@
 <div class="pure-menu pure-menu-open pure-menu-horizontal">
-  <a class="pure-menu-heading" href="">angular-kickstart <span app-version></span></a>
-  <ul>
-    <li ui-sref-active="pure-menu-selected"><a href ui-sref="root.home">{{ 'home' | uppercase }}</a>
+  <ul class="pure-menu-list">
+
+    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="#" class="pure-menu-link">Academics</a>
+      <ul class="pure-menu-children">
+        <li class="pure-menu-item"><a href ui-sref="root.professors" class="pure-menu-link">Professors</a></li>
+        <li class="pure-menu-item"><a href ui-sref="root.courses" class="pure-menu-link">Courses</a></li>
+        <li class="pure-menu-item"><a href ui-sref="root.tutors" class="pure-menu-link">Tutors</a></li>
+        <li class="pure-menu-item"><a href ui-sref="root.degreeRequirements" class="pure-menu-link">Degree Requirements</a></li>
+      </ul>
     </li>
-    <li ui-sref-active="pure-menu-selected"><a href ui-sref="root.getting-started">{{ 'getting started' | uppercase }}</a>
+
+    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="#" class="pure-menu-link">Career</a>
+      <ul class="pure-menu-children">
+        <li class="pure-menu-item"><a href ui-sref="root.resumeAndCoverLetter" class="pure-menu-link">Resume and Cover Letter</a></li>
+        <li class="pure-menu-item"><a href ui-sref="root.trainingForInterviews" class="pure-menu-link">Training for Interviews</a></li>
+        <li class="pure-menu-item"><a href ui-sref="root.careerFairs" class="pure-menu-link">Career Fairs</a></li>
+        <li class="pure-menu-item"><a href ui-sref="root.jobPostings" class="pure-menu-link">Job Postings</a></li>
+      </ul>
     </li>
+
+    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="#" class="pure-menu-link">Community</a>
+      <ul class="pure-menu-children">
+        <li class="pure-menu-item"><a href ui-sref="root.seminars" class="pure-menu-link">Seminars</a></li>
+        <li class="pure-menu-item"><a href ui-sref="root.hackathons" class="pure-menu-link">Hackathons</a></li>
+        <li class="pure-menu-item"><a href ui-sref="root.studentProjects" class="pure-menu-link">Student Projects</a></li>
+      </ul>
+    </li>
+
+    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+      <a href="#" class="pure-menu-link">About</a>
+      <ul class="pure-menu-children">
+        <li class="pure-menu-item"><a href ui-sref="root.ubcIO" class="pure-menu-link">ubcIO</a></li>
+        <li class="pure-menu-item"><a href ui-sref="root.theDevelopers" class="pure-menu-link">The Developers</a></li>
+      </ul>
+    </li>
+
   </ul>
 </div>
