@@ -2,7 +2,7 @@
   'use strict';
 
   function headerCtrl($log) {
-    $log.debug('Header loaded');
+    var header = this; 
   }
 
   angular.module('common.header', [])
