@@ -14,7 +14,7 @@
         views: {
           'header': {
             templateUrl: 'src/common/header.tpl.html',
-            controller: 'HeaderCtrl'
+            controller: 'HeaderCtrl as header'
           }
         }
       });
