@@ -6,7 +6,21 @@ https://github.com/davidrapson/scss-toolkit
 */
 @import 'settings', 'mixins', 'base', 'helpers', 'modules/island','modules/horizontal-list', 'modules/buttons', 'layouts/page', 'states';
 
+// Navbar Styling ----
+
+.pure-menu {
+    background-color: $navbarBlack !important;
+}
+
+.pure-menu-link {
+    color: $navbarWhite; 
+}
+
 // TODO Style this 
 .aboutSelected {
     background-color: $gray;
 }
+
+// ----
+
+
