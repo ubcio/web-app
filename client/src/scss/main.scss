@@ -1,13 +1,6 @@
-/*
-inspired by:
-https://github.com/minamarkham/sassy-starter/
-https://github.com/kachunchau/smacss-boilerplate
-https://github.com/davidrapson/scss-toolkit
-*/
 @import 'settings', 'mixins', 'base', 'helpers', 'modules/island','modules/horizontal-list', 'modules/buttons', 'layouts/page', 'states';
 
-// Navbar Styling ----
-
+// Navbar Styling
 .pure-menu {
     background-color: $navbarBlack !important;
 }
@@ -21,25 +14,15 @@ https://github.com/davidrapson/scss-toolkit
 }
 
 // TODO style this 
-.aboutSelected {
-    background-color: $gray;
-}
-
-// TODO style this 
 .pure-menu-children {
     background-color: $navbarBlack;
 }
-
-// ----
-
-
-
+// ---------------------------------
+// About Page 
 .img {
     width:  50%;
     height: 50%;
-  border-radius: 100%;
- 
-  
+    border-radius: 100%;
 }
 
 .teamMember {
@@ -52,8 +35,9 @@ https://github.com/davidrapson/scss-toolkit
     padding: 3em;
     padding-top: 1em;
 }
+// -------------------------------
+// Element Styling ---- 
 body {
   background-color: #f1f4f9;
 }
-
-
+// -------------------------------
