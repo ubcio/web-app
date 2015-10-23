@@ -16,9 +16,18 @@ https://github.com/davidrapson/scss-toolkit
     color: $navbarWhite; 
 }
 
-// TODO Style this 
+.navbarLinkActive  {
+    background-color:  #1F8DD6 !important;
+}
+
+// TODO style this 
 .aboutSelected {
     background-color: $gray;
+}
+
+// TODO style this 
+.pure-menu-children {
+    background-color: $navbarBlack;
 }
 
 // ----
