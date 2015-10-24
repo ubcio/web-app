@@ -42,6 +42,7 @@
       'hackathons',
       'student-projects',
       'about',
+      'companies',
       'common.header',
       'common.services.data',
       'common.directives.version',
