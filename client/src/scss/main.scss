@@ -14,6 +14,10 @@
     color: $ubcLightGrey;
 }
 
+.navbarLinkActive .pure-menu-link:hover {
+  background-color: $ubcBlue;
+}
+
 .pure-menu-children {
     background-color: $ubcBlack;
 }
@@ -24,11 +28,11 @@
 }
 
 .headerLink:hover {
-  background-color: transparent!important;
+  background-color: transparent !important;
   color:$ubcLightGrey;
 }
+
 .about:hover {
-  background-color: transparent!important;
   color:$ubcLightGrey;
 }
 
