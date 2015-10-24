@@ -10,10 +10,10 @@
 }
 
 .navbarLinkActive  {
-    background-color:  #1F8DD6 !important;
+    background-color:  $navbarBlue !important;
 }
 
-// TODO style this 
+// TODO pick color 
 .pure-menu-children {
     background-color: $navbarBlack;
 }
@@ -37,7 +37,22 @@
 }
 // -------------------------------
 // Element Styling ---- 
+// TODO pick color
+a:focus {
+    color: $navbarWhite;
+}
+
 body {
   background-color: #f1f4f9;
 }
 // -------------------------------
+// Overriding PURE 
+// TODO pick color
+.pure-menu-link:focus {
+    background-color:  $navbarBlue;
+}
+// TODO pick color
+.pure-menu-link:hover {
+   background-color: $navbarWhite; 
+}
+// ------------------------------
