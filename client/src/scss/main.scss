@@ -2,21 +2,50 @@
 
 // Navbar Styling
 .pure-menu {
-    background-color: $navbarBlack !important;
+    background-color: $ubcBlack !important;
 }
 
 .pure-menu-link {
-    color: $navbarWhite; 
+    color: $ubcLightGrey; 
 }
 
 .navbarLinkActive  {
-    background-color:  $navbarBlue !important;
+    background-color:  $ubcBlue !important;
+    color: $ubcLightGrey;
 }
 
-// TODO pick color 
 .pure-menu-children {
-    background-color: $navbarBlack;
+    background-color: $ubcBlack;
 }
+
+.headerLink:focus {
+  background-color: $ubcBlack !important;
+  color:$ubcLightGrey;
+}
+
+.headerLink:hover {
+  background-color: transparent!important;
+  color:$ubcLightGrey;
+}
+.about:hover {
+  background-color: transparent!important;
+  color:$ubcLightGrey;
+}
+
+.about:focus {
+  color: $ubcLightGrey;
+}
+
+.pure-menu-link:focus {
+    background-color:  $ubcBlue;
+  color: $ubcLightGrey;
+}
+
+.pure-menu-link:hover {
+   background-color: $ubcGrey;
+  color: $ubcLightGrey;
+}
+
 // ---------------------------------
 // About Page 
 .img {
@@ -37,22 +66,11 @@
 }
 // -------------------------------
 // Element Styling ---- 
-// TODO pick color
 a:focus {
-    color: $navbarWhite;
+    color: $ubcGrey;
 }
 
 body {
-  background-color: #f1f4f9;
+  background-color: $ubcLightBlue;
 }
-// -------------------------------
-// Overriding PURE 
-// TODO pick color
-.pure-menu-link:focus {
-    background-color:  $navbarBlue;
-}
-// TODO pick color
-.pure-menu-link:hover {
-   background-color: $navbarWhite; 
-}
-// ------------------------------
+
