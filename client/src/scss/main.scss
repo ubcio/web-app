@@ -53,6 +53,7 @@
 // ---------------------------------
 // About Page 
 .img {
+    padding: 3%;
     width:  50%;
     height: 50%;
     border-radius: 100%;
@@ -60,13 +61,21 @@
 
 .teamMember {
     text-align: center;
+    padding: 2%;
 }
 
 .teamMemberDetails {
+    background-color: $ubcWhite;
     display: block;
     text-align: center;
-    padding: 3em;
-    padding-top: 1em;
+    padding: 10%;
+    padding-top: 5%;
+}
+
+.ubcIODescription{
+  margin: 1%;
+  padding: 3%;
+  background-color: $ubcWhite;
 }
 // -------------------------------
 // Element Styling ---- 
