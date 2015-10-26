@@ -1,5 +1,6 @@
-@import 'settings', 'mixins', 'base', 'helpers', 'modules/island','modules/horizontal-list', 'modules/buttons', 'layouts/page', 'states';
+@import 'settings', 'mixins', 'base', 'helpers', 'modules/island','modules/horizontal-list', 'modules/buttons', 'layouts/page' , 'bootstrap';
 
+// -------------------------------
 // Navbar Styling
 .pure-menu {
     background-color: $ubcBlack !important;
@@ -78,6 +79,17 @@
   background-color: $ubcWhite;
 }
 // -------------------------------
+// Degree Requirements
+.degreeRequirements {
+  text-align: center;
+
+  iframe {
+    width: 1000px;
+    height: 800px;
+  }
+}
+
+// -------------------------------
 // Element Styling ----
 a:focus {
     color: $ubcGrey;
@@ -86,51 +98,9 @@ a:focus {
 body {
   background-color: $ubcLightBlue;
 }
-// -------------------------------
-// Bootstrap Sass copy
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none; // none by default, but block on "open" of the menu
-  float: left;
-  min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0; // override default ul
-  list-style: none;
-  font-size: $base-root-size;
-  text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
-  background-color: $ubcBlack;
 
-  // Aligns the dropdown menu to right
-  //
-  // Deprecated as of 3.1.0 in favor of `.dropdown-menu-[dir]`
-  &.pull-right {
-    right: 0;
-    left: auto;
-  }
 
-  // Links within the dropdown menu
-  > li > a {
-    display: block;
-    padding: 3px 20px;
-    clear: both;
-    font-weight: normal;
-    color: $ubcLightGrey;
-    white-space: nowrap; // prevent links from randomly breaking onto new lines
-  }
-}
 
-// Hover/Focus state
-.dropdown-menu > li > a {
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    background-color: $ubcGrey;
-  }
-}
-// -----------------------------------------
 
 
 

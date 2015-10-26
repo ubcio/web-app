@@ -1,11 +1,9 @@
-<div class="pure-form">
-  <button class="pure-button pure-button-primary" type="submit">Submit</button>
-  <input name="states" id="states" type="text" placeholder="enter a state" ng-model="degreeRequirements.selected"
-         typeahead="state for state in degreeRequirements.states | filter:$viewValue | limitTo:8" class="form-control">
+<div class="degreeRequirements">
+  <div class="pure-form">
+    <input name="states" id="states" type="text" placeholder="Enter your degree" ng-model="degreeRequirements.selected"
+           typeahead="state for state in degreeRequirements.states | filter:$viewValue | limitTo:8"
+           class="pure-input">
+  </div>
+  <iframe src="http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421"></iframe>
 </div>
-
-
-<iframe src="http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421"
-        style="width: 1000px ; height: 800px; float: right"></iframe>
-
 
