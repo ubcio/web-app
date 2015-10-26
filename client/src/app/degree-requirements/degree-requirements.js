@@ -24,7 +24,25 @@
    */
   function DegreeRequirementsCtrl() {
     var degreeRequirements = this;
-    degreeRequirements.states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Dakota", "North Carolina", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"];
+    degreeRequirements.degrees = [
+      {name: "Computer Science Major", scroll: 100},
+      {name: "Computer Science Honours", scroll: 100},
+      {name: "Computer Science and Another Science Subject Combined Major", scroll: 100},
+      {name: "Computer Science and Biology Combined Major" , scroll: 100},
+      {name: "Computer Science and Mathematics Combined Major", scroll: 100},
+      {name: "Computer Science and Microbiology and Immunology Combined Major", scroll: 100},
+      {name: "Computer Science and Physics Combined Major" , scroll: 100},
+      {name: "Computer Science and Statistics Combined Major" , scroll: 100},
+      {name: "Atmospheric Science and Computer Science Combined Honours" , scroll: 100},
+      {name: "Computer Science and Biology Combined Honours" , scroll: 100},
+      {name: "Computer Science and Mathematics Combined Honours", scroll: 100},
+      {name: "Computer Science and Microbiology and Immunology Combined Honours", scroll: 100},
+      {name: "Computer Science and Physics Combined Honours" , scroll: 100},
+      {name: "Computer Science and Statistics Combined Honours" , scroll: 100},
+      {name: "Computer Science and Software Engineering Major" , scroll: 100},
+      {name: "Computer Science and Software Engineering Honours" , scroll: 100},
+      {name: "Cognitive Systems Major: Computational Intelligence and Design", scroll: 100}
+    ];
     degreeRequirements.selected = undefined;
 
   }
