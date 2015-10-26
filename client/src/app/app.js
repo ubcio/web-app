@@ -30,6 +30,7 @@
 
   angular.module('app', [
       'ui.router',
+      'ui.bootstrap',
       'courses',
       'professors',
       'tutors',
