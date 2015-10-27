@@ -87,6 +87,17 @@
     width: 1000px;
     height: 800px;
   }
+
+  input {
+    text-align: center;
+    width: 500px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+
+  .active {
+    background-color: $ubcBlue;
+  }
 }
 
 // -------------------------------

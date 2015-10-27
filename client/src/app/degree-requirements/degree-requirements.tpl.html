@@ -1,8 +1,7 @@
 <div class="degreeRequirements">
   <div class="pure-form">
-    <input name="states" type="text" placeholder="Enter your degree" ng-model="degreeRequirements.selected"
-           typeahead="degree.name for degree in degreeRequirements.degrees | filter:{name:$viewValue} | limitTo:8"
-           class="pure-input">
+    <input name="states" type="text" placeholder="Start typing your specific CS degree" ng-model="degreeRequirements.selected"
+           typeahead="degree.name for degree in degreeRequirements.degrees | filter:{name:$viewValue} | limitTo:8">
   </div>
   <iframe src="http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421"></iframe>
 </div>
