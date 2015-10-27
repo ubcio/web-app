@@ -24,6 +24,14 @@
    */
   function DegreeRequirementsCtrl() {
     var degreeRequirements = this;
+    var frameWrapper = document.getElementById('frameWrapper');
+    var firstYearRequirements = 1840;
+
+    var init = function() {
+      frameWrapper.scrollTop = firstYearRequirements;        // Start on first year requirements
+    };
+    init();
+
     degreeRequirements.degrees = [
       {name: "Computer Science Major", scroll: 2275},
       {name: "Computer Science Honours", scroll: 2650},
@@ -47,12 +55,12 @@
 
     degreeRequirements.scrollFrame = function(scrollToX) {
       if(scrollToX != null) {
-         document.getElementById('frameWrapper').scrollTop = scrollToX;
+         frameWrapper.scrollTop = scrollToX;
       } else {
         // TODO
         // error message - "please select a degree from the dropdown"
       }
-    }
+    };
 
   }
 
