@@ -39,7 +39,7 @@
       {name: "Computer Science and Microbiology and Immunology Combined Honours", scroll: 6990},
       {name: "Computer Science and Physics Combined Honours" , scroll: 7040},
       {name: "Computer Science and Statistics Combined Honours" , scroll: 8100},
-      {name: "Computer Science and Software Engineering Major" , scroll: 9300},
+      {name: "Computer Science and Software Engineering Major" , scroll: 9265},
       {name: "Computer Science and Software Engineering Honours" , scroll: 9760},
       {name: "Cognitive Systems Major: Computational Intelligence and Design", scroll: 10300}
     ];
