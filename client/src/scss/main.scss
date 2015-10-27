@@ -85,7 +85,7 @@
 
   iframe {
     width: 1000px;
-    height: 120s00px; // height we want iframe to scroll to, keep it around this
+    height: 12000px; // height we want iframe to scroll to, keep it around this
   }
 
   input {
@@ -101,11 +101,12 @@
 }
 
 #frameWrapper{
-  margin: auto;
+  left: 50%;
+  margin-left: -500px;
   position: absolute;
   overflow: scroll;
   width: 1000px;
-  height: 500px;
+  height: 600px;
 }
 
 // -------------------------------
