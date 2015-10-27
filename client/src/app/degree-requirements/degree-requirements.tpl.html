@@ -4,7 +4,11 @@
            typeahead="degree as degree.name for degree in degreeRequirements.degrees | filter:{name:$viewValue} | limitTo:8">
     <button class="pure-button pure-button-primary" ng-click="degreeRequirements.scrollFrame(degreeRequirements.selected.scroll)">GO</button>
   </div>
-    <div id="frameWrapper">
-      <iframe id="degreeRequirementsFrame" src="http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421"></iframe>
+    <div id="specificFrameWrapper" class="degreeRequirementsFrameWrapper">
+      <iframe id="specificFrame" class="degreeRequirementsFrame" src="http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421"></iframe>
+    </div>
+
+    <div id="generalFrameWrapper" class="degreeRequirementsFrameWrapper">
+      <iframe id="generalFrame" class="degreeRequirementsFrame" src="http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,408#18798" scrolling="no"></iframe>
     </div>
 </div>

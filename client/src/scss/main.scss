@@ -83,12 +83,6 @@
 .degreeRequirements {
   text-align: center;
 
-  iframe {
-    width: 1000px;
-    height: 11730px; // height we want iframe to scroll to, keep it around this
-    overflow: auto;
-  }
-
   input {
     text-align: center;
     width: 600px;
@@ -99,17 +93,41 @@
   .active {
     background-color: $ubcBlue;
   }
+
+  .degreeRequirementsFrameWrapper {
+    left: 50%;
+    margin-left: -500px;
+    position: absolute;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 1000px;
+  }
+
+  .degreeRequirementsFrame {
+    width: 1000px;
+    overflow: auto;
+  }
+
+  #specificFrame {
+    height: 11730px; // height we want iframe to scroll to, keep it around this
+  }
+
+  #specificFrameWrapper{
+    height: 600px;
+  }
+
+  #generalFrame {
+    height: 2000px;
+  }
+
+  #generalFrameWrapper {
+    height: 470px;
+    top: 800px;
+    overflow: hidden;
+  }
 }
 
-#frameWrapper{
-  left: 50%;
-  margin-left: -500px;
-  position: absolute;
-  overflow: auto;
-  overflow-x: hidden;
-  width: 1000px;
-  height: 600px;
-}
+
 
 // -------------------------------
 // Element Styling ----

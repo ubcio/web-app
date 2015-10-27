@@ -24,11 +24,12 @@
    */
   function DegreeRequirementsCtrl() {
     var degreeRequirements = this;
-    var frameWrapper = document.getElementById('frameWrapper');
+    var frameWrapper = document.getElementById('specificFrameWrapper');
     var firstYearRequirements = 1840;
 
     var init = function() {
-      frameWrapper.scrollTop = firstYearRequirements;        // Start on first year requirements
+      frameWrapper.scrollTop = firstYearRequirements;                 // Start on first year requirements
+      document.getElementById('generalFrameWrapper').scrollTop = 350; // focus on general degree requirements
     };
     init();
 
