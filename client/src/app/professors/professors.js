@@ -22,8 +22,12 @@
    * @name  ProfessorsCtrl
    * @description Controller
    */
-  function ProfessorsCtrl() {
+  function ProfessorsCtrl(ProfessorsService) {
     var professors = this;
+    var init = function(){
+      professors.profs = ProfessorsService.getProfessors();
+      professors.selectedProf = undefined;
+    }();
   }
 
   angular.module('professors', [])
