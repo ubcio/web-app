@@ -45,7 +45,7 @@
       'about',
       'companies',
       'common.header',
-      'common.services.data',
+      'common.services.degree-requirements',
       'common.directives.version',
       'common.filters.uppercase',
       'common.interceptors.http',
