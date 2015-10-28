@@ -47,6 +47,7 @@
       'common.header',
       'common.services.degree-requirements',
       'common.services.tutors',
+      'common.services.courses',
       'common.directives.version',
       'common.filters.uppercase',
       'common.interceptors.http',

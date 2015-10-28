@@ -22,8 +22,9 @@
    * @name  CoursesCtrl
    * @description Controller
    */
-  function CoursesCtrl() {
+  function CoursesCtrl(CoursesService) {
     var courses = this;
+    courses.courses = CoursesService.getCourses();
   }
 
   angular.module('courses', [])
