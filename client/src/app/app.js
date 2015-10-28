@@ -46,6 +46,7 @@
       'companies',
       'common.header',
       'common.services.degree-requirements',
+      'common.services.tutors',
       'common.directives.version',
       'common.filters.uppercase',
       'common.interceptors.http',

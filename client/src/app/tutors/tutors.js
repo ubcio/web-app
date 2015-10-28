@@ -22,8 +22,12 @@
    * @name  TutorsCtrl
    * @description Controller
    */
-  function TutorsCtrl() {
+  function TutorsCtrl(TutorsService) {
     var tutors = this;
+    var init = function(){
+      tutors.coursesWithTutors = TutorsService.getCoursesWithTutors();
+      tutors.selectedCourse = undefined;
+    }();
   }
 
   angular.module('tutors', [])
