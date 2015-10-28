@@ -24,7 +24,10 @@
    */
   function CoursesCtrl(CoursesService) {
     var courses = this;
-    courses.courses = CoursesService.getCourses();
+    var init = function() {
+      courses.courses = CoursesService.getCourses();
+      courses.selectedCourse = undefined;
+    }();
   }
 
   angular.module('courses', [])
