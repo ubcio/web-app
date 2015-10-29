@@ -1,15 +1,15 @@
 @import 'settings', 'mixins', 'base', 'helpers', 'modules/island','modules/horizontal-list', 'modules/buttons', 'layouts/page' , 'bootstrap';
 
 // -------------------------------
+// Globals
 .textBox {
   //border-radius: 20px;
-  
+
   padding: 2%;
- background-color: $ubcWhite;
- background-image: url("assets/images/banafsheh.jpg");
+  background-color: $ubcWhite;
 }
 
-
+// -------------------------------
 // Navbar Styling
 .pure-menu {
     background-color: $ubcBlack !important;
@@ -62,24 +62,13 @@
 
 // ---------------------------------
 // About Page
-
-
-
-
 .teamMember {
-    padding: 2%;
-    
   img {
-    
-    height: auto;
+    width: 100%;
     display: inline-block;
-    
-    max-height: 445px;
-    
-    
+
+    max-width: 445px;
   }
-  
-  
 }
 
 .teamMemberDetails {
@@ -91,21 +80,15 @@
     margin-top: 0;
   }
   display: inline-block;
-  
-}
 
-.ubcIODescription{
-  height: 25%;
 }
 
 .aboutPage{
   h2{
     margin-top: 0;
   }
-  
+
 }
-
-
 
 // -------------------------------
 // Degree Requirements
