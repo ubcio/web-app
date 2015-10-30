@@ -3,9 +3,7 @@
 // -------------------------------
 // Globals
 .textBox {
-  //border-radius: 20px;
-
-  padding: 2%;
+  padding: 5px 30px 5px 30px;
   background-color: $ubcWhite;
 }
 
@@ -62,16 +60,97 @@
 
 // ---------------------------------
 // About Page
+@media screen and (min-width: 200px){
 .teamMember {
   img {
+    display: block;
+    margin-top: 30px; 
     width: 100%;
-    display: inline-block;
+    min-width: 100px;
+  }
+  .teamProfile {
+    margin-top: 0px;
+  }
+}
+}
 
-    max-width: 445px;
+@media only screen and (min-width: 450px){
+  .ubcIODescription {
+    max-width: 500px;
+    margin: auto;
+  }
+  .teamMember {
+    max-width: 500px;
+    margin: auto;
   }
 }
 
-.teamMemberDetails {
+@media only screen and (min-width: 900px){
+  .ubcIODescription {
+    max-width: 800px;
+    margin: auto;
+  }
+  .teamMembers{
+    
+    max-width: 800px;
+    margin: auto;
+  }
+  .teamMember {
+    display: inline-block;
+    max-width: 372px;
+  }
+  div.teamMember:nth-child(odd){
+    float: left;
+    
+  }
+ 
+  div.teamMember:nth-child(even){
+    float: right;
+    
+  }
+  
+}
+
+@media only screen and (min-width: 1280px){
+  .ubcIODescription {
+    max-width: 1234px; 
+    margin: auto;
+  }
+  
+  .teamMembers{
+    max-width: 1234px;
+    margin: auto;
+  }
+  
+  .teamMember{
+    max-width: 1234px;
+    
+    img{
+      width: 247px;
+      float: left;
+    }
+    
+    .textBox{
+      margin-top: 30px;
+      max-width: 926px;
+      float: right;
+    }
+    p {
+      width: 926px;
+    }
+    
+  }
+ 
+    div.teamMember:nth-child(odd){
+      float:none;
+   }
+ 
+    div.teamMember:nth-child(even){
+      float:none;
+  }
+}
+
+.teamProfile {
   h2{
     margin-bottom: 0;
   }
