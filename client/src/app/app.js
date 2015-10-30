@@ -58,5 +58,6 @@
     .config(config)
     .run(run)
     .controller('MainCtrl', MainCtrl)
+    .constant('FirebaseUrl', 'https://ubcio.firebaseio.com/')
     .value('version', '1.1.0');
 })();
