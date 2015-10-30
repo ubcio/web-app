@@ -22,8 +22,12 @@
    * @name  CoursesCtrl
    * @description Controller
    */
-  function CoursesCtrl() {
+  function CoursesCtrl(CoursesService) {
     var courses = this;
+    var init = function() {
+      courses.courses = CoursesService.getCourses();
+      courses.selectedCourse = undefined;
+    }();
   }
 
   angular.module('courses', [])

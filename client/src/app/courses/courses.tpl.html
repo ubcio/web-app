@@ -1,3 +1,24 @@
-<div>
-  Courses
+<div class="courses">
+  <div class="pure-form">
+    <input name="states" type="text" placeholder="What CS course do you want to know more about?"
+           ng-model="courses.selectedCourse"
+           typeahead="course as course.name for course in courses.courses | filter:{name:$viewValue} | limitTo:8">
+  </div>
+  <div ng-show="courses.selectedCourse.name">
+    <p>
+      {{courses.selectedCourse.name}},
+      {{courses.selectedCourse.description}},
+      {{courses.selectedCourse.credits}} credits,
+
+    <div ng-hide="courses.selectedCourse.prerequisites.length == 0">
+      Prerequisites:
+    <span ng-repeat="prerequisite in courses.selectedCourse.prerequisites">
+      {{prerequisite}}
+    </span>
+    </div>
+    <div ng-show="courses.selectedCourse.prerequisites.length == 0">
+      Prerequisites: none
+    </div>
+    </p>
+  </div>
 </div>
