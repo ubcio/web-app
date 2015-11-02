@@ -58,9 +58,40 @@
   color: $ubcLightGrey;
 }
 
+@media only screen and (max-width: 480px){
+ .pure-menu{
+   ul {
+      width: 100% !important;
+  }
+   li {
+    display:block !important;
+  }
+ }
+}
+
 // ---------------------------------
 // About Page
-@media screen and (min-width: 200px){
+
+.teamProfile {
+  h2{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  h5{
+    font-weight: normal;
+    margin-top: 0;
+  }
+  display: inline-block;
+
+}
+
+.title {
+  margin-top: 20px;
+}
+
+// Media queries 
+
+@media only screen and (min-width: 200px){
 .teamMember {
   img {
     display: block;
@@ -150,24 +181,8 @@
   }
 }
 
-.teamProfile {
-  h2{
-    margin-bottom: 0;
-  }
-  h5{
-    font-weight: normal;
-    margin-top: 0;
-  }
-  display: inline-block;
 
-}
 
-.aboutPage{
-  h2{
-    margin-top: 0;
-  }
-
-}
 
 // -------------------------------
 // Degree Requirements
