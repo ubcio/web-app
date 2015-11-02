@@ -232,7 +232,21 @@
     background-color: $ubcBlue;
   }
 }
+// -------------------------------
+// Courses
+.courses {
+  text-align: center;
 
+  input {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+  }
+
+  .active {
+    background-color: $ubcBlue;
+  }
+}
 // -------------------------------
 // Element Styling ----
 a:focus {

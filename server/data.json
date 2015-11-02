@@ -1,27 +1,33 @@
 {
-  "courses": [
-    {
-      "name": "CS 110",
-      "description": "Shitty",
-      "credits": 3,
-      "prerequisites": []
-    },
-    {
-      "name": "CS 121",
-      "description": "Meh",
-      "credits": 3,
-      "prerequisites": []
-    },
-    {
-      "name": "CS 210",
-      "description": "ohh yaaa",
-      "credits": 3,
-      "prerequisites": [
-        "CS110",
-        "CS121"
-      ]
-    }
-  ],
+  "courses": {
+    "courses": [
+      {
+        "name": "CPSC 110 Computation, Programs, and Programming",
+        "description": "Fundamental program and computation structures. Introductory programming skills. Computation as a tool for information processing, simulation and modeling, and interacting with the world. ",
+        "credits": 4,
+        "prerequisites": [],
+        "corequisites": []
+      },
+      {
+        "name": "CPSC 121 Models of Computation",
+        "description": "Physical and mathematical structures of computation. Boolean algebra and combinations logic circuits; proof techniques; functions and sequential circuits; sets and relations; finite state machines; sequential instruction execution.",
+        "credits": 4,
+        "prerequisites": [],
+        "corequisites": [
+          "CPSC 110"
+        ]
+      },
+      {
+        "name": "CPSC 210 Software Construction",
+        "description": " Design, development, and analysis of robust software components. Topics such as software design, computational models, data structures, debugging, and testing. ",
+        "credits": 4,
+        "prerequisites": [
+          "One of CPSC 110 , CPSC 260"
+        ],
+        "corequisites": []
+      }
+    ]
+  },
   "degreeRequirements": {
     "degrees": [
       {
@@ -133,13 +139,16 @@
       {
         "name": "CPSC 110",
         "tutors": [
-          0 , 1
+          0,
+          1
         ]
       },
       {
         "name": "CPSC 121",
         "tutors": [
-          0 , 1 , 2
+          0,
+          1,
+          2
         ]
       },
       {

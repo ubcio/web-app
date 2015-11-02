@@ -1,33 +1,12 @@
 (function () {
   'use strict';
 
-  function coursesService() {
+  function coursesService(FirebaseUrl , $firebaseArray) {
+    var ref = new Firebase(FirebaseUrl + "courses");
 
     return {
       getCourses: function () {
-        return [
-          {
-            name: "CS 110",
-            description: "Shitty",
-            credits: 3,
-            prerequisites: []
-          },
-          {
-            name: "CS 121",
-            description: "Meh",
-            credits: 3,
-            prerequisites: []
-          },
-          {
-            name: "CS 210",
-            description: "ohh yaaa",
-            credits: 3,
-            prerequisites: [
-              "CS110",
-              "CS121"
-            ]
-          }
-        ];
+        return $firebaseArray(ref.child("courses"));
       }
     };
   }
