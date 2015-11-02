@@ -1,16 +1,21 @@
 <div class="professors">
   <div class="pure-form">
-    <input name="states" type="text" placeholder="What Professor do you want to know more about?"
+    <input type="text" placeholder="what professor do you want to know more about?"
            ng-model="professors.selectedProf"
            typeahead="prof as prof.name for prof in professors.profs | filter:{name:$viewValue} | limitTo:8">
   </div>
   <div ng-show="professors.selectedProf.name">
     <p>
-      {{professors.selectedProf.name}},
-      {{professors.selectedProf.bio}},
+      {{professors.selectedProf.name}}
+      <br>
+      {{professors.selectedProf.bio}}
     </p>
     <div ng-repeat="review in professors.selectedProf.reviews">
       {{review}}
     </div>
+
+    <span ng-repeat="course in professors.selectedProf.courses">
+      {{course}}
+    </span>
   </div>
 </div>

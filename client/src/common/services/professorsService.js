@@ -1,27 +1,12 @@
 (function () {
   'use strict';
 
-  function professorsService() {
+  function professorsService(FirebaseUrl , $firebaseArray) {
+    var ref = new Firebase(FirebaseUrl + "professors");
 
     return {
       getProfessors: function () {
-        return [
-          {
-            name: "Paul Carter",
-            bio: "Cool prof as well",
-            reviews: [
-              "Dope Prof",
-              "Really dope"
-            ]
-          },
-          {
-            name: "Ron Garcia",
-            bio: "Cool prof",
-            reviews: [
-
-            ]
-          }
-        ];
+        return $firebaseArray(ref.child("professors"));
       }
     };
   }

@@ -1,6 +1,6 @@
 <div class="tutors">
   <div class="pure-form">
-    <input type="text" placeholder="What course do you need help with?"
+    <input type="text" placeholder="what course do you need help with?"
            ng-model="tutors.selectedCourse"
            typeahead="course as course.name for course in tutors.coursesWithTutors | filter:{name:$viewValue} | limitTo:8">
   </div>
