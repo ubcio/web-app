@@ -1,12 +1,16 @@
 <div class="tutors">
   <div class="pure-form">
-    <input name="states" type="text" placeholder="What CS course do you need help with?"
+    <input type="text" placeholder="What course do you need help with?"
            ng-model="tutors.selectedCourse"
-           typeahead="course as course.courseName for course in tutors.coursesWithTutors | filter:{courseName:$viewValue} | limitTo:8">
+           typeahead="course as course.name for course in tutors.coursesWithTutors | filter:{name:$viewValue} | limitTo:8">
   </div>
-  <div ng-repeat="tutor in tutors.selectedCourse.tutors">
+  <div ng-repeat="tutorIndex in tutors.selectedCourse.tutors">
     <p>
-      {{tutor.name}}, {{tutor.bio}} , {{tutor.price}} per hour
+      {{tutors.tutors[tutorIndex].name}}, {{tutors.tutors[tutorIndex].bio}} , {{tutors.tutors[tutorIndex].price}} per hour
     </p>
+  </div>
+
+  <div ng-hide="tutors.selectedCourse">
+    Would you like to be a tutor? All you have to do is email us at ubcio.team@gmail.com
   </div>
 </div>

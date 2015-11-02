@@ -1,49 +1,16 @@
 (function () {
   'use strict';
 
-  function tutorsService() {
-    var arieMilner = {
-      name: "Arie Milner",
-      bio: "likes to code",
-      price: 20
-    };
+  function tutorsService(FirebaseUrl , $firebaseArray) {
+    var ref = new Firebase(FirebaseUrl + "tutors");
 
-    var banafshehDerayat = {
-      name: "Banafsheh Derayat",
-      bio: "Sexy mama",
-      price:100
-    };
-
-    var timeh = {
-      name: "Timeh",
-      bio: "tiny timeh",
-      price: -100
-    };
 
     return {
       getCoursesWithTutors: function () {
-        return [
-          {
-            courseName: "CS 110",
-            tutors: [
-              arieMilner,
-              banafshehDerayat,
-              timeh
-            ]
-          },
-          {
-            courseName: "CS 121",
-            tutors:[
-              arieMilner
-            ]
-          },
-          {
-            courseName: "CS 210",
-            tutors:[
-              timeh
-            ]
-          }
-        ];
+        return $firebaseArray(ref.child("courses"));
+      },
+      getTutors: function(){
+        return $firebaseArray(ref.child("tutors"));
       }
     };
   }

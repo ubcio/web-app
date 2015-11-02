@@ -97,5 +97,44 @@
         "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#14865"
       }
     ]
+  },
+  "tutors": {
+    "tutors": [
+      {
+        "name": "Arie Milner",
+        "bio": "likes to code",
+        "price": 20
+      },
+      {
+        "name": "Banafsheh Derayat",
+        "bio": "Sexy mama",
+        "price": 100
+      },
+      {
+        "name": "Timeh daLoser",
+        "bio": "tiny timeh",
+        "price": -100
+      }
+    ],
+    "courses": [
+      {
+        "name": "CPSC 110",
+        "tutors": [
+          0 , 1
+        ]
+      },
+      {
+        "name": "CPSC 121",
+        "tutors": [
+          0 , 1 , 2
+        ]
+      },
+      {
+        "name": "CPSC 210",
+        "tutors": [
+          0
+        ]
+      }
+    ]
   }
 }

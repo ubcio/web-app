@@ -26,6 +26,7 @@
     var tutors = this;
     var init = function(){
       tutors.coursesWithTutors = TutorsService.getCoursesWithTutors();
+      tutors.tutors = TutorsService.getTutors();
       tutors.selectedCourse = undefined;
     }();
   }

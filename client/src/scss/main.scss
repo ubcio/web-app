@@ -217,6 +217,23 @@
 }
 
 // -------------------------------
+// Tutors
+.tutors {
+
+  text-align: center;
+
+  input {
+    text-align: center;
+    width: 350px;
+    margin: auto;
+  }
+
+  .active {
+    background-color: $ubcBlue;
+  }
+}
+
+// -------------------------------
 // Element Styling ----
 a:focus {
     color: $ubcGrey;
