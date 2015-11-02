@@ -8,6 +8,9 @@
     <p>
       {{tutors.tutors[tutorIndex].name}}, {{tutors.tutors[tutorIndex].bio}} , {{tutors.tutors[tutorIndex].price}} per hour
     </p>
+    <div ng-repeat="review in tutors.tutors[tutorIndex].reviews">
+      {{review}}
+    </div>
   </div>
 
   <div ng-hide="tutors.selectedCourse">

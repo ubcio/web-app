@@ -103,17 +103,30 @@
       {
         "name": "Arie Milner",
         "bio": "likes to code",
-        "price": 20
+        "price": 20,
+        "reviews": [
+          "Best tutor ever",
+          "Kick ass tutor"
+        ]
       },
       {
         "name": "Banafsheh Derayat",
         "bio": "Sexy mama",
-        "price": 100
+        "price": 100,
+        "reviews": [
+          "Best tutor ever",
+          "Kick ass tutor",
+          "Sexy mama"
+        ]
       },
       {
         "name": "Timeh daLoser",
         "bio": "tiny timeh",
-        "price": -100
+        "price": -100,
+        "reviews": [
+          "shit",
+          "garbage"
+        ]
       }
     ],
     "courses": [
