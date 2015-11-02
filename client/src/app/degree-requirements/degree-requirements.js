@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   /**
@@ -24,24 +24,20 @@
    */
   function DegreeRequirementsCtrl(DegreeRequirementsService) {
     var degreeRequirements = this;
-    var frameWrapper = document.getElementById('specificFrameWrapper');
 
-    var init = function() {
-      frameWrapper.scrollTop = DegreeRequirementsService.getSpecificStartingPosition();
-      document.getElementById('generalFrameWrapper').scrollTop = DegreeRequirementsService.getGeneralStartingPosition();
+    var init = function () {
       degreeRequirements.degrees = DegreeRequirementsService.getDegrees();
       degreeRequirements.selected = undefined;
+      degreeRequirements.website = "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#5297";
     }();
 
-    degreeRequirements.scrollFrame = function(scrollToX) {
-      if(scrollToX != null) {
-         frameWrapper.scrollTop = scrollToX;
+    degreeRequirements.onClick = function () {
+      if (degreeRequirements.website == degreeRequirements.selected.website) {
+        degreeRequirements.website = degreeRequirements.selected.website + " ";  // this tells angular that the website has changed so it goes back to the url (in case person scrolled and wanted to go back)
       } else {
-        // TODO
-        // error message - "please select a degree from the dropdown"
+        degreeRequirements.website = degreeRequirements.selected.website;
       }
-    };
-
+    }
   }
 
   angular.module('degree-requirements', [])

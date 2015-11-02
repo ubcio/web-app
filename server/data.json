@@ -25,72 +25,76 @@
   "degreeRequirements": {
     "degrees": [
       {
+        "name": "Computer Science First Year Requirements",
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#5297"
+      },
+      {
         "name": "Computer Science Major",
-        "scroll": 2275
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#5312"
       },
       {
         "name": "Computer Science Honours",
-        "scroll": 2650
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#5314"
       },
       {
         "name": "Computer Science and Another Science Subject Combined Major",
-        "scroll": 3200
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#9185"
       },
       {
         "name": "Computer Science and Biology Combined Major",
-        "scroll": 3920
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,418#9181"
       },
       {
         "name": "Computer Science and Mathematics Combined Major",
-        "scroll": 3970
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,429#10508"
       },
       {
         "name": "Computer Science and Microbiology and Immunology Combined Major",
-        "scroll": 4020
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,430#9199"
       },
       {
         "name": "Computer Science and Physics Combined Major",
-        "scroll": 4070
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#9958"
       },
       {
         "name": "Computer Science and Statistics Combined Major",
-        "scroll": 5090
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#9183"
       },
       {
         "name": "Atmospheric Science and Computer Science Combined Honours",
-        "scroll": 5965
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,416#9187"
       },
       {
         "name": "Computer Science and Biology Combined Honours",
-        "scroll": 6020
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,418#10490"
       },
       {
         "name": "Computer Science and Mathematics Combined Honours",
-        "scroll": 6075
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#5317"
       },
       {
         "name": "Computer Science and Microbiology and Immunology Combined Honours",
-        "scroll": 6990
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,430#9198"
       },
       {
         "name": "Computer Science and Physics Combined Honours",
-        "scroll": 7040
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#5320"
       },
       {
         "name": "Computer Science and Statistics Combined Honours",
-        "scroll": 8100
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#9184"
       },
       {
         "name": "Computer Science and Software Engineering Major",
-        "scroll": 9265
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#5384"
       },
       {
         "name": "Computer Science and Software Engineering Honours",
-        "scroll": 9760
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#5385"
       },
       {
         "name": "Cognitive Systems Major: Computational Intelligence and Design",
-        "scroll": 10300
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#14865"
       }
     ]
   }

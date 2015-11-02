@@ -89,7 +89,7 @@
   margin-top: 20px;
 }
 
-// Media queries 
+// Media queries
 
 @media only screen and (min-width: 200px){
 .teamMember {
@@ -200,37 +200,20 @@
     background-color: $ubcBlue;
   }
 
-  .degreeRequirementsFrameWrapper {
-    left: 50%;
-    margin-left: -500px;
-    position: absolute;
+  .centerFrame {
+    width: 1000px;
     overflow: auto;
     overflow-x: hidden;
-    width: 1000px;
   }
 
-  .degreeRequirementsFrame {
-    width: 1000px;
-    overflow: auto;
+  .specificFrame {
+    height: 600px; // height we want iframe to scroll to, keep it around this
   }
 
-  #specificFrame {
-    height: 11730px; // height we want iframe to scroll to, keep it around this
+  .generalFrame {
+    height: 450px;
   }
 
-  #specificFrameWrapper{
-    height: 600px;
-  }
-
-  #generalFrame {
-    height: 2000px;
-  }
-
-  #generalFrameWrapper {
-    height: 470px;
-    top: 800px;
-    overflow: hidden;
-  }
 }
 
 // -------------------------------
