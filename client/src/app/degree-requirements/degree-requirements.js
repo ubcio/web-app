@@ -27,17 +27,13 @@
 
     var init = function () {
       degreeRequirements.degrees = DegreeRequirementsService.getDegrees();
-      degreeRequirements.selected = undefined;
-      degreeRequirements.website = "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#5297";
-    }();
 
-    degreeRequirements.onClick = function () {
-      if (degreeRequirements.website == degreeRequirements.selected.website) {
-        degreeRequirements.website = degreeRequirements.selected.website + " ";  // this tells angular that the website has changed so it goes back to the url (in case person scrolled and wanted to go back)
-      } else {
-        degreeRequirements.website = degreeRequirements.selected.website;
-      }
-    }
+      // Default page is first year reqs for CS
+      degreeRequirements.selected = {
+        "name": "",
+        "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#5297"
+      };
+    }();
   }
 
   angular.module('degree-requirements', [])
