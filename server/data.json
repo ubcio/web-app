@@ -137,6 +137,7 @@
       {
         "name": "Arie Milner",
         "bio": "likes to code",
+        "email": "amilner42@gmail.com",
         "price": 20,
         "reviews": [
           "Best tutor ever",
@@ -146,6 +147,7 @@
       {
         "name": "Banafsheh Derayat",
         "bio": "Sexy mama",
+        "email": "b.derayat@gmail.com",
         "price": 100,
         "reviews": [
           "Best tutor ever",
@@ -156,7 +158,8 @@
       {
         "name": "Timeh daLoser",
         "bio": "tiny timeh",
-        "price": -100,
+        "email": "timehDaLoser@gmail.com",
+        "price": 100,
         "reviews": [
           "shit",
           "garbage"

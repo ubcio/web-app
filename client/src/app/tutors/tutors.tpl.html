@@ -4,9 +4,10 @@
            ng-model="tutors.selectedCourse"
            typeahead="course as course.name for course in tutors.coursesWithTutors | filter:{name:$viewValue} | limitTo:8">
   </div>
+  <!-- In case there is just one tutor center it-->
   <div class="textBox tutorBox oneTutor" ng-show="tutors.selectedCourse.tutors.length == 1">
     <h2> {{tutors.tutors[0].name}} </h2>
-    <h5>{{tutors.tutors[0].price}}per hour</h5>
+    <h5>{{tutors.tutors[0].email + ", " + tutors.tutors[0].price}}per hour</h5>
 
     <p>
       {{tutors.tutors[0].bio}}<br>
@@ -20,11 +21,13 @@
       {{review}}
     </div>
   </div>
+
+  <!-- If there is more than one tutor use a double tiled column approach -->
   <div ng-show="tutors.selectedCourse.tutors.length > 1">
     <div class="leftColumn">
       <div class="textBox tutorBox" ng-repeat="tutorIndex in tutors.selectedCourse.tutors" ng-if="$even">
         <h2> {{tutors.tutors[tutorIndex].name}} </h2>
-        <h5>{{tutors.tutors[tutorIndex].price}} per hour</h5>
+        <h5>{{tutors.tutors[tutorIndex].email + ", " + tutors.tutors[tutorIndex].price}} per hour</h5>
 
         <p>
           {{tutors.tutors[tutorIndex].bio}}<br>
@@ -43,7 +46,7 @@
     <div class="rightColumn">
       <div class="textBox tutorBox" ng-repeat="tutorIndex in tutors.selectedCourse.tutors" ng-if="$odd">
         <h2> {{tutors.tutors[tutorIndex].name}} </h2>
-        <h5>{{tutors.tutors[tutorIndex].price}} per hour</h5>
+        <h5>{{tutors.tutors[tutorIndex].email + ", " + tutors.tutors[tutorIndex].price}} per hour</h5>
 
         <p>
           {{tutors.tutors[tutorIndex].bio}}<br>
@@ -60,6 +63,7 @@
       </div>
     </div>
   </div>
+  <!-- If no course selected, display contribution message TODO style it-->
   <div ng-hide="tutors.selectedCourse">
     Would you like to contribute to the ubcIO community by becoming a tutor? Well we would love to have you! We take a
     whopping 0 percent of the money you make because taking a cut would be...fucking annoying to say the least. All
