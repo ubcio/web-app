@@ -219,17 +219,70 @@
 // -------------------------------
 // Tutors
 .tutors {
-
   text-align: center;
-
+  
+  button{
+    margin-bottom: 10px;
+    background: $ubcBlue;
+    color: $ubcWhite;
+  }
   input {
     text-align: center;
     width: 350px;
     margin: auto;
+    margin-bottom: 10px;
   }
 
   .active {
     background-color: $ubcBlue;
+  }
+  h2{
+    margin-bottom: 0;
+  }
+  
+  h5{
+    margin: 0;
+  }
+ 
+  .reviews{
+    padding: 10px;
+    background-color: $ubcLightGrey;
+    border:2px solid $ubcWhite;
+  }
+  
+   @media only screen and (min-width: 200px) and (max-width: 768px){
+     .tutorBox{
+       margin: auto;
+       margin-top: 10px;
+       max-width: 550px;
+     }
+     
+     
+ }
+  
+  
+  @media only screen and (min-width: 769px) {
+    
+    .tutorBox{
+      @include border-box();
+      width: 100%;
+      border: 5px solid $ubcLightBlue;
+      display: inline-table;
+     }
+    .leftColumn {
+      width: 50%;
+      float: left;
+    }
+  
+    .rightColumn {
+      width: 50%;
+      float: right;
+    }
+  }
+  
+  .oneTutor{
+    max-width: 700px;
+    margin: auto;
   }
 }
 // -------------------------------
