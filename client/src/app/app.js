@@ -59,7 +59,8 @@
       'common.directives.version',
       'common.filters.uppercase',
       'common.interceptors.http',
-      'templates'
+      'templates',
+      'ngMdIcons'
     ])
     .config(config)
     .run(run)
