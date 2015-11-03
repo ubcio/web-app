@@ -7,6 +7,19 @@
   background-color: $ubcWhite;
 }
 
+input {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+@media only screen and (max-width: 600px) {
+  input {
+    width: 80%;
+  }
+}
+
 // -------------------------------
 // Navbar Styling
 .pure-menu {
@@ -186,13 +199,6 @@
 .degreeRequirements {
   text-align: center;
 
-  input {
-    text-align: center;
-    width: 500px;
-    margin-top: 0px;
-    margin-bottom: 15px;
-  }
-
   .active {
     background-color: $ubcBlue;
   }
@@ -210,6 +216,19 @@
   .generalFrame {
     height: 450px;
   }
+  
+  .stripe {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:1002px;
+    background-color: $ubcBlack;
+    color: $ubcLightGrey;
+    margin: auto;
+  }
+  
+  .generalStripe{
+    margin-top: 30px;
+  }
 
 }
 
@@ -223,12 +242,7 @@
     background: $ubcBlue;
     color: $ubcWhite;
   }
-  input {
-    text-align: center;
-    width: 500px;
-    margin: auto;
-    margin-bottom: 10px;
-  }
+  
 
   .active {
     background-color: $ubcBlue;
@@ -286,11 +300,7 @@
 .courses {
   text-align: center;
 
-  input {
-    text-align: center;
-    width: 500px;
-    margin: auto;
-  }
+  
 
   .active {
     background-color: $ubcBlue;
@@ -301,15 +311,33 @@
 // Professors
 .professors {
   text-align: center;
-
-  input {
-    text-align: center;
-    width: 500px;
-    margin: auto;
-  }
-
+  margin: auto;
+  max-width: 1000px;
+  
   .active {
     background-color: $ubcBlue;
+  }
+  .textBox{
+    margin-top: 10px;
+  } 
+   h2{
+    margin-bottom: 0;
+  }
+  
+  h5{
+    margin: 0;
+  }
+  button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: $ubcBlue;
+    color: $ubcWhite;
+  }
+  
+  .reviews{
+    padding: 10px;
+    background-color: $ubcLightGrey;
+    border:2px solid $ubcWhite;
   }
 }
 
