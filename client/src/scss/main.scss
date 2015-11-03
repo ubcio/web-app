@@ -1,4 +1,4 @@
-@import 'settings', 'mixins', 'base', 'helpers', 'modules/island','modules/horizontal-list', 'modules/buttons', 'layouts/page' , 'bootstrap';
+@import 'settings', 'mixins', 'base', 'helpers', 'modules/island', 'modules/horizontal-list', 'modules/buttons', 'layouts/page', 'bootstrap';
 
 // -------------------------------
 // Globals
@@ -10,16 +10,16 @@
 // -------------------------------
 // Navbar Styling
 .pure-menu {
-    background-color: $ubcBlack !important;
+  background-color: $ubcBlack !important;
 }
 
 .pure-menu-link {
-    color: $ubcLightGrey;
+  color: $ubcLightGrey;
 }
 
-.navbarLinkActive  {
-    background-color:  $ubcBlue !important;
-    color: $ubcLightGrey;
+.navbarLinkActive {
+  background-color: $ubcBlue !important;
+  color: $ubcLightGrey;
 }
 
 .navbarLinkActive .pure-menu-link:hover {
@@ -27,21 +27,21 @@
 }
 
 .pure-menu-children {
-    background-color: $ubcBlack;
+  background-color: $ubcBlack;
 }
 
 .headerLink:focus {
   background-color: $ubcBlack !important;
-  color:$ubcLightGrey;
+  color: $ubcLightGrey;
 }
 
 .headerLink:hover {
   background-color: transparent !important;
-  color:$ubcLightGrey;
+  color: $ubcLightGrey;
 }
 
 .about:hover {
-  color:$ubcLightGrey;
+  color: $ubcLightGrey;
 }
 
 .about:focus {
@@ -49,35 +49,35 @@
 }
 
 .pure-menu-link:focus {
-    background-color:  $ubcBlue;
+  background-color: $ubcBlue;
   color: $ubcLightGrey;
 }
 
 .pure-menu-link:hover {
-   background-color: $ubcGrey;
+  background-color: $ubcGrey;
   color: $ubcLightGrey;
 }
 
-@media only screen and (max-width: 480px){
- .pure-menu{
-   ul {
+@media only screen and (max-width: 480px) {
+  .pure-menu {
+    ul {
       width: 100% !important;
+    }
+    li {
+      display: block !important;
+    }
   }
-   li {
-    display:block !important;
-  }
- }
 }
 
 // ---------------------------------
 // About Page
 
 .teamProfile {
-  h2{
+  h2 {
     margin-bottom: 0;
     margin-top: 0;
   }
-  h5{
+  h5 {
     font-weight: normal;
     margin-top: 0;
   }
@@ -91,21 +91,21 @@
 
 // Media queries
 
-@media only screen and (min-width: 200px){
-.teamMember {
-  img {
-    display: block;
-    margin-top: 30px;
-    width: 100%;
-    min-width: 100px;
+@media only screen and (min-width: 200px) {
+  .teamMember {
+    img {
+      display: block;
+      margin-top: 30px;
+      width: 100%;
+      min-width: 100px;
+    }
+    .teamProfile {
+      margin-top: 0px;
+    }
   }
-  .teamProfile {
-    margin-top: 0px;
-  }
-}
 }
 
-@media only screen and (min-width: 450px){
+@media only screen and (min-width: 450px) {
   .ubcIODescription {
     max-width: 500px;
     margin: auto;
@@ -116,12 +116,12 @@
   }
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px) {
   .ubcIODescription {
     max-width: 800px;
     margin: auto;
   }
-  .teamMembers{
+  .teamMembers {
 
     max-width: 800px;
     margin: auto;
@@ -130,38 +130,38 @@
     display: inline-block;
     max-width: 372px;
   }
-  div.teamMember:nth-child(odd){
+  div.teamMember:nth-child(odd) {
     float: left;
 
   }
 
-  div.teamMember:nth-child(even){
+  div.teamMember:nth-child(even) {
     float: right;
 
   }
 
 }
 
-@media only screen and (min-width: 1280px){
+@media only screen and (min-width: 1280px) {
   .ubcIODescription {
     max-width: 1234px;
     margin: auto;
   }
 
-  .teamMembers{
+  .teamMembers {
     max-width: 1234px;
     margin: auto;
   }
 
-  .teamMember{
+  .teamMember {
     max-width: 1234px;
 
-    img{
+    img {
       width: 247px;
       float: left;
     }
 
-    .textBox{
+    .textBox {
       margin-top: 30px;
       max-width: 926px;
       float: right;
@@ -172,17 +172,14 @@
 
   }
 
-    div.teamMember:nth-child(odd){
-      float:none;
-   }
+  div.teamMember:nth-child(odd) {
+    float: none;
+  }
 
-    div.teamMember:nth-child(even){
-      float:none;
+  div.teamMember:nth-child(even) {
+    float: none;
   }
 }
-
-
-
 
 // -------------------------------
 // Degree Requirements
@@ -220,8 +217,8 @@
 // Tutors
 .tutors {
   text-align: center;
-  
-  button{
+
+  button {
     margin-bottom: 10px;
     background: $ubcBlue;
     color: $ubcWhite;
@@ -236,55 +233,54 @@
   .active {
     background-color: $ubcBlue;
   }
-  h2{
+  h2 {
     margin-bottom: 0;
   }
-  
-  h5{
+
+  h5 {
     margin: 0;
   }
- 
-  .reviews{
+
+  .reviews {
     padding: 10px;
     background-color: $ubcLightGrey;
-    border:2px solid $ubcWhite;
+    border: 2px solid $ubcWhite;
   }
-  
-   @media only screen and (min-width: 200px) and (max-width: 768px){
-     .tutorBox{
-       margin: auto;
-       margin-top: 10px;
-       max-width: 550px;
-     }
-     
-     
- }
-  
-  
+
+  @media only screen and (min-width: 200px) and (max-width: 768px) {
+    .tutorBox {
+      margin: auto;
+      margin-top: 10px;
+      max-width: 550px;
+    }
+
+  }
+
   @media only screen and (min-width: 769px) {
-    
-    .tutorBox{
+
+    .tutorBox {
       @include border-box();
       width: 100%;
       border: 5px solid $ubcLightBlue;
       display: inline-table;
-     }
+    }
     .leftColumn {
       width: 50%;
       float: left;
     }
-  
+
     .rightColumn {
       width: 50%;
       float: right;
     }
   }
-  
-  .oneTutor{
+
+  .oneTutor {
     max-width: 700px;
     margin: auto;
   }
 }
+
 // -------------------------------
 // Courses
 .courses {
@@ -300,6 +296,7 @@
     background-color: $ubcBlue;
   }
 }
+
 // -------------------------------
 // Professors
 .professors {
@@ -319,7 +316,7 @@
 // -------------------------------
 // Element Styling ----
 a:focus {
-    color: $ubcGrey;
+  color: $ubcGrey;
 }
 
 body {

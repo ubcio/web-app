@@ -1,58 +1,69 @@
 <div class="tutors">
-   <div class="pure-form">
-      <input type="text" placeholder="what course do you need help with?"
-         ng-model="tutors.selectedCourse"
-         typeahead="course as course.name for course in tutors.coursesWithTutors | filter:{name:$viewValue} | limitTo:8">
-   </div>
-   <div class="textBox tutorBox oneTutor" ng-show="tutors.selectedCourse.tutors.length == 1">
-      <h2> {{tutors.tutors[0].name}} </h2>
-      <h5>{{tutors.tutors[0].price}}per hour</h5> 
-            <p>
-               {{tutors.tutors[0].bio}}<br>  
-            </p>
-     
-     <button class="button-secondary pure-button" ng-show="tutors.tutors[0].reviews">
-             Reviews
-           </button>
-            <div class="reviews" ng-repeat="review in tutors.tutors[0].reviews">
-               {{review}}
-            </div>
-   </div>
-   <div ng-show="tutors.selectedCourse.tutors.length > 1">
-      <div class="leftColumn">
-         <div class="textBox tutorBox" ng-repeat="tutorIndex in tutors.selectedCourse.tutors" ng-if="$even">
-            <h2> {{tutors.tutors[tutorIndex].name}} </h2>
-           <h5>{{tutors.tutors[tutorIndex].price}} per hour</h5>
-            <p>
-               {{tutors.tutors[tutorIndex].bio}}<br>
-               
-            </p>
-            <button class="button-secondary pure-button"  ng-show="tutors.tutors[tutorIndex].reviews">
-             Reviews
-           </button>
-            <div class="reviews" ng-repeat="review in tutors.tutors[tutorIndex].reviews">
-               {{review}}
-            </div>
-         </div>
+  <div class="pure-form">
+    <input type="text" placeholder="what course do you need help with?"
+           ng-model="tutors.selectedCourse"
+           typeahead="course as course.name for course in tutors.coursesWithTutors | filter:{name:$viewValue} | limitTo:8">
+  </div>
+  <div class="textBox tutorBox oneTutor" ng-show="tutors.selectedCourse.tutors.length == 1">
+    <h2> {{tutors.tutors[0].name}} </h2>
+    <h5>{{tutors.tutors[0].price}}per hour</h5>
+
+    <p>
+      {{tutors.tutors[0].bio}}<br>
+    </p>
+
+    <button class="button-secondary pure-button" ng-show="tutors.tutors[0].reviews"
+            ng-click="tutors.tutors[0].showReviews = !tutors.tutors[0].showReviews">
+      Reviews
+    </button>
+    <div ng-show="tutors.tutors[0].showReviews" class="reviews" ng-repeat="review in tutors.tutors[0].reviews">
+      {{review}}
+    </div>
+  </div>
+  <div ng-show="tutors.selectedCourse.tutors.length > 1">
+    <div class="leftColumn">
+      <div class="textBox tutorBox" ng-repeat="tutorIndex in tutors.selectedCourse.tutors" ng-if="$even">
+        <h2> {{tutors.tutors[tutorIndex].name}} </h2>
+        <h5>{{tutors.tutors[tutorIndex].price}} per hour</h5>
+
+        <p>
+          {{tutors.tutors[tutorIndex].bio}}<br>
+
+        </p>
+        <button class="button-secondary pure-button" ng-show="tutors.tutors[tutorIndex].reviews"
+                ng-click="tutors.tutors[tutorIndex].showReviews = !tutors.tutors[tutorIndex].showReviews">
+          Reviews
+        </button>
+        <div ng-show="tutors.tutors[tutorIndex].showReviews" class="reviews"
+             ng-repeat="review in tutors.tutors[tutorIndex].reviews">
+          {{review}}
+        </div>
       </div>
-      <div class="rightColumn">
-         <div class="textBox tutorBox" ng-repeat="tutorIndex in tutors.selectedCourse.tutors" ng-if="$odd">
-            <h2> {{tutors.tutors[tutorIndex].name}} </h2>
-           <h5>{{tutors.tutors[tutorIndex].price}} per hour</h5>
-            <p>
-              {{tutors.tutors[tutorIndex].bio}}<br>
-               
-            </p>
-           <button class="button-secondary pure-button"  ng-show="tutors.tutors[tutorIndex].reviews">
-             Reviews
-           </button>
-            <div class="reviews" ng-repeat="review in tutors.tutors[tutorIndex].reviews">
-               {{review}}
-            </div>
-         </div>
+    </div>
+    <div class="rightColumn">
+      <div class="textBox tutorBox" ng-repeat="tutorIndex in tutors.selectedCourse.tutors" ng-if="$odd">
+        <h2> {{tutors.tutors[tutorIndex].name}} </h2>
+        <h5>{{tutors.tutors[tutorIndex].price}} per hour</h5>
+
+        <p>
+          {{tutors.tutors[tutorIndex].bio}}<br>
+
+        </p>
+        <button class="button-secondary pure-button" ng-show="tutors.tutors[tutorIndex].reviews"
+                ng-click="tutors.tutors[tutorIndex].showReviews = !tutors.tutors[tutorIndex].showReviews">
+          Reviews
+        </button>
+        <div ng-show="tutors.tutors[tutorIndex].showReviews" class="reviews"
+             ng-repeat="review in tutors.tutors[tutorIndex].reviews">
+          {{review}}
+        </div>
       </div>
-   </div>
-   <div ng-hide="tutors.selectedCourse">
-      Would you like to be a tutor? All you have to do is email us at ubcio.team@gmail.com
-   </div>
+    </div>
+  </div>
+  <div ng-hide="tutors.selectedCourse">
+    Would you like to contribute to the ubcIO community by becoming a tutor? Well we would love to have you! We take a
+    whopping 0 percent of the money you make because taking a cut would be...fucking annoying to say the least. All
+    you have to do is email us at ubcio.team@gmail.com with the following info:
+    name, preferred email, price, bio, and the course(s) you would like to tutor. We look forward to hearing from you :)
+  </div>
 </div>
