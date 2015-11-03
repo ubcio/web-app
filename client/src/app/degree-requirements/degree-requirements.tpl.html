@@ -4,8 +4,10 @@
            ng-model="degreeRequirements.selected"
            typeahead="degree as degree.name for degree in degreeRequirements.degrees | filter:{name:$viewValue} | limitTo:8">
   </div>
+  <h4 class="stripe">Degree Requirements</h4>
   <iframe class="centerFrame specificFrame"
           ng-src="{{degreeRequirements.selected.website}}"></iframe>
+  <h4 class="stripe generalStripe">General Requirements</h4>
   <iframe class="centerFrame generalFrame"
-          src="http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,408#18663" scrolling="no"></iframe>
+          src="http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,408#18663"></iframe>
 </div>

@@ -4,18 +4,23 @@
            ng-model="professors.selectedProf"
            typeahead="prof as prof.name for prof in professors.profs | filter:{name:$viewValue} | limitTo:8">
   </div>
-  <div ng-show="professors.selectedProf.name">
-    <p>
-      {{professors.selectedProf.name}}
+  <div class="textBox" ng-show="professors.selectedProf.name">
+    
+     <h2>{{professors.selectedProf.name}}</h2> 
       <br>
+  <p>
       {{professors.selectedProf.bio}}
     </p>
-    <div ng-repeat="review in professors.selectedProf.reviews">
+    <span ng-repeat="course in professors.selectedProf.courses">
+      {{course}}{{$last ? '' : ', '}}
+    </span><br>
+    <button class="pure-button"  ng-show="professors.selectedProf.reviews">
+             Reviews
+           </button>
+    <div class="reviews" ng-repeat="review in professors.selectedProf.reviews">
       {{review}}
     </div>
 
-    <span ng-repeat="course in professors.selectedProf.courses">
-      {{course}}
-    </span>
+    
   </div>
 </div>
