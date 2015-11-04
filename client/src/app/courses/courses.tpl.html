@@ -26,6 +26,14 @@
       Co-requisites: none
     </div>
 
+    <div ng-hide="courses.selectedCourse.tips == null">
+      <button class="pure-button" ng-click="courses.selectedCourse.showTips = !courses.selectedCourse.showTips">
+        Tips
+      </button>
+      <div ng-show="courses.selectedCourse.showTips" ng-repeat="tip in courses.selectedCourse.tips">
+        {{tip}}
+      </div>
+    </div>
     </p>
   </div>
 </div>

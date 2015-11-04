@@ -52523,6 +52523,7 @@ var courses = [
 // 2. delete Department key
 // 3. get rid of 'Pre-reqs:      ' trailing string in prerequisites
 // 4. get rid of 'Co-reqs:       ' trailing string in corequisites
+// 5. add "tips" keys and give it an empty array value
 for(var i = 0; i < courses.length; i++) {
     delete courses[i]["Course"];
     delete courses[i]["Department"];
@@ -52537,11 +52538,12 @@ for(var i = 0; i < courses.length; i++) {
       if(courses[i]["corequisites"].substring(0,14) == "Co-reqs:      ") {
         courses[i]["corequisites"] = courses[i]["corequisites"].substring(14);
       } else {
-        courses[i]["corequisites"] = null;  // catch web scraper mistakes 
+        courses[i]["corequisites"] = null;  // catch web scraper mistakes
       }
     }
+    courses[i]["tips"] = [];
 }
 // easiest way to work with this is to use bash piping:
 // node courseParser.js > fileName.json
-console.log(JSON.stringify(courses));
+console.log(JSON.stringify({"courses": courses}));
 
