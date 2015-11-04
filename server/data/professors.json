@@ -1,28 +1,47 @@
 {
-    "professors": [
-      {
-        "name": "Paul Carter",
-        "bio": "I am particularly interested in the use of technology in education. Specifically I have been involved in the development of web-based materials that not only present learners with raw information, but also present an opportunity to learn in an interactive manner through the use of multimedia. As a graduate student of Uri Ascher's I worked on the application of multigrid techniques to the shape from shading problem in computer vision. The problem was modelled by a singularly perturbed elliptic partial differential equation. I continue to be interested in scientific computation, particularly in the numerical solution of differential equations.           I directed the new Bachelor of Computer Science (Integrated Computer Science) / BCS(ICS) program during its first two years in operation. This unique second degree program provides students with the opportunity to combine their existing skills with a solid foundation in computer science. The first cohort of students was admitted in September 2004. Students entering the program have very diverse backgrounds and experience. This intense program assumes no prior knowledge in computer science, yet provides students with the opportunity to graduate with a Bachelor of Computer Science in only two years.",
-        "reviews": [
-          "Dope Prof",
-          "Really dope"
+  "professors": [
+    {
+      "name": "Paul Carter",
+      "reviews": [
+        "Wow he knows his racket",
+        "Wow he knows his python",
+        "Wow he knows his java"
+      ],
+      "courses": {
+        "All": [
+          0,
+          1,
+          2
         ],
-        "courses": [
-          "CPSC 110",
-          "CPSC 189",
-          "CPSC 210"
-        ]
-      },
-      {
-        "name": "Ron Garcia",
-        "bio": "I am interested in many aspects of programming language semantics, design, and implementation, including language support for library-centric and modular software development, generic and generative programming, and domain specific languages and libraries. ",
-        "reviews": [
-          "Awesome prof"
+        "CPSC 110": [
+          0
         ],
-        "courses": [
-          "110",
-          "509"
+        "CPSC 189": [
+          1
+        ],
+        "CPSC 210": [
+          2
         ]
       }
-    ]
-  }
+    },
+    {
+      "name": "Ron Garcia",
+      "reviews": [
+        "Remembered the name of all his students",
+        "Was a great grad prof"
+      ],
+      "courses": {
+        "All": [
+          0,
+          1
+        ],
+        "CPSC 110": [
+          0
+        ],
+        "CPSC 509": [
+          1
+        ]
+      }
+    }
+  ]
+}
