@@ -11,7 +11,7 @@ input {
     text-align: center;
     width: 500px;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 15px;
     margin-bottom: 15px;
   }
 @media only screen and (max-width: 600px) {
@@ -20,8 +20,36 @@ input {
   }
 }
 
+.messageBox {
+  background-color:$ubcWhite;
+  padding: 30px 30px 30px 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 30px;
+  border: 5px solid $ubcBlack;
+  font-family: 'Raleway';
+}
+
+ .openQuote {
+   transform: rotateY(180deg);
+    display: inline-block;
+    
+  }
+  
+  .closeQuote {
+    display: inline-block;
+  }
+
+
 // -------------------------------
 // Navbar Styling
+
+.header{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
 .pure-menu {
   background-color: $ubcBlack !important;
 }
@@ -71,7 +99,7 @@ input {
   color: $ubcLightGrey;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .pure-menu {
     ul {
       width: 100% !important;
@@ -85,112 +113,118 @@ input {
 // ---------------------------------
 // About Page
 
-.teamProfile {
-  h2 {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-  h5 {
-    font-weight: normal;
-    margin-top: 0;
-  }
-  display: inline-block;
+.aboutPage{
+  
+  font-family: Maven Pro ;
 
-}
+  .teamProfile {
 
-.title {
-  margin-top: 20px;
-}
-
-// Media queries
-
-@media only screen and (min-width: 200px) {
-  .teamMember {
-    img {
-      display: block;
-      margin-top: 30px;
-      width: 100%;
-      min-width: 100px;
+    h2 {
+      margin-bottom: 0;
+      margin-top: 0;
     }
-    .teamProfile {
-      margin-top: 0px;
+    h5 {
+      font-weight: normal;
+      margin-top: 0;
     }
-  }
-}
-
-@media only screen and (min-width: 450px) {
-  .ubcIODescription {
-    max-width: 500px;
-    margin: auto;
-  }
-  .teamMember {
-    max-width: 500px;
-    margin: auto;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .ubcIODescription {
-    max-width: 800px;
-    margin: auto;
-  }
-  .teamMembers {
-
-    max-width: 800px;
-    margin: auto;
-  }
-  .teamMember {
     display: inline-block;
-    max-width: 372px;
-  }
-  div.teamMember:nth-child(odd) {
-    float: left;
 
   }
 
-  div.teamMember:nth-child(even) {
-    float: right;
-
+  .title {
+    margin-top: 20px;
   }
 
-}
+  // Media queries
 
-@media only screen and (min-width: 1280px) {
-  .ubcIODescription {
-    max-width: 1234px;
-    margin: auto;
+  @media only screen and (min-width: 200px) {
+    .teamMember {
+      img {
+        display: block;
+        margin-top: 30px;
+        width: 100%;
+        min-width: 100px;
+      }
+      .teamProfile {
+        margin-top: 0px;
+      }
+    }
   }
 
-  .teamMembers {
-    max-width: 1234px;
-    margin: auto;
+  @media only screen and (min-width: 450px) {
+    .ubcIODescription {
+      max-width: 500px;
+      margin: auto;
+    }
+    .teamMember {
+      max-width: 500px;
+      margin: auto;
+    }
   }
 
-  .teamMember {
-    max-width: 1234px;
+  @media only screen and (min-width: 900px) {
+    .ubcIODescription {
+      max-width: 800px;
+      margin: auto;
+    }
+    .teamMembers {
 
-    img {
-      width: 247px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .teamMember {
+      display: inline-block;
+      max-width: 372px;
+    }
+    div.teamMember:nth-child(odd) {
       float: left;
+
     }
 
-    .textBox {
-      margin-top: 30px;
-      max-width: 926px;
+    div.teamMember:nth-child(even) {
       float: right;
-    }
-    p {
-      width: 926px;
+
     }
 
   }
 
-  div.teamMember:nth-child(odd) {
-    float: none;
-  }
+  @media only screen and (min-width: 1280px) {
+    .ubcIODescription {
+      max-width: 1234px;
+      margin: auto;
+    }
 
-  div.teamMember:nth-child(even) {
-    float: none;
+    .teamMembers {
+      max-width: 1234px;
+      margin: auto;
+    }
+
+    .teamMember {
+      max-width: 1234px;
+
+      img {
+        width: 247px;
+        float: left;
+      }
+
+      .textBox {
+        margin-top: 30px;
+        max-width: 926px;
+        float: right;
+      }
+      p {
+        width: 926px;
+      }
+
+    }
+
+    div.teamMember:nth-child(odd) {
+      float: none;
+    }
+
+    div.teamMember:nth-child(even) {
+      float: none;
+    }
   }
 }
 
@@ -243,7 +277,15 @@ input {
     color: $ubcWhite;
   }
   
-
+  .openQuote {
+   transform: rotateY(180deg);
+    display: inline-block;
+    
+  }
+  
+  .closeQuote {
+    display: inline-block;
+  }
   .active {
     background-color: $ubcBlue;
   }

@@ -64,10 +64,13 @@
     </div>
   </div>
   <!-- If no course selected, display contribution message TODO style it-->
-  <div ng-hide="tutors.selectedCourse">
+  <div class="messageBox" ng-hide="tutors.selectedCourse">
+    <div class="openQuote"><ng-md-icon  icon="format_quote"></ng-md-icon> </div>
     Would you like to contribute to the ubcIO community by becoming a tutor? Well we would love to have you! We take a
     whopping 0 percent of the money you make because taking a cut would be...fucking annoying to say the least. All
     you have to do is email us at ubcio.team@gmail.com with the following info:
     name, preferred email, price, bio, and the course(s) you would like to tutor. We look forward to hearing from you :)
+    
+    <div class="closeQuote" ><ng-md-icon  icon="format_quote"></ng-md-icon> </div>
   </div>
 </div>
