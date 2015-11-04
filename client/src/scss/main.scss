@@ -250,7 +250,7 @@ input {
   .generalFrame {
     height: 450px;
   }
-  
+
   .stripe {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -259,7 +259,7 @@ input {
     color: $ubcLightGrey;
     margin: auto;
   }
-  
+
   .generalStripe{
     margin-top: 30px;
   }
@@ -277,15 +277,6 @@ input {
     color: $ubcWhite;
   }
   
-  .openQuote {
-   transform: rotateY(180deg);
-    display: inline-block;
-    
-  }
-  
-  .closeQuote {
-    display: inline-block;
-  }
   .active {
     background-color: $ubcBlue;
   }
@@ -342,7 +333,7 @@ input {
 .courses {
   text-align: center;
 
-  
+
 
   .active {
     background-color: $ubcBlue;
@@ -355,32 +346,42 @@ input {
   text-align: center;
   margin: auto;
   max-width: 1000px;
-  
+
   .active {
     background-color: $ubcBlue;
   }
   .textBox{
     margin-top: 10px;
-  } 
+  }
    h2{
     margin-bottom: 0;
   }
-  
+
   h5{
     margin: 0;
   }
-  button{
+  button {
     margin-top: 10px;
     margin-bottom: 10px;
     background: $ubcBlue;
     color: $ubcWhite;
   }
-  
+
   .reviews{
     padding: 10px;
     background-color: $ubcLightGrey;
     border:2px solid $ubcWhite;
   }
+}
+
+.active  {
+  background-color: $ubcBlue !important;
+  color: $ubcWhite !important;
+}
+
+label {
+  background-color: $ubcBlack !important;
+  color: $ubcLightGrey !important;
 }
 
 // -------------------------------

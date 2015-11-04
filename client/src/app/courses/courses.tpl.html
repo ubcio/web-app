@@ -2,7 +2,7 @@
   <div class="pure-form">
     <input type="text" placeholder="what course do you want to know more about?"
            ng-model="courses.selectedCourse"
-           typeahead="course as course.name for course in courses.courses | filter:{name:$viewValue} | limitTo:8">
+           typeahead="course as course.name for course in courses.courses | filter:{name:$viewValue} | limitTo:20">
   </div>
   <div ng-show="courses.selectedCourse.name">
     <p>
@@ -13,24 +13,40 @@
       {{courses.selectedCourse.credits}} credits
 
     <div ng-hide="courses.selectedCourse.prerequisites == null">
-      Prerequisites:
-      <span ng-repeat="prerequisite in courses.selectedCourse.prerequisites">
-        {{prerequisite}}
-      </span>
+      Prerequisites: {{courses.selectedCourse.prerequisites}}
     </div>
     <div ng-show="courses.selectedCourse.prerequisites == null">
       Prerequisites: none
     </div>
 
     <div ng-hide="courses.selectedCourse.corequisites == null">
-      Co-requisites:
-    <span ng-repeat="corequisite in courses.selectedCourse.corequisites">
-      {{corequisite}}
-    </span>
+      Co-requisites: {{courses.selectedCourse.corequisites}}
     </div>
     <div ng-show="courses.selectedCourse.corequisites == null">
       Co-requisites: none
     </div>
+
+    <div ng-hide="courses.selectedCourse.tips == null">
+      <button class="pure-button" ng-click="courses.selectedCourse.showTips = !courses.selectedCourse.showTips">
+        Tips
+      </button>
+      <div ng-show="courses.selectedCourse.showTips" ng-repeat="tip in courses.selectedCourse.tips">
+        {{tip}}
+      </div>
+    </div>
     </p>
+  </div>
+
+  <!-- If no courses selected, display contribution message TODO style it -->
+  <div ng-hide="courses.selectedCourse">
+    Have you ever finished a course and had the following thought: 
+    <br>
+      "Man it would have been so much easier if I had just ..."
+    <br>
+    I know you have! We ALL have, that's just how learning works - and this is where as a community we can benefit from each other.
+    Not only will you find course information here (same as SSC),  you will find tips left by other students. So join the community,
+    read course tips before you take courses AND leave tips of your own for future students! 
+
+    To leave a tip, simply email us at ubcio.team@gmail.com with the course name and the tip. We look forward to hearing from you :)
   </div>
 </div>

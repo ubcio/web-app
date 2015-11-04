@@ -1,0 +1,47 @@
+{
+  "professors": [
+    {
+      "name": "Paul Carter",
+      "reviews": [
+        "Wow he knows his racket",
+        "Wow he knows his python",
+        "Wow he knows his java"
+      ],
+      "courses": {
+        "All": [
+          0,
+          1,
+          2
+        ],
+        "CPSC 110": [
+          0
+        ],
+        "CPSC 189": [
+          1
+        ],
+        "CPSC 210": [
+          2
+        ]
+      }
+    },
+    {
+      "name": "Ron Garcia",
+      "reviews": [
+        "Remembered the name of all his students",
+        "Was a great grad prof"
+      ],
+      "courses": {
+        "All": [
+          0,
+          1
+        ],
+        "CPSC 110": [
+          0
+        ],
+        "CPSC 509": [
+          1
+        ]
+      }
+    }
+  ]
+}
