@@ -2,7 +2,7 @@
   <div class="pure-form">
     <input type="text" placeholder="what course do you want to know more about?"
            ng-model="courses.selectedCourse"
-           typeahead="course as course.name for course in courses.courses | filter:{name:$viewValue} | limitTo:8">
+           typeahead="course as course.name for course in courses.courses | filter:{name:$viewValue} | limitTo:20">
   </div>
   <div ng-show="courses.selectedCourse.name">
     <p>
@@ -13,24 +13,19 @@
       {{courses.selectedCourse.credits}} credits
 
     <div ng-hide="courses.selectedCourse.prerequisites == null">
-      Prerequisites:
-      <span ng-repeat="prerequisite in courses.selectedCourse.prerequisites">
-        {{prerequisite}}
-      </span>
+      Prerequisites: {{courses.selectedCourse.prerequisites}}
     </div>
     <div ng-show="courses.selectedCourse.prerequisites == null">
       Prerequisites: none
     </div>
 
     <div ng-hide="courses.selectedCourse.corequisites == null">
-      Co-requisites:
-    <span ng-repeat="corequisite in courses.selectedCourse.corequisites">
-      {{corequisite}}
-    </span>
+      Co-requisites: {{courses.selectedCourse.corequisites}}
     </div>
     <div ng-show="courses.selectedCourse.corequisites == null">
       Co-requisites: none
     </div>
+
     </p>
   </div>
 </div>
