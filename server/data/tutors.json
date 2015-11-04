@@ -1,0 +1,58 @@
+{
+  "tutors": [
+    {
+      "name": "Arie Milner",
+      "bio": "likes to code",
+      "email": "amilner42@gmail.com",
+      "price": 20,
+      "reviews": [
+        "Best tutor ever",
+        "Kick ass tutor"
+      ]
+    },
+    {
+      "name": "Banafsheh Derayat",
+      "bio": "Sexy mama",
+      "email": "b.derayat@gmail.com",
+      "price": 100,
+      "reviews": [
+        "Best tutor ever",
+        "Kick ass tutor",
+        "Sexy mama"
+      ]
+    },
+    {
+      "name": "Timeh daLoser",
+      "bio": "tiny timeh",
+      "email": "timehDaLoser@gmail.com",
+      "price": 100,
+      "reviews": [
+        "shit",
+        "garbage"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "name": "CPSC 110",
+      "tutors": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "CPSC 121",
+      "tutors": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "CPSC 210",
+      "tutors": [
+        0
+      ]
+    }
+  ]
+}
