@@ -23,7 +23,8 @@
   </div>
 
     <!-- If no professors selected, display contribution message TODO style it -->
-  <div ng-hide="courses.selectedProf">
+  <div  class="messageBox" ng-hide="courses.selectedProf">
+    <div class="openQuote"><ng-md-icon  icon="format_quote"></ng-md-icon> </div>
     At UBC, like all Universities, we have a range of professors, some mediocore (being polite here) 
     and some exceptional. Regardless, they all could improve because teaching is fucking hard (not being polite here). Here 
     you will find highly detailed reviews on professors, not only giving students an idea of where 
@@ -37,6 +38,7 @@
     To write a review, email us at ubcio.team@gmail.com with the name of the professor, the course you 
     took, and the review. We look forward to hearing about your experiences and are thankful to all 
     the contributers in the ubc.io community!
+     <div class="closeQuote" ><ng-md-icon  icon="format_quote"></ng-md-icon> </div>
   </div>
 
 </div>
