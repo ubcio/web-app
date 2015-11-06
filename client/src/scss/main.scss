@@ -236,9 +236,15 @@ input {
   .active {
     background-color: $ubcBlue;
   }
+  
+   .requirementBox{
+    width: 1000px;
+    margin: auto;
+     margin-top: 15px;
+  }
 
   .centerFrame {
-    width: 1000px;
+    width: 100%;
     overflow: auto;
     overflow-x: hidden;
   }
@@ -250,17 +256,21 @@ input {
   .generalFrame {
     height: 450px;
   }
+  
+ 
 
   .stripe {
+    display: block;
     padding-top: 10px;
     padding-bottom: 10px;
-    width:1002px;
+    width:100%;
     background-color: $ubcBlack;
     color: $ubcLightGrey;
     margin: auto;
   }
-
-  .generalStripe{
+  
+  
+  .bottomFrame{
     margin-top: 30px;
   }
 
