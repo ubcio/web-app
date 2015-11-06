@@ -30,8 +30,9 @@
       <button class="pure-button" ng-click="courses.selectedCourse.showTips = !courses.selectedCourse.showTips">
         Tips
       </button>
-      <div ng-show="courses.selectedCourse.showTips" ng-repeat="tip in courses.selectedCourse.tips">
-        {{tip}}
+      <div ng-show="courses.selectedCourse.showTips" ng-repeat="tip in courses.selectedCourse.tips | orderBy: courses.orderByDate:true">
+        {{tip.tip}},
+        {{tip.createDate}}
       </div>
     </div>
     </p>
@@ -40,7 +41,7 @@
   <!-- If no courses selected, display contribution message TODO style it -->
   <div  class="messageBox" ng-hide="courses.selectedCourse">
     <div class="openQuote"><ng-md-icon  icon="format_quote"></ng-md-icon> </div>
-    Have you ever finished a course and had the following thought: 
+    Have you ever finished a course and had the following thought:
     <br>
     <br>
       "Man it would have been so much easier if I had just ..."
@@ -48,7 +49,7 @@
     <br>
     I know you have! We ALL have, that's just how learning works - and this is where as a community we can benefit from each other.
     Not only will you find course information here (same as SSC),  you will find tips left by other students. So join the community,
-    read course tips before you take courses AND leave tips of your own for future students! 
+    read course tips before you take courses AND leave tips of your own for future students!
 
     To leave a tip, simply email us at ubcio.team@gmail.com with the course name and the tip. We look forward to hearing from you :)
       <div class="closeQuote" ><ng-md-icon  icon="format_quote"></ng-md-icon> </div>

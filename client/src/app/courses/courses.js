@@ -27,6 +27,9 @@
     var init = function() {
       courses.courses = CoursesService.getCourses();
       courses.selectedCourse = undefined;
+      courses.orderByDate = function(tip) {
+        return new Date(tip.createDate);
+      }
     }();
   }
 

@@ -6,7 +6,20 @@
       "credits": "3",
       "prerequisites": null,
       "corequisites": null,
-      "tips": []
+      "tips": [
+        {
+          "tip": "DO the HW or suffer",
+          "createDate": "2015-03-12"
+        },
+        {
+          "tip": "Dont buy the textbook, useless...",
+          "createDate": "2013-03-12"
+        },
+        {
+          "tip": "The textbook was essential",
+          "createDate": "2015-03-12"
+        }
+      ]
     },
     {
       "name": "ARTH 533B Studies in Medieval Art - MEDEVAL ART",
