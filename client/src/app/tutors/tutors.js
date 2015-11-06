@@ -24,10 +24,13 @@
    */
   function TutorsCtrl(TutorsService) {
     var tutors = this;
-    var init = function(){
+    var init = function() {
       tutors.coursesWithTutors = TutorsService.getCoursesWithTutors();
       tutors.tutors = TutorsService.getTutors();
       tutors.selectedCourse = undefined;
+      tutors.orderByDate = function(review) {
+        return new Date(review.createDate);
+      }
     }();
   }
 

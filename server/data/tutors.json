@@ -6,8 +6,14 @@
       "email": "amilner42@gmail.com",
       "price": 20,
       "reviews": [
-        "Best tutor ever",
-        "Kick ass tutor"
+        {
+          "review": "He made me appreciate life, but he didn't help me with the course! Da hell man!",
+          "createDate": "2014-01-13"
+        },
+        {
+          "review": "Wow he knows his shit, that guy has it together!",
+          "createDate": "2015-02-13"
+        }
       ]
     },
     {
@@ -16,9 +22,18 @@
       "email": "b.derayat@gmail.com",
       "price": 100,
       "reviews": [
-        "Best tutor ever",
-        "Kick ass tutor",
-        "Sexy mama"
+        {
+          "review": "Straight up was good",
+          "createDate": "2015-03-13"
+        },
+        {
+          "review": "Not lying was rad",
+          "createDate": "2011-02-15"
+        },
+        {
+          "review": "Being serious I enjoyed the lesson",
+          "createDate": "2013-02-13"
+        }
       ]
     },
     {
@@ -27,8 +42,14 @@
       "email": "timehDaLoser@gmail.com",
       "price": 100,
       "reviews": [
-        "shit",
-        "garbage"
+        {
+          "review": "The only thing worse than Timeh, is 2 Timehs",
+          "createDate": "2014-02-13"
+        },
+        {
+          "review": "I wouldn't have another lesson with him if someone pointed a gun to my head",
+          "createDate": "2013-02-13"
+        }
       ]
     }
   ],

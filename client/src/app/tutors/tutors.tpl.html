@@ -17,8 +17,10 @@
             ng-click="tutors.tutors[0].showReviews = !tutors.tutors[0].showReviews">
       Reviews
     </button>
-    <div ng-show="tutors.tutors[0].showReviews" class="reviews" ng-repeat="review in tutors.tutors[0].reviews">
-      {{review}}
+    <div ng-show="tutors.tutors[0].showReviews" class="reviews"
+         ng-repeat="review in tutors.tutors[0].reviews | orderBy:tutors.orderByDate:true">
+      {{review.review}},
+      {{review.createDate}}
     </div>
   </div>
 
@@ -38,8 +40,9 @@
           Reviews
         </button>
         <div ng-show="tutors.tutors[tutorIndex].showReviews" class="reviews"
-             ng-repeat="review in tutors.tutors[tutorIndex].reviews">
-          {{review}}
+             ng-repeat="review in tutors.tutors[tutorIndex].reviews | orderBy:tutors.orderByDate:true">
+          {{review.review}},
+          {{review.createDate}}
         </div>
       </div>
     </div>
@@ -57,8 +60,9 @@
           Reviews
         </button>
         <div ng-show="tutors.tutors[tutorIndex].showReviews" class="reviews"
-             ng-repeat="review in tutors.tutors[tutorIndex].reviews">
-          {{review}}
+             ng-repeat="review in tutors.tutors[tutorIndex].reviews | orderBy:tutors.orderByDate:true">
+          {{review.review}},
+          {{review.createDate}}
         </div>
       </div>
     </div>
@@ -70,7 +74,7 @@
     whopping 0 percent of the money you make because taking a cut would be...fucking annoying to say the least. All
     you have to do is email us at ubcio.team@gmail.com with the following info:
     name, preferred email, price, bio, and the course(s) you would like to tutor. We look forward to hearing from you :)
-    
+
     <div class="closeQuote" ><ng-md-icon  icon="format_quote"></ng-md-icon> </div>
   </div>
 </div>
