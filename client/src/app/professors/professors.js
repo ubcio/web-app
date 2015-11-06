@@ -27,6 +27,10 @@
     var init = function(){
       professors.profs = ProfessorsService.getProfessors();
       professors.selectedProf = undefined;
+      professors.orderByDate = function(index) {
+        var stringDate = professors.selectedProf.reviews[index].createDate;
+        return new Date(stringDate);
+      };
     }();
   }
 

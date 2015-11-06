@@ -3,9 +3,16 @@
     {
       "name": "Paul Carter",
       "reviews": [
-        "Wow he knows his racket",
-        "Wow he knows his python",
-        "Wow he knows his java"
+        {
+          "review": "Wow he knows his racket",
+          "createDate": "2015-02-13"
+        },{
+          "review": "Wow he knows his python",
+          "createDate": "2013-04-28"
+        },{
+          "review": "Wow he knows his java",
+          "createDate": "2015-03-12"
+        }
       ],
       "courses": {
         "All": [
@@ -27,8 +34,13 @@
     {
       "name": "Ron Garcia",
       "reviews": [
-        "Remembered the name of all his students",
-        "Was a great grad prof"
+        {
+          "review": "Remembered the name of all his students",
+          "createDate": "2009-12-10"
+        },{
+          "review": "Was a great grad prof",
+          "createDate": "2009-11-11"
+        }
       ],
       "courses": {
         "All": [
