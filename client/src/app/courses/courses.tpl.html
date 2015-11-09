@@ -4,7 +4,7 @@
            ng-model="courses.selectedCourse"
            typeahead="course as course.name for course in courses.courses | filter:{name:$viewValue} | limitTo:20">
   </div>
-  <div ng-show="courses.selectedCourse.name">
+  <div class="textBox" ng-show="courses.selectedCourse.name">
     <p>
       {{courses.selectedCourse.name}},
       <br>
@@ -30,9 +30,12 @@
       <button class="pure-button" ng-click="courses.selectedCourse.showTips = !courses.selectedCourse.showTips">
         Tips
       </button>
-      <div ng-show="courses.selectedCourse.showTips" ng-repeat="tip in courses.selectedCourse.tips | orderBy: courses.orderByDate:true">
-        {{tip.tip}},
-        {{tip.createDate}}
+      <div class= "reviews" ng-show="courses.selectedCourse.showTips" ng-repeat="tip in courses.selectedCourse.tips | orderBy: courses.orderByDate:true">
+        <div class="reviewDate">
+            <strong>{{tip.createDate | date: format:'fullDate'}}</strong>
+          </div>
+        <p>{{tip.tip}}</p>
+        
       </div>
     </div>
     </p>

@@ -357,9 +357,12 @@ input {
 // Courses
 .courses {
   text-align: center;
+  margin: auto;
+  max-width: 1000px;
 
-
-
+  .textBox{
+    margin-top: 10px;
+  }
   .active {
     background-color: $ubcBlue;
   }
