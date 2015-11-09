@@ -5,20 +5,22 @@
            typeahead="prof as prof.name for prof in professors.profs | filter:{name:$viewValue} | limitTo:8">
   </div>
   <div class="textBox" ng-show="professors.selectedProf.name">
-
-    <h2>{{professors.selectedProf.name}}</h2>
     <br>
 
     <!-- Filter Toggle-->
-    <div>
-      <label ng-repeat="(name , reviewIndexes) in professors.selectedProf.courses" class="pure-button"
+    <div >
+      <label ng-repeat="(name , reviewIndexes) in professors.selectedProf.courses" class="pure-button reviewToggle"
              ng-model="professors.selectedProf.reviewFilter" btn-radio="name">{{name}}</label>
     </div>
 
     <!-- Reviews -->
-    <div ng-repeat="reviewIndex in professors.selectedProf.courses[professors.selectedProf.reviewFilter] | orderBy:professors.orderByDate:true">
-          {{professors.selectedProf.reviews[reviewIndex].review}},
-          {{professors.selectedProf.reviews[reviewIndex].createDate | date: format:'fullDate'}}
+    <div class="reviews" ng-repeat="reviewIndex in professors.selectedProf.courses[professors.selectedProf.reviewFilter] | orderBy:professors.orderByDate:true">
+      <div class="reviewDate">
+          <strong>{{professors.selectedProf.reviews[reviewIndex].createDate | date: format:'fullDate'}}</strong>
+      </div>
+      
+          <p>{{professors.selectedProf.reviews[reviewIndex].review}}</p>
+          
     </div>
 
   </div>

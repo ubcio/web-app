@@ -17,10 +17,12 @@
             ng-click="tutors.tutors[0].showReviews = !tutors.tutors[0].showReviews">
       Reviews
     </button>
-    <div ng-show="tutors.tutors[0].showReviews" class="reviews"
+    <div class="reviews" ng-show="tutors.tutors[0].showReviews" 
          ng-repeat="review in tutors.tutors[0].reviews | orderBy:tutors.orderByDate:true">
-      {{review.review}},
-      {{review.createDate}}
+      <div class="reviewDate">
+            <strong>{{review.createDate | date: format:'fullDate'}}</strong>
+          </div>
+      <p>{{review.review}}</p>
     </div>
   </div>
 
@@ -41,8 +43,12 @@
         </button>
         <div ng-show="tutors.tutors[tutorIndex].showReviews" class="reviews"
              ng-repeat="review in tutors.tutors[tutorIndex].reviews | orderBy:tutors.orderByDate:true">
-          {{review.review}},
-          {{review.createDate}}
+          <div class="reviewDate">
+            <strong>{{review.createDate | date: format:'fullDate'}}</strong>
+          </div>
+          
+         <p>{{review.review}}</p>
+          
         </div>
       </div>
     </div>
@@ -61,9 +67,12 @@
         </button>
         <div ng-show="tutors.tutors[tutorIndex].showReviews" class="reviews"
              ng-repeat="review in tutors.tutors[tutorIndex].reviews | orderBy:tutors.orderByDate:true">
-          {{review.review}},
-          {{review.createDate}}
-        </div>
+         
+          <div class="reviewDate">
+            <strong>{{review.createDate | date: format:'fullDate'}}</strong>
+          </div>
+          <p>{{review.review}}</p>
+         </div>
       </div>
     </div>
   </div>

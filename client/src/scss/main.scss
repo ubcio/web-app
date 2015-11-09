@@ -41,6 +41,27 @@ input {
     display: inline-block;
   }
 
+ .reviews {
+    padding: 10px;
+    background-color: $ubcLightGrey;
+    border: 2px solid $ubcWhite;
+   .reviewDate {
+    float: right;
+     display: block;
+     margin-bottom: 5px;
+    }
+   p {
+     display: block;
+   }
+  }
+.reviewToggle{
+  background-color: $ubcBlack!important;
+  color: $ubcLightGrey !important;
+  margin: 2px;
+  margin-bottom: 20px;
+}
+
+
 
 // -------------------------------
 // Navbar Styling
@@ -115,7 +136,6 @@ input {
 
 .aboutPage{
   
-  font-family: Maven Pro ;
 
   .teamProfile {
 
@@ -298,11 +318,6 @@ input {
     margin: 0;
   }
 
-  .reviews {
-    padding: 10px;
-    background-color: $ubcLightGrey;
-    border: 2px solid $ubcWhite;
-  }
 
   @media only screen and (min-width: 200px) and (max-width: 768px) {
     .tutorBox {
@@ -357,9 +372,6 @@ input {
   margin: auto;
   max-width: 1000px;
 
-  .active {
-    background-color: $ubcBlue;
-  }
   .textBox{
     margin-top: 10px;
   }
@@ -376,23 +388,13 @@ input {
     background: $ubcBlue;
     color: $ubcWhite;
   }
-
-  .reviews{
-    padding: 10px;
-    background-color: $ubcLightGrey;
-    border:2px solid $ubcWhite;
-  }
 }
-
 .active  {
   background-color: $ubcBlue !important;
   color: $ubcWhite !important;
 }
 
-label {
-  background-color: $ubcBlack !important;
-  color: $ubcLightGrey !important;
-}
+
 
 // -------------------------------
 // Element Styling ----
