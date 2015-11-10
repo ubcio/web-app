@@ -67,7 +67,7 @@ input {
 // Navbar Styling
 
 .header{
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Dosis";
   font-size: 20px;
 }
 
@@ -136,7 +136,9 @@ input {
 
 .aboutPage{
   
-
+  font-family:"Dosis";
+  font-size: 17px;
+  
   .teamProfile {
 
     h2 {
@@ -235,6 +237,9 @@ input {
       p {
         width: 926px;
       }
+      h5{
+        margin-bottom: -6px;
+      }
 
     }
 
@@ -251,6 +256,8 @@ input {
 // -------------------------------
 // Degree Requirements
 .degreeRequirements {
+  font-family:"Dosis";
+  font-size: 17px;
   text-align: center;
 
   .active {
@@ -299,6 +306,8 @@ input {
 // -------------------------------
 // Tutors
 .tutors {
+  font-family:"Dosis";
+  font-size: 17px;
   text-align: center;
 
   button {
@@ -356,6 +365,8 @@ input {
 // -------------------------------
 // Courses
 .courses {
+  font-family:"Dosis";
+  font-size: 17px;
   text-align: center;
   margin: auto;
   max-width: 1000px;
@@ -371,6 +382,8 @@ input {
 // -------------------------------
 // Professors
 .professors {
+  font-family:"Dosis";
+  font-size: 17px;
   text-align: center;
   margin: auto;
   max-width: 1000px;
