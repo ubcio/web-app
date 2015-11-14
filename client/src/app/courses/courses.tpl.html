@@ -27,7 +27,7 @@
     </div>
 
     <div ng-hide="courses.selectedCourse.tips == null">
-      <button class="pure-button" ng-click="courses.selectedCourse.showTips = !courses.selectedCourse.showTips">
+      <button class="pure-button tipButton" ng-click="courses.selectedCourse.showTips = !courses.selectedCourse.showTips">
         Tips
       </button>
       <div class= "reviews" ng-show="courses.selectedCourse.showTips" ng-repeat="tip in courses.selectedCourse.tips | orderBy: courses.orderByDate:true">

@@ -9,14 +9,14 @@ input,
 select,
 textarea,
 .pure-g [class *= "pure-u"] {
-  font-family: 'Open Sans', sans-serif;
+  font-family:  "Dosis";
 
 }
 /* Defaults
    ========================================================================== */
 
 html {
-  @include font-size($base-root-size);
+  @include font-size(17);
   line-height: 1.5;
 }
 ::-moz-selection {

@@ -2,6 +2,7 @@
 
 // -------------------------------
 // Globals
+
 .textBox {
   padding: 5px 30px 5px 30px;
   background-color: $ubcWhite;
@@ -61,16 +62,22 @@ input {
   margin-bottom: 20px;
 }
 
+.reviewButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: $ubcBlue;
+    color: $ubcWhite;
+  }
+
 
 
 // -------------------------------
 // Navbar Styling
 
 .header{
-  font-family: "Dosis";
-  font-size: 20px;
+   font-size: 20px;
 }
-
+  
 .pure-menu {
   background-color: $ubcBlack !important;
 }
@@ -131,14 +138,11 @@ input {
   }
 }
 
+
 // ---------------------------------
 // About Page
 
 .aboutPage{
-  
-  font-family:"Dosis";
-  font-size: 17px;
-  
   .teamProfile {
 
     h2 {
@@ -256,8 +260,6 @@ input {
 // -------------------------------
 // Degree Requirements
 .degreeRequirements {
-  font-family:"Dosis";
-  font-size: 17px;
   text-align: center;
 
   .active {
@@ -306,15 +308,7 @@ input {
 // -------------------------------
 // Tutors
 .tutors {
-  font-family:"Dosis";
-  font-size: 17px;
   text-align: center;
-
-  button {
-    margin-bottom: 10px;
-    background: $ubcBlue;
-    color: $ubcWhite;
-  }
   
   .active {
     background-color: $ubcBlue;
@@ -365,8 +359,6 @@ input {
 // -------------------------------
 // Courses
 .courses {
-  font-family:"Dosis";
-  font-size: 17px;
   text-align: center;
   margin: auto;
   max-width: 1000px;
@@ -382,8 +374,6 @@ input {
 // -------------------------------
 // Professors
 .professors {
-  font-family:"Dosis";
-  font-size: 17px;
   text-align: center;
   margin: auto;
   max-width: 1000px;
@@ -397,12 +387,6 @@ input {
 
   h5{
     margin: 0;
-  }
-  button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: $ubcBlue;
-    color: $ubcWhite;
   }
 }
 .active  {
