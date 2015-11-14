@@ -48,7 +48,6 @@
       'job-postings',
       'seminars',
       'hackathons',
-      'student-projects',
       'about',
       'companies',
       'common.header',
