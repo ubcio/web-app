@@ -44,8 +44,10 @@ input {
 
  .reviews {
     padding: 10px;
-    background-color: $ubcLightGrey;
-    border: 2px solid $ubcWhite;
+    background-color: $ubcWhite;
+    border: 2px solid $ubcBlue;
+   border-radius: 5px;
+    margin-bottom: 5px;
    .reviewDate {
     float: right;
      display: block;
@@ -67,6 +69,21 @@ input {
     margin-bottom: 10px;
     background: $ubcBlue;
     color: $ubcWhite;
+  }
+.tips {
+    padding: 10px;
+    background-color: $ubcWhite;
+    border: 2px solid $ubcGreen;
+   border-radius: 5px;
+    margin-bottom: 5px;
+   .reviewDate {
+    float: right;
+     display: block;
+     margin-bottom: 5px;
+    }
+   p {
+     display: block;
+   }
   }
 
 .tipButton {

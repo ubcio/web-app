@@ -31,7 +31,7 @@
       <button class="pure-button tipButton" ng-click="courses.selectedCourse.showTips = !courses.selectedCourse.showTips">
         Tips
       </button>
-      <div class= "reviews" ng-show="courses.selectedCourse.showTips" ng-repeat="tip in courses.selectedCourse.tips | orderBy: courses.orderByDate:true">
+      <div class= "tips" ng-show="courses.selectedCourse.showTips" ng-repeat="tip in courses.selectedCourse.tips | orderBy: courses.orderByDate:true">
         <div class="reviewDate">
             <strong>{{tip.createDate | date: format:'fullDate'}}</strong>
           </div>
