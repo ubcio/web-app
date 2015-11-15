@@ -6,25 +6,26 @@
   </div>
   <div class="textBox" ng-show="courses.selectedCourse.name">
     <p>
-      {{courses.selectedCourse.name}},
-      <br>
+      <h3>{{courses.selectedCourse.name}}</h3>
+      <h5>{{courses.selectedCourse.credits}} credits</h5>
       {{courses.selectedCourse.description}}
       <br>
-      {{courses.selectedCourse.credits}} credits
-
-    <div ng-hide="courses.selectedCourse.prerequisites == null">
-      Prerequisites: {{courses.selectedCourse.prerequisites}}
+    <div class="requisits">
+      <div ng-hide="courses.selectedCourse.prerequisites == null">
+     <strong>Prerequisites: </strong> {{courses.selectedCourse.prerequisites}}
     </div>
     <div ng-show="courses.selectedCourse.prerequisites == null">
-      Prerequisites: none
+      <strong>Prerequisites: </strong>none
     </div>
 
     <div ng-hide="courses.selectedCourse.corequisites == null">
-      Co-requisites: {{courses.selectedCourse.corequisites}}
+      <strong>Co-requisites:</strong> {{courses.selectedCourse.corequisites}}
     </div>
     <div ng-show="courses.selectedCourse.corequisites == null">
-      Co-requisites: none
+      <strong>Co-requisites:</strong> none
     </div>
+    </div>
+    
 
     <div ng-hide="courses.selectedCourse.tips == null">
       <button class="pure-button tipButton" ng-click="courses.selectedCourse.showTips = !courses.selectedCourse.showTips">
