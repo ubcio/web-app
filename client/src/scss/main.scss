@@ -2,7 +2,13 @@
 
 // -------------------------------
 // Globals
+a:focus {
+  color: $ubcGrey;
+}
 
+body {
+  background-color: $ubcLightBlue;
+}
 .textBox {
   padding: 5px 30px 5px 30px;
   background-color: $ubcWhite;
@@ -430,15 +436,18 @@ input {
 }
 
 
+//--------------------------------
+// Training For Interviews 
 
-// -------------------------------
-// Element Styling ----
-a:focus {
-  color: $ubcGrey;
-}
-
-body {
-  background-color: $ubcLightBlue;
+.trainingForInterviews{
+  
+  .textBox{
+    margin: auto;
+    max-width: 1000px;
+  }
+  .overview{
+    margin-top: 15px;
+  }
 }
 
 
