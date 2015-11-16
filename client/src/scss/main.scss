@@ -246,17 +246,17 @@ input {
 
   @media only screen and (min-width: 1280px) {
     .ubcIODescription {
-      max-width: 1234px;
+      max-width: $base-width;
       margin: auto;
     }
 
     .teamMembers {
-      max-width: 1234px;
+      max-width: $base-width;
       margin: auto;
     }
 
     .teamMember {
-      max-width: 1234px;
+      max-width: $base-width;
 
       img {
         width: 247px;
@@ -363,7 +363,8 @@ input {
   }
 
   @media only screen and (min-width: 769px) {
-
+    max-width: base-width;
+    margin: auto;
     .tutorBox {
       @include border-box();
       width: 100%;
@@ -392,7 +393,7 @@ input {
 .courses {
   text-align: center;
   margin: auto;
-  max-width: 1000px;
+  max-width: $base-width;
 
   .textBox{
     margin-top: 10px;
@@ -417,7 +418,7 @@ input {
 .professors {
   text-align: center;
   margin: auto;
-  max-width: 1000px;
+  max-width: $base-width;
 
   .textBox{
     margin-top: 10px;
@@ -440,14 +441,9 @@ input {
 // Training For Interviews 
 
 .trainingForInterviews{
+  max-width: $base-width;
+  margin: auto;
   
-  .textBox{
-    margin: auto;
-    max-width: 1000px;
-  }
-  .overview{
-    margin-top: 15px;
-  }
 }
 
 
