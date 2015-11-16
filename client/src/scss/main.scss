@@ -340,6 +340,7 @@ input {
 // Tutors
 .tutors {
   text-align: center;
+    
 
   .active {
     background-color: $ubcBlue;
@@ -363,7 +364,7 @@ input {
   }
 
   @media only screen and (min-width: 769px) {
-    max-width: base-width;
+  max-width: $base-width;
     margin: auto;
     .tutorBox {
       @include border-box();
