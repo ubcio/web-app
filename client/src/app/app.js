@@ -55,6 +55,7 @@
       'common.services.tutors',
       'common.services.courses',
       'common.services.professors',
+      'common.services.seminars',
       'common.directives.version',
       'common.filters.uppercase',
       'common.interceptors.http',

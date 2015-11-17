@@ -22,8 +22,11 @@
    * @name  SeminarsCtrl
    * @description Controller
    */
-  function SeminarsCtrl() {
+  function SeminarsCtrl(SeminarsService) {
     var seminars = this;
+    var init = function() {
+      seminars.seminars = SeminarsService.getSeminars();
+    }();
   }
 
   angular.module('seminars', [])
