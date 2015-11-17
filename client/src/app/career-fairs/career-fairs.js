@@ -22,8 +22,11 @@
    * @name  CareerFairsCtrl
    * @description Controller
    */
-  function CareerFairsCtrl() {
+  function CareerFairsCtrl(CareerFairsService) {
     var careerFairs = this;
+    var init = function() {
+      careerFairs.careerFairs = CareerFairsService.getCareerFairs();
+    }();
   }
 
   angular.module('career-fairs', [])

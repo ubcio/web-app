@@ -57,6 +57,7 @@
       'common.services.professors',
       'common.services.seminars',
       'common.services.hackathons',
+      'common.services.career-fairs',
       'common.directives.version',
       'common.filters.uppercase',
       'common.interceptors.http',

@@ -1,0 +1,16 @@
+{
+  "careerFairs": [
+    {
+      "name": "make-a-job",
+      "date": "Febuary 20th from 12 - 4pm",
+      "description": "Come work for us! We pay less and work you harder!",
+      "location": "CS 139"
+    },
+    {
+      "name": "the other career fair",
+      "date": "April 8th from 8am - 4pm",
+      "description": "Do you like flowers?",
+      "location": "Forestry"
+    }
+  ]
+}
