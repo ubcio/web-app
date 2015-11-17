@@ -1,0 +1,14 @@
+{
+  "seminars": [
+   { "name": "That Talk",
+    "date": "2015-02-13",
+    "description": "this is a bullshit talk about nothing",
+    "location": "San Francisco"
+    },
+    { "name": "the other talk",
+    "date": "2016-05-20",
+    "description": "this is a very important seminar that you have to attend for sure!",
+     "location": "Vancouver"
+    }
+  ]
+}
