@@ -1,0 +1,16 @@
+{
+  "hackathons": [
+    {
+      "name": "hack-a-house",
+      "date": "Febuary 14th from 12 - 4pm",
+      "description": "Let's hack a house! Together!",
+      "location": "Irving Library"
+    },
+    {
+      "name": "the other hackathon",
+      "date": "Febuary 16th from 8 - 9am",
+      "description": "this is a very important seminar that you have to attend for sure!",
+      "location": "CS room X309"
+    }
+  ]
+}

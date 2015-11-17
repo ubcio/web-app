@@ -56,6 +56,7 @@
       'common.services.courses',
       'common.services.professors',
       'common.services.seminars',
+      'common.services.hackathons',
       'common.directives.version',
       'common.filters.uppercase',
       'common.interceptors.http',

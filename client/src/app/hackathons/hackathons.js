@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   /**
@@ -22,8 +22,12 @@
    * @name  HackathonsCtrl
    * @description Controller
    */
-  function HackathonsCtrl() {
+  function HackathonsCtrl(HackathonsService) {
     var hackathons = this;
+
+    var init = function () {
+      hackathons.hackathons = HackathonsService.getHackathons();
+    }();
   }
 
   angular.module('hackathons', [])
