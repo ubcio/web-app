@@ -1,5 +1,33 @@
-<div>
-    <div ng-repeat="company in companies.companies">
-      {{company}}
+<div class="companies">
+  <div class="pure-form">
+    <input type="text" placeholder="enter a company name..."
+           ng-model="companies.selectedCompany"
+           typeahead="company as company.name for company in companies.companies | filter:{name:$viewValue} | limitTo:8">
+  </div>
+  <div class="textBox" ng-show="companies.selectedCompany.name">
+    <h3>{{companies.selectedCompany.name}}</h3>
+
+    <div class="reviews"
+         ng-repeat="review in companies.selectedCompany.reviews | orderBy: companies.orderByDate:true">
+      <div class="reviewDate">
+        <strong>{{review.createDate | date: format:'fullDate'}}</strong>
+      </div>
+      <p>{{review.review}}</p>
     </div>
+  </div>
+
+  <!-- If no company selected, display contribution message -->
+  <div class="messageBox" ng-hide="companies.selectedCompany">
+    <div class="openQuote">
+      <ng-md-icon icon="format_quote"></ng-md-icon>
+    </div>
+    Working before you graduate is an excellent idea! Internships are awesome...well most of them. Unfortunately
+    some companies don't offer the best environment for internships - wouldn't it be great to know about this
+    BEFORE you accept the offer. Well that's what we offer here - company reviews! If you find this useful then join
+    the ubc.io community and send us reviews of companies where you've interned! To leave a review, simply email us at
+    ubcio.team@gmail.com with the company name and the review. We look forward to hearing from you :)
+    <div class="closeQuote">
+      <ng-md-icon icon="format_quote"></ng-md-icon>
+    </div>
+  </div>
 </div>

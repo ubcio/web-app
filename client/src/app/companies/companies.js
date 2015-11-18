@@ -26,6 +26,10 @@
     var companies = this;
     var init = function() {
       companies.companies = CompaniesService.getCompanies();
+      companies.selectedCompany = undefined;
+      companies.orderByDate = function(review) {
+        return new Date(review.createDate);
+      }
     }();
   }
 

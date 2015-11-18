@@ -340,7 +340,7 @@ input {
 // Tutors
 .tutors {
   text-align: center;
-    
+
 
   .active {
     background-color: $ubcBlue;
@@ -439,12 +439,19 @@ input {
 
 
 //--------------------------------
-// Training For Interviews 
-
+// Training For Interviews
 .trainingForInterviews{
   max-width: $base-width;
   margin: auto;
-  
+
+}
+
+//--------------------------------
+// Companies
+.companies {
+  text-align: center;
+  margin: auto;
+  max-width: $base-width;
 }
 
 
