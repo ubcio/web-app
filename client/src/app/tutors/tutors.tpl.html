@@ -1,6 +1,6 @@
 <div class="tutors">
   <div class="pure-form">
-    <input type="text" placeholder="what course do you need help with?"
+    <input type="text" placeholder="enter a course name..."
            ng-model="tutors.selectedCourse"
            typeahead="course as course.name for course in tutors.coursesWithTutors | filter:{name:$viewValue} | limitTo:8">
   </div>
@@ -17,7 +17,7 @@
             ng-click="tutors.tutors[0].showReviews = !tutors.tutors[0].showReviews">
       Reviews
     </button>
-    <div class="reviews" ng-show="tutors.tutors[0].showReviews" 
+    <div class="reviews" ng-show="tutors.tutors[0].showReviews"
          ng-repeat="review in tutors.tutors[0].reviews | orderBy:tutors.orderByDate:true">
       <div class="reviewDate">
             <strong>{{review.createDate | date: format:'fullDate'}}</strong>
@@ -46,9 +46,9 @@
           <div class="reviewDate">
             <strong>{{review.createDate | date: format:'fullDate'}}</strong>
           </div>
-          
+
          <p>{{review.review}}</p>
-          
+
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@
         </button>
         <div ng-show="tutors.tutors[tutorIndex].showReviews" class="reviews"
              ng-repeat="review in tutors.tutors[tutorIndex].reviews | orderBy:tutors.orderByDate:true">
-         
+
           <div class="reviewDate">
             <strong>{{review.createDate | date: format:'fullDate'}}</strong>
           </div>
@@ -76,10 +76,10 @@
       </div>
     </div>
   </div>
-  <!-- If no course selected, display contribution message TODO style it-->
+  <!-- If no course selected, display contribution message -->
   <div class="messageBox" ng-hide="tutors.selectedCourse">
     <div class="openQuote"><ng-md-icon  icon="format_quote"></ng-md-icon> </div>
-    Would you like to contribute to the ubcIO community by becoming a tutor? Well we would love to have you! We take a
+    Would you like to contribute to the ubc.io community by becoming a tutor? Well we would love to have you! We take a
     whopping 0 percent of the money you make because taking a cut would be...fucking annoying to say the least. All
     you have to do is email us at ubcio.team@gmail.com with the following info:
     name, preferred email, price, bio, and the course(s) you would like to tutor. We look forward to hearing from you :)

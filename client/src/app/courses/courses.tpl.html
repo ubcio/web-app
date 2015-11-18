@@ -1,6 +1,6 @@
 <div class="courses">
   <div class="pure-form">
-    <input type="text" placeholder="what course do you want to know more about?"
+    <input type="text" placeholder="enter a course name..."
            ng-model="courses.selectedCourse"
            typeahead="course as course.name for course in courses.courses | filter:{name:$viewValue} | limitTo:20">
   </div>
@@ -25,7 +25,7 @@
       <strong>Co-requisites:</strong> none
     </div>
     </div>
-    
+
 
     <div ng-hide="courses.selectedCourse.tips == null">
       <button class="pure-button tipButton" ng-click="courses.selectedCourse.showTips = !courses.selectedCourse.showTips">
@@ -36,13 +36,13 @@
             <strong>{{tip.createDate | date: format:'fullDate'}}</strong>
           </div>
         <p>{{tip.tip}}</p>
-        
+
       </div>
     </div>
     </p>
   </div>
 
-  <!-- If no courses selected, display contribution message TODO style it -->
+  <!-- If no courses selected, display contribution message -->
   <div  class="messageBox" ng-hide="courses.selectedCourse">
     <div class="openQuote"><ng-md-icon  icon="format_quote"></ng-md-icon> </div>
     Have you ever finished a course and had the following thought:

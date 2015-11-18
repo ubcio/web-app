@@ -1,6 +1,6 @@
 <div class="professors">
   <div class="pure-form">
-    <input type="text" placeholder="what professor do you want to know more about?"
+    <input type="text" placeholder="enter a professor's name..."
            ng-model="professors.selectedProf"
            typeahead="prof as prof.name for prof in professors.profs | filter:{name:$viewValue} | limitTo:8">
   </div>
@@ -18,14 +18,14 @@
       <div class="reviewDate">
           <strong>{{professors.selectedProf.reviews[reviewIndex].createDate | date: format:'fullDate'}}</strong>
       </div>
-      
+
           <p>{{professors.selectedProf.reviews[reviewIndex].review}}</p>
-          
+
     </div>
 
   </div>
 
-    <!-- If no professors selected, display contribution message TODO style it -->
+  <!-- If no professors selected, display contribution message -->
   <div  class="messageBox" ng-hide="professors.selectedProf">
     <div class="openQuote"><ng-md-icon  icon="format_quote"></ng-md-icon> </div>
     At UBC, like all Universities, we have a range of professors, some mediocre (being polite here)
