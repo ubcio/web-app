@@ -22,8 +22,11 @@
    * @name  JobPostingsCtrl
    * @description Controller
    */
-  function JobPostingsCtrl() {
+  function JobPostingsCtrl(JobPostingsService) {
     var jobPostings = this;
+    var init = function() {
+      jobPostings.jobPostings = JobPostingsService.getJobPostings();
+    }();
   }
 
   angular.module('job-postings', [])
