@@ -22,11 +22,18 @@
    * @name  HackathonsCtrl
    * @description Controller
    */
-  function HackathonsCtrl(HackathonsService) {
+  function HackathonsCtrl(HackathonsService , $scope) {
     var hackathons = this;
 
+    var postInit = function(hackathonsData) {
+      hackathons.hackathons = hackathonsData;
+      hackathons.loaded = true;
+      $scope.$digest();
+    };
+
     var init = function () {
-      hackathons.hackathons = HackathonsService.getHackathons();
+       HackathonsService.getHackathons(postInit);
+      hackathons.loaded = false;
     }();
   }
 

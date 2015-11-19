@@ -1,12 +1,14 @@
 (function () {
   'use strict';
 
-  function hackathonsService(FirebaseUrl , $firebaseArray) {
+  function hackathonsService(FirebaseUrl) {
     var ref = new Firebase(FirebaseUrl + "hackathons");
 
     return {
-      getHackathons: function () {
-        return $firebaseArray(ref.child("hackathons"));
+      getHackathons: function (callback) {
+        ref.child("hackathons").once("value" , function(snapshot) {
+          callback(snapshot.val());
+        });
       }
     };
   }
