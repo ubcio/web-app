@@ -1,6 +1,6 @@
 <div class="courses">
   <div class="pure-form">
-    <input type="text" placeholder="enter a course name..."
+    <input type="text" placeholder="{{courses.inputText}}" ng-disabled="!courses.loaded"
            ng-model="courses.selectedCourse"
            typeahead="course as course.name for course in courses.courses | filter:{name:$viewValue} | limitTo:20">
   </div>
