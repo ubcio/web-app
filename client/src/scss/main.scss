@@ -19,8 +19,8 @@ input {
     text-align: center;
     width: 500px;
     margin: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 17px;
   }
 @media only screen and (max-width: 600px) {
   input {
@@ -34,7 +34,7 @@ input {
   border-radius: 10px;
   max-width: 900px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 10px;
   border: 5px solid $ubcBlack;
   font-family: 'Raleway';
 }
@@ -225,6 +225,7 @@ input {
     .ubcIODescription {
       max-width: 500px;
       margin: auto;
+      margin-top: 10px;
     }
     .teamMember {
       max-width: 500px;
@@ -316,7 +317,7 @@ input {
    .requirementBox{
     width: 1000px;
     margin: auto;
-     margin-top: 15px;
+     margin-top: 10px;
   }
 
   .centerFrame {
@@ -387,7 +388,7 @@ input {
       width: 100%;
       border: 5px solid $ubcLightBlue;
       display: inline-table;
-
+      margin-top: 5px;
     }
     .leftColumn {
       width: 50%;
