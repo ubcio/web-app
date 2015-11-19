@@ -2,20 +2,44 @@
   <table class="pure-table pure-table-bordered">
     <thead>
     <tr>
-      <th>
+      <th class="notSort">
         Title
       </th>
       <th>
-        <a ng-click="jobPostings.tableFilter('company' , !jobPostings.sortReverse)">Company</a>
+        <div class="sort" ng-click="jobPostings.tableFilter('company' , !jobPostings.sortReverse)"><a href="#job-postings">Company
+                  <div class="arrows">
+          <div class="arrow"><ng-md-icon  icon="keyboard_arrow_up" ></ng-md-icon> </div>
+          <div class="arrow"><ng-md-icon  icon="keyboard_arrow_down" ></ng-md-icon></div>
+          
+        </div></a>
+
+        </div>
+        
       </th>
       <th>
-        <a ng-click="jobPostings.tableFilter('location' , !jobPostings.sortReverse)">Location</a>
+        <div class="sort" ng-click="jobPostings.tableFilter('location' , !jobPostings.sortReverse)"><a href="#job-postings">Location
+          <div class="arrows">
+          <div class="arrow"><ng-md-icon  icon="keyboard_arrow_up" ></ng-md-icon> </div>
+          <div class="arrow"><ng-md-icon  icon="keyboard_arrow_down" ></ng-md-icon></div>
+          
+        </div>
+          </a>
+        
+        </div>
       </th>
-      <th>
+      <th class="notSort">
         Term
       </th>
       <th>
-        <a ng-click="jobPostings.tableFilter('deadline' , !jobPostings.sortReverse)">Deadline</a>
+        <div class="sort" ng-click="jobPostings.tableFilter('deadline' , !jobPostings.sortReverse)"><a href="#job-postings">Deadline
+            <div class="arrows">
+          <div class="arrow"><ng-md-icon  icon="keyboard_arrow_up" ></ng-md-icon> </div>
+          <div class="arrow"><ng-md-icon  icon="keyboard_arrow_down" ></ng-md-icon></div>
+          
+        </div>
+          </a>
+        
+        </div>
       </th>
     </tr>
     </thead>
@@ -33,7 +57,7 @@
         {{jobPosting.term}}
       </td>
       <td>
-        {{jobPosting.deadline}}
+        {{jobPosting.deadline | date: format:'fullDate'}}
       </td>
     </tr>
   </table>

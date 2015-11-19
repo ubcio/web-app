@@ -533,9 +533,35 @@ input {
 //----------------------------------
 // Job Postings
 .jobPostings {
+
   table {
+    max-width: $base-width;
     background-color: $ubcWhite;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
   }
+  .notSort {
+    padding-bottom: 12px;
+  }
+  
+  .sort {
+     display: inline-block;
+    a {
+     color:$ubcBlack; 
+      float: left;
+    }
+  }
+  
+  .arrows {
+    display: inline-block;
+    float: right;
+  }
+  
+  .arrow {
+    margin-bottom: -20px;
+  }
+  
 }
 //----------------------------------
 // Resumes and Cover Letters
