@@ -1,5 +1,10 @@
-<div>
-  <div ng-repeat="careerFair in careerFairs.careerFairs">
-    {{careerFair}}
+<div class="careerFairs">
+  <div class="textBox" ng-repeat="careerFair in careerFairs.careerFairs">
+    <h2>{{careerFair.name}}</h2>
+    <h5>{{careerFair.date}}</h5>
+    
+    <p>{{careerFair.description}}</p>
+    <br>
+    <h5>{{careerFair.location}}</h5>
   </div>
 </div>

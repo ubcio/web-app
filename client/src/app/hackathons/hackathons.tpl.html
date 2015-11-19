@@ -1,5 +1,10 @@
-<div>
-  <div ng-repeat="hackathon in hackathons.hackathons">
-    {{hackathon}}
+<div class="hackathons">
+  <div class="textBox" ng-repeat="hackathon in hackathons.hackathons">
+    <h2>{{hackathon.name}}</h2>
+    <h5>{{hackathon.date}}</h5>
+    
+    <p>{{hackathon.description}}</p>
+    <br>
+    <h5>{{hackathon.location}}</h5>
   </div>
 </div>

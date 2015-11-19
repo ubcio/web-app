@@ -1,9 +1,10 @@
-<div>
-  <div ng-repeat="seminar in seminars.seminars">
-    {{seminar}}
-    <!-- example below , it's that easy! ERASE ME -->
+<div class="seminars">
+  <div class="textBox" ng-repeat="seminar in seminars.seminars">
+    <h2>{{seminar.name}}</h2>
+    <h5>{{seminar.date}}</h5>
+    
+    <p>{{seminar.description}}</p>
     <br>
-    <strong>{{seminar.name}}</strong>
-    <!-- ERASE FINISH -->
+    <h5>{{seminar.location}}</h5>
   </div>
 </div>

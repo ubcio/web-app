@@ -10,6 +10,7 @@ body {
   background-color: $ubcLightBlue;
 }
 .textBox {
+  margin-top: 10px;
   padding: 5px 30px 5px 30px;
   background-color: $ubcWhite;
 }
@@ -357,7 +358,6 @@ input {
   @media only screen and (min-width: 200px) and (max-width: 768px) {
     .tutorBox {
       margin: auto;
-      margin-top: 10px;
       max-width: 550px;
     }
 
@@ -396,9 +396,6 @@ input {
   margin: auto;
   max-width: $base-width;
 
-  .textBox{
-    margin-top: 10px;
-  }
   .active {
     background-color: $ubcBlue;
   }
@@ -421,9 +418,6 @@ input {
   margin: auto;
   max-width: $base-width;
 
-  .textBox{
-    margin-top: 10px;
-  }
    h2{
     margin-bottom: 0;
   }
@@ -454,7 +448,50 @@ input {
   max-width: $base-width;
 }
 
+//---------------------------------
+//Seminars
+.seminars {
+  text-align: center;
+  max-width: $base-width;
+  margin: auto;
+  h2{
+    margin-bottom: 0;
+  }
+  h5{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
 
+
+//--------------------------------
+//Hackathons
+.hackathons {
+  text-align: center;
+  max-width: $base-width;
+  margin: auto;
+  h2{
+    margin-bottom: 0;
+  }
+  h5{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+//----------------------------------
+//Career Fairs
+.careerFairs {
+  text-align: center;
+  max-width: $base-width;
+  margin: auto;
+  h2{
+    margin-bottom: 0;
+  }
+  h5{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
 
 
 
