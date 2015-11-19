@@ -4,11 +4,11 @@
            ng-model="professors.selectedProf"
            typeahead="prof as prof.name for prof in professors.professors | filter:{name:$viewValue} | limitTo:8">
   </div>
-  <div class="textBox" ng-show="professors.selectedProf.name">
+  <div class="textBox" ng-if="professors.selectedProf.name">
     <br>
 
     <!-- Filter Toggle-->
-    <div >
+    <div ng-init="professors.selectedProf.reviewFilter = 'All'">
       <label ng-repeat="(name , reviewIndexes) in professors.selectedProf.courses" class="pure-button reviewToggle"
              ng-model="professors.selectedProf.reviewFilter" btn-radio="name">{{name}}</label>
     </div>
