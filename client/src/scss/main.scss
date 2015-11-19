@@ -107,12 +107,12 @@ input {
   p{
     display: inline-block;
   }
+  .eventBusy {
+    display: inline-block;
+}
 }
 
-.eventBusy {
-    display: inline-block;
-  //margin-top: inherit;
- }
+
 
 // -------------------------------
 // Navbar Styling
@@ -476,7 +476,7 @@ input {
 }
 
 //---------------------------------
-//Seminars
+// Seminars
 .seminars {
   text-align: center;
   max-width: $base-width;
@@ -495,7 +495,7 @@ input {
 
 
 //--------------------------------
-//Hackathons
+// Hackathons
 .hackathons {
   text-align: center;
   max-width: $base-width;
@@ -512,7 +512,7 @@ input {
   }
 }
 //----------------------------------
-//Career Fairs
+// Career Fairs
 .careerFairs {
   text-align: center;
   max-width: $base-width;
@@ -536,6 +536,14 @@ input {
     background-color: $ubcWhite;
   }
 }
-
+//----------------------------------
+// Resumes and Cover Letters
+.resumeCoverletter{
+  max-width: $base-width;
+  margin: auto;
+  .textBox{
+      margin-top: 10px;
+  }
+}
 
 

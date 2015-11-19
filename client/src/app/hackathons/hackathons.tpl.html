@@ -7,4 +7,9 @@
     </p>
     <h5>{{hackathon.location}}</h5>
   </div>
+  <div class="noEvents" ng-show="hackathons.hackathons.length == 0">
+      <div class="eventBusy"><ng-md-icon  icon="event_busy" size="50px"></ng-md-icon> </div>
+    <p>There are no upcoming hackathons</p>
+    
+  </div>
 </div>
