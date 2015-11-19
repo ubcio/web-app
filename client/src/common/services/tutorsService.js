@@ -4,13 +4,11 @@
   function tutorsService(FirebaseUrl , $firebaseArray) {
     var ref = new Firebase(FirebaseUrl + "tutors");
 
-
     return {
-      getCoursesWithTutors: function () {
-        return $firebaseArray(ref.child("courses"));
-      },
-      getTutors: function(){
-        return $firebaseArray(ref.child("tutors"));
+      getTutors: function (callback) {
+        ref.once("value" , function(snapshot) {
+          callback(snapshot.val());
+        });
       }
     };
   }

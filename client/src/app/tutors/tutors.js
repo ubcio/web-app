@@ -22,11 +22,21 @@
    * @name  TutorsCtrl
    * @description Controller
    */
-  function TutorsCtrl(TutorsService) {
+  function TutorsCtrl(TutorsService , $scope) {
     var tutors = this;
+
+    var postInit = function(tutorsData) {
+      tutors.courses = tutorsData.courses;
+      tutors.tutors = tutorsData.tutors;
+      tutors.loaded = true;
+      tutors.inputText = "enter a course name...";
+      $scope.$digest();
+    };
+
     var init = function() {
-      tutors.coursesWithTutors = TutorsService.getCoursesWithTutors();
-      tutors.tutors = TutorsService.getTutors();
+      TutorsService.getTutors(postInit);
+      tutors.loaded = false;
+      tutors.inputText = "loading data...";
       tutors.selectedCourse = undefined;
       tutors.orderByDate = function(review) {
         return new Date(review.createDate);
