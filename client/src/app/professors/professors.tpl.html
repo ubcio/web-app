@@ -4,35 +4,42 @@
            ng-model="professors.selectedProf"
            typeahead="prof as prof.name for prof in professors.professors | filter:{name:$viewValue} | limitTo:8">
   </div>
-  <div class="textBox" ng-show="professors.selectedProf.name">
+  <div class="textBox" ng-if="professors.selectedProf.name">
     <br>
 
     <!-- Filter Toggle-->
-    <div >
+    <div ng-init="professors.selectedProf.reviewFilter = 'All'">
       <label ng-repeat="(name , reviewIndexes) in professors.selectedProf.courses" class="pure-button reviewToggle"
              ng-model="professors.selectedProf.reviewFilter" btn-radio="name">{{name}}</label>
     </div>
 
     <!-- Reviews -->
-    <div class="reviews" ng-repeat="reviewIndex in professors.selectedProf.courses[professors.selectedProf.reviewFilter] | orderBy:professors.orderByDate:true">
+    <div class="reviews"
+         ng-repeat="reviewIndex in professors.selectedProf.courses[professors.selectedProf.reviewFilter] | orderBy:professors.orderByDate:true">
       <div class="reviewDate">
-          <strong>{{professors.selectedProf.reviews[reviewIndex].createDate | date: format:'fullDate'}}</strong>
+        <strong>{{professors.selectedProf.reviews[reviewIndex].createDate | date: format:'fullDate'}}</strong>
+        <br>
+        <span ng-show="professors.selectedProf.reviewFilter == 'All'"> {{professors.selectedProf.reviews[reviewIndex].course}} </span>
       </div>
 
-          <p>{{professors.selectedProf.reviews[reviewIndex].review}}</p>
+      <p>{{professors.selectedProf.reviews[reviewIndex].review}}</p>
 
     </div>
 
   </div>
 
   <!-- If no professors selected, display contribution message -->
-  <div  class="messageBox" ng-hide="professors.selectedProf">
-    <div class="openQuote"><ng-md-icon  icon="format_quote"></ng-md-icon> </div>
+  <div class="messageBox" ng-hide="professors.selectedProf">
+    <div class="openQuote">
+      <ng-md-icon icon="format_quote"></ng-md-icon>
+    </div>
     Here you will find highly detailed reviews on professors. To write a review, email us at ubcio.team@gmail.com with
     the <u>name of the professor</u>, the <u>name of the course</u> you
     took, and the <u>review</u>. We look forward to hearing about your experiences and are thankful to all
     the contributors in the ubc.io community!
-     <div class="closeQuote" ><ng-md-icon  icon="format_quote"></ng-md-icon> </div>
+    <div class="closeQuote">
+      <ng-md-icon icon="format_quote"></ng-md-icon>
+    </div>
   </div>
 
 </div>
