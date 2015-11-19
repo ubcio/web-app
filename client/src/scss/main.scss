@@ -10,7 +10,7 @@ body {
   background-color: $ubcLightBlue;
 }
 .textBox {
-  margin-top: 10px;
+
   padding: 5px 30px 5px 30px;
   background-color: $ubcWhite;
 }
@@ -100,7 +100,19 @@ input {
     color: $ubcWhite;
   }
 
+.noEvents {
+  font-size: 40px;
+  margin-top: 25%;
+  color: $ubcGrey;
+  p{
+    display: inline-block;
+  }
+}
 
+.eventBusy {
+    display: inline-block;
+  //margin-top: inherit;
+ }
 
 // -------------------------------
 // Navbar Styling
@@ -223,6 +235,7 @@ input {
     .ubcIODescription {
       max-width: 800px;
       margin: auto;
+      margin-top: 10px;
     }
     .teamMembers {
 
@@ -249,6 +262,7 @@ input {
     .ubcIODescription {
       max-width: $base-width;
       margin: auto;
+      margin-top: 10px;
     }
 
     .teamMembers {
@@ -359,6 +373,7 @@ input {
     .tutorBox {
       margin: auto;
       max-width: 550px;
+      margin-top: 10px;
     }
 
   }
@@ -371,6 +386,7 @@ input {
       width: 100%;
       border: 5px solid $ubcLightBlue;
       display: inline-table;
+      
     }
     .leftColumn {
       width: 50%;
@@ -395,7 +411,9 @@ input {
   text-align: center;
   margin: auto;
   max-width: $base-width;
-
+  .textBox{
+      margin-top: 10px;
+  }
   .active {
     background-color: $ubcBlue;
   }
@@ -417,6 +435,9 @@ input {
   text-align: center;
   margin: auto;
   max-width: $base-width;
+  .textBox{
+      margin-top: 10px;
+  }
 
    h2{
     margin-bottom: 0;
@@ -437,7 +458,9 @@ input {
 .trainingForInterviews{
   max-width: $base-width;
   margin: auto;
-
+  .textBox{
+      margin-top: 10px;
+  }
 }
 
 //--------------------------------
@@ -446,6 +469,9 @@ input {
   text-align: center;
   margin: auto;
   max-width: $base-width;
+  .textBox{
+      margin-top: 10px;
+  }
 }
 
 //---------------------------------
@@ -454,6 +480,9 @@ input {
   text-align: center;
   max-width: $base-width;
   margin: auto;
+  .textBox{
+      margin-top: 10px;
+  }
   h2{
     margin-bottom: 0;
   }
@@ -470,6 +499,9 @@ input {
   text-align: center;
   max-width: $base-width;
   margin: auto;
+  .textBox{
+      margin-top: 10px;
+  }
   h2{
     margin-bottom: 0;
   }
@@ -484,6 +516,9 @@ input {
   text-align: center;
   max-width: $base-width;
   margin: auto;
+  .textBox{
+      margin-top: 10px;
+  }
   h2{
     margin-bottom: 0;
   }
