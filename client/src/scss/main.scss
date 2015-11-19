@@ -107,12 +107,12 @@ input {
   p{
     display: inline-block;
   }
+  .eventBusy {
+    display: inline-block;
+}
 }
 
-.eventBusy {
-    display: inline-block;
-  //margin-top: inherit;
- }
+
 
 // -------------------------------
 // Navbar Styling
