@@ -1,9 +1,4 @@
 <div class="seminars">
-
-  <div ng-hide="seminars.loaded">
-    loading data...
-  </div>
-
   <div ng-show="seminars.loaded">
     <div class="textBox" ng-repeat="seminar in seminars.seminars">
       <h2>{{seminar.name}}</h2>
