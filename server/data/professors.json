@@ -5,13 +5,16 @@
       "reviews": [
         {
           "review": "Wow he knows his racket",
-          "createDate": "2015-02-13"
+          "createDate": "2015-02-13",
+          "course": "CPSC 110"
         },{
           "review": "Wow he knows his python",
-          "createDate": "2013-04-28"
+          "createDate": "2013-04-28",
+          "course": "CPSC 189"
         },{
           "review": "Wow he knows his java",
-          "createDate": "2015-03-12"
+          "createDate": "2015-03-12",
+          "course": "CPSC 210"
         }
       ],
       "courses": {
@@ -36,10 +39,12 @@
       "reviews": [
         {
           "review": "Remembered the name of all his students",
-          "createDate": "2009-12-10"
+          "createDate": "2009-12-10",
+          "course": "CPSC 110"
         },{
           "review": "Was a great grad prof",
-          "createDate": "2009-11-11"
+          "createDate": "2009-11-11",
+          "course": "CPSC 509"
         }
       ],
       "courses": {
