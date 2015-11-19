@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   /**
@@ -22,10 +22,18 @@
    * @name  CareerFairsCtrl
    * @description Controller
    */
-  function CareerFairsCtrl(CareerFairsService) {
+  function CareerFairsCtrl(CareerFairsService, $scope) {
     var careerFairs = this;
-    var init = function() {
-      careerFairs.careerFairs = CareerFairsService.getCareerFairs();
+
+    var postInit = function (careerFairsData) {
+      careerFairs.careerFairs = careerFairsData;
+      careerFairs.loaded = true;
+      $scope.$digest();
+    };
+
+    var init = function () {
+      CareerFairsService.getCareerFairs(postInit);
+      careerFairs.loaded = false;
     }();
   }
 
