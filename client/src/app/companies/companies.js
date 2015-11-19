@@ -22,10 +22,21 @@
    * @name  CompaniesCtrl
    * @description Controller
    */
-  function CompaniesCtrl(CompaniesService) {
+  function CompaniesCtrl(CompaniesService , $scope) {
     var companies = this;
+
+    var initPost = function(companiesData) {
+      companies.companies = companiesData;
+      companies.inputText = "enter a company name...";
+      companies.loaded = true;
+      $scope.$digest();
+
+    }
+
     var init = function() {
-      companies.companies = CompaniesService.getCompanies();
+      CompaniesService.getCompanies(initPost);
+      companies.inputText = "loading data...";
+      companies.loaded = false;
       companies.selectedCompany = undefined;
       companies.orderByDate = function(review) {
         return new Date(review.createDate);

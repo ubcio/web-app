@@ -1,12 +1,14 @@
 (function () {
   'use strict';
 
-  function companiesService(FirebaseUrl , $firebaseArray) {
+  function companiesService(FirebaseUrl) {
     var ref = new Firebase(FirebaseUrl + "companies");
 
     return {
-      getCompanies: function () {
-        return $firebaseArray(ref.child("companies"));
+      getCompanies: function (callback) {
+        ref.child("companies").once("value" , function(snapshot) {
+          callback(snapshot.val());
+        });
       }
     };
   }

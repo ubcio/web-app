@@ -1,6 +1,6 @@
 <div class="companies">
   <div class="pure-form">
-    <input type="text" placeholder="enter a company name..."
+    <input type="text" placeholder="{{companies.inputText}}" ng-disabled="!companies.loaded"
            ng-model="companies.selectedCompany"
            typeahead="company as company.name for company in companies.companies | filter:{name:$viewValue} | limitTo:8">
   </div>
