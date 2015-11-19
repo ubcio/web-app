@@ -1,13 +1,15 @@
 (function () {
   'use strict';
 
-  function seminarsService(FirebaseUrl , $firebaseArray) {
+  function seminarsService(FirebaseUrl) {
     var ref = new Firebase(FirebaseUrl + "seminars");
 
 
     return {
-      getSeminars: function(){
-        return $firebaseArray(ref.child("seminars"));
+      getSeminars: function(callback){
+        ref.child("seminars").once("value" , function(snapshot) {
+          callback(snapshot.val());
+        });
       }
     };
   }

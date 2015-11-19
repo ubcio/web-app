@@ -1,13 +1,18 @@
-[ {
-  "date" : "Thursday November 19, 12:30pm – 2pm",
-  "description" : "Thanks for those of you who attended the Nov 12 Amazon Women in Tech event.  Please find attached a reference sheet that the speakers promised to send out. A quick reminder to sign up for the FoWCS Nov 19 lunch with Associate Dean Gail Murphy if you haven’t done so: FoWCS Lunch with Associate Dean and CS Professor Gail Murphy Many of you have met Gail Murphy as the instructor who teaches CS 210.  Other than being a CS professor, she is also the Associate Dean of Research and Graduate Studies in the Faculty of Science, the co-founder and Chief Scientist of Tasktop Technologies, as well as the recipient of numerous research honours and awards (There are too many to name.  See here.).  How did Gail manage to handle so many roles with such aplomb, and find time to hang out with her husband, 3 sons and her puppy?  You have a chance to ask her on Nov 19!  Gail will be doing a short presentation on Balancing School and Personal Life.",
-  "link" : "http://google.ca",
-  "location" : "Rm 146, ICICS/CS",
-  "name" : "Upcoming Women in CS Events"
-}, {
-  "date" : "Monday January 5th, 2:00pm-3:30pm",
-  "description" : "this is a very important seminar that you have to attend for sure!",
-  "link" : "http://facebook.com",
-  "location" : "Vancouver",
-  "name" : "the other talk"
-} ]
+{
+  "seminars": [
+    {
+      "date": "Thursday November 19, 12:30pm – 2pm",
+      "description": "Thanks for those of you who attended the Nov 12 Amazon Women in Tech event.  Please find attached a reference sheet that the speakers promised to send out. A quick reminder to sign up for the FoWCS Nov 19 lunch with Associate Dean Gail Murphy if you haven’t done so: FoWCS Lunch with Associate Dean and CS Professor Gail Murphy Many of you have met Gail Murphy as the instructor who teaches CS 210.  Other than being a CS professor, she is also the Associate Dean of Research and Graduate Studies in the Faculty of Science, the co-founder and Chief Scientist of Tasktop Technologies, as well as the recipient of numerous research honours and awards (There are too many to name.  See here.).  How did Gail manage to handle so many roles with such aplomb, and find time to hang out with her husband, 3 sons and her puppy?  You have a chance to ask her on Nov 19!  Gail will be doing a short presentation on Balancing School and Personal Life.",
+      "link": "http://google.ca",
+      "location": "Rm 146, ICICS/CS",
+      "name": "Upcoming Women in CS Events"
+    },
+    {
+      "date": "Monday January 5th, 2:00pm-3:30pm",
+      "description": "this is a very important seminar that you have to attend for sure!",
+      "link": "http://facebook.com",
+      "location": "Vancouver",
+      "name": "the other talk"
+    }
+  ]
+}

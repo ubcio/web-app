@@ -22,10 +22,18 @@
    * @name  SeminarsCtrl
    * @description Controller
    */
-  function SeminarsCtrl(SeminarsService) {
+  function SeminarsCtrl(SeminarsService , $scope) {
     var seminars = this;
+
+    var postInit = function(seminarsData) {
+      seminars.seminars = seminarsData;
+      seminars.loaded = true;
+      $scope.$digest();
+    };
+
     var init = function() {
-      seminars.seminars = SeminarsService.getSeminars();
+      SeminarsService.getSeminars(postInit);
+      seminars.loaded = false;
     }();
   }
 

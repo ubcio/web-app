@@ -1,16 +1,26 @@
 <div class="seminars">
-  <div class="textBox" ng-repeat="seminar in seminars.seminars">
-    <h2>{{seminar.name}}</h2>
-    <h5>{{seminar.date}}</h5>
-    <p>{{seminar.description}}
-      <strong ng-show="seminar.link"><a target="_blank" href="{{seminar.link}}">Learn more</a> </strong>
-    </p>
-    <h5>{{seminar.location}}</h5>
+
+  <div ng-hide="seminars.loaded">
+    loading data...
   </div>
-  
-  <div class="noEvents" ng-show="seminars.seminars.length == 0">
-      <div class="eventBusy"><ng-md-icon  icon="event_busy" size="50px"></ng-md-icon> </div>
-    <p>There are no upcoming seminars</p>
-    
+
+  <div ng-show="seminars.loaded">
+    <div class="textBox" ng-repeat="seminar in seminars.seminars">
+      <h2>{{seminar.name}}</h2>
+      <h5>{{seminar.date}}</h5>
+
+      <p>{{seminar.description}}
+        <strong ng-show="seminar.link"><a target="_blank" href="{{seminar.link}}">Learn more</a> </strong>
+      </p>
+      <h5>{{seminar.location}}</h5>
+    </div>
+
+    <div class="noEvents" ng-show="seminars.seminars == null || seminars.seminars.length == 0">
+      <div class="eventBusy">
+        <ng-md-icon icon="event_busy" size="50px"></ng-md-icon>
+      </div>
+      <p>There are no upcoming seminars</p>
+
+    </div>
   </div>
 </div>
