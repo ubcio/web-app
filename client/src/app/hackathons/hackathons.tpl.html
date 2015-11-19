@@ -3,8 +3,9 @@
     <h2>{{hackathon.name}}</h2>
     <h5>{{hackathon.date}}</h5>
     
-    <p>{{hackathon.description}}</p>
-    <br>
+    <p>{{hackathon.description}}
+      <strong ng-show="hackathon.link"><a target="_blank" href="{{hackathon.link}}">Learn more</a> </strong>
+    </p>
     <h5>{{hackathon.location}}</h5>
   </div>
 </div>

@@ -3,8 +3,9 @@
     <h2>{{careerFair.name}}</h2>
     <h5>{{careerFair.date}}</h5>
     
-    <p>{{careerFair.description}}</p>
-    <br>
+    <p>{{careerFair.description}}
+    <strong ng-show="careerFair.link"><a target="_blank" href="{{careerFair.link}}">Learn more</a> </strong>
+    </p>
     <h5>{{careerFair.location}}</h5>
   </div>
 </div>

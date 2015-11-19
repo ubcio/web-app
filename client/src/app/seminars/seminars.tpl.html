@@ -3,8 +3,9 @@
     <h2>{{seminar.name}}</h2>
     <h5>{{seminar.date}}</h5>
     
-    <p>{{seminar.description}}</p>
-    <br>
+    <p>{{seminar.description}}
+      <strong ng-show="seminar.link"><a target="_blank" href="{{seminar.link}}">Learn more</a> </strong>
+    </p>
     <h5>{{seminar.location}}</h5>
   </div>
 </div>
