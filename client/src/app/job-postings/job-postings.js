@@ -24,8 +24,16 @@
    */
   function JobPostingsCtrl(JobPostingsService) {
     var jobPostings = this;
+
+    jobPostings.tableFilter = function(type , order){
+      jobPostings.sortType = type;
+      jobPostings.sortReverse = order;
+    };
+
     var init = function() {
       jobPostings.jobPostings = JobPostingsService.getJobPostings();
+      jobPostings.sortType = "deadline";
+      jobPostings.sortReverse = false;
     }();
   }
 

@@ -1,12 +1,28 @@
 {
   "jobPostings": [
     {
-      "position": "UX Designer",
-      "description": "Lots of design, lots of beauty",
-      "datePosted": "2015-03-10",
-      "deadline": "2015-03-23",
-      "location": "vancouver",
-      "link": "www.google.com"
+      "title": "UX Designer for Web App",
+      "company": "CuteApp",
+      "location": "Vancouver, BC, Canada",
+      "deadline": "2015-12-02",
+      "term": "2016 January - August",
+      "link": "https://www.google.com"
+    },
+    {
+      "title": "Software Engineer on Android",
+      "company": "Bnoopers",
+      "location": "Calgary, Alberta, Canada",
+      "deadline": "2015-12-08",
+      "term": "2016 September - 2017 April",
+      "link": "https://www.facebook.com"
+    },
+    {
+      "title": "Kernel Development with C",
+      "company": "Low Core",
+      "location": "San Fransisco, CA, USA",
+      "deadline": "2015-011-28",
+      "term": "2016 January - August",
+      "link": "https://www.yahoo.com"
     }
   ]
 }

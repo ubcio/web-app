@@ -1,5 +1,41 @@
-<div>
-  <div ng-repeat="jobPosting in jobPostings.jobPostings">
-    {{jobPosting}}
-  </div>
+<div class="jobPostings">
+  <table class="pure-table pure-table-bordered">
+    <thead>
+    <tr>
+      <th>
+        Title
+      </th>
+      <th>
+        <a ng-click="jobPostings.tableFilter('company' , !jobPostings.sortReverse)">Company</a>
+      </th>
+      <th>
+        <a ng-click="jobPostings.tableFilter('location' , !jobPostings.sortReverse)">Location</a>
+      </th>
+      <th>
+        Term
+      </th>
+      <th>
+        <a ng-click="jobPostings.tableFilter('deadline' , !jobPostings.sortReverse)">Deadline</a>
+      </th>
+    </tr>
+    </thead>
+    <tr ng-repeat="jobPosting in jobPostings.jobPostings | orderBy:jobPostings.sortType:jobPostings.sortReverse">
+      <td>
+        <a target="_blank" href="{{jobPosting.link}}"> {{jobPosting.title}} </a>
+      </td>
+      <td>
+        {{jobPosting.company}}
+      </td>
+      <td>
+        {{jobPosting.location}}
+      </td>
+      <td>
+        {{jobPosting.term}}
+      </td>
+      <td>
+        {{jobPosting.deadline}}
+      </td>
+    </tr>
+  </table>
+
 </div>
