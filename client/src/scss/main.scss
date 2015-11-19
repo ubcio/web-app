@@ -161,7 +161,8 @@ input {
 }
 
 .pure-menu-link:focus {
-  background-color: $ubcBlue;
+  background-color: inherit;
+  outline: 0;
   color: $ubcLightGrey;
 }
 
@@ -386,7 +387,7 @@ input {
       width: 100%;
       border: 5px solid $ubcLightBlue;
       display: inline-table;
-      
+
     }
     .leftColumn {
       width: 50%;
