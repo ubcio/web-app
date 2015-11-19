@@ -529,6 +529,15 @@ input {
   }
 }
 
+//----------------------------------
+//Resumes and Cover Letters
 
+.resumeCoverletter{
+  max-width: $base-width;
+  margin: auto;
+  .textBox{
+      margin-top: 10px;
+  }
+}
 
 
