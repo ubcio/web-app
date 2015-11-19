@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  function coursesService(FirebaseUrl , $firebaseArray) {
+  function coursesService(FirebaseUrl) {
     var ref = new Firebase(FirebaseUrl + "courses");
 
     return {

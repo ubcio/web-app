@@ -22,11 +22,21 @@
    * @name  ProfessorsCtrl
    * @description Controller
    */
-  function ProfessorsCtrl(ProfessorsService) {
+  function ProfessorsCtrl(ProfessorsService , $scope) {
     var professors = this;
+
+    var postInit = function(professorsData) {
+      professors.professors = professorsData;
+      professors.loaded = true;
+      professors.inputText = "enter a professor's name...";
+      $scope.$digest();
+    };
+
     var init = function(){
-      professors.profs = ProfessorsService.getProfessors();
+      ProfessorsService.getProfessors(postInit);
       professors.selectedProf = undefined;
+      professors.loaded = false;
+      professors.inputText = "loading data...";
       professors.orderByDate = function(index) {
         var stringDate = professors.selectedProf.reviews[index].createDate;
         return new Date(stringDate);

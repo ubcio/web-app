@@ -1,8 +1,8 @@
 <div class="professors">
   <div class="pure-form">
-    <input type="text" placeholder="enter a professor's name..."
+    <input type="text" placeholder="{{professors.inputText}}" ng-disabled="!professors.loaded"
            ng-model="professors.selectedProf"
-           typeahead="prof as prof.name for prof in professors.profs | filter:{name:$viewValue} | limitTo:8">
+           typeahead="prof as prof.name for prof in professors.professors | filter:{name:$viewValue} | limitTo:8">
   </div>
   <div class="textBox" ng-show="professors.selectedProf.name">
     <br>
