@@ -1,12 +1,14 @@
 (function () {
   'use strict';
 
-  function jobPostingsService(FirebaseUrl , $firebaseArray) {
+  function jobPostingsService(FirebaseUrl) {
     var ref = new Firebase(FirebaseUrl + "jobPostings");
 
     return {
-      getJobPostings: function () {
-        return $firebaseArray(ref.child("jobPostings"));
+      getJobPostings: function (callback) {
+        ref.child("jobPostings").once("value" , function(snapshot) {
+          callback(snapshot.val());
+        });
       }
     };
   }

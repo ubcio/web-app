@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   /**
@@ -22,18 +22,24 @@
    * @name  JobPostingsCtrl
    * @description Controller
    */
-  function JobPostingsCtrl(JobPostingsService) {
+  function JobPostingsCtrl(JobPostingsService, $scope) {
     var jobPostings = this;
 
-    jobPostings.tableFilter = function(type , order){
-      jobPostings.sortType = type;
-      jobPostings.sortReverse = order;
+    var postInit = function (jobPostingsData) {
+      jobPostings.jobPostings = jobPostingsData;
+      jobPostings.loaded = true;
+      $scope.$digest();
     };
 
-    var init = function() {
-      jobPostings.jobPostings = JobPostingsService.getJobPostings();
+    var init = function () {
+      JobPostingsService.getJobPostings(postInit);
       jobPostings.sortType = "deadline";
       jobPostings.sortReverse = false;
+
+      jobPostings.tableFilter = function (type, reverse) {
+        jobPostings.sortType = type;
+        jobPostings.sortReverse = reverse;
+      };
     }();
   }
 
