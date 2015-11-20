@@ -538,11 +538,12 @@ input {
 //----------------------------------
 // Job Postings
 .jobPostings {
-
+  max-width: $base-width;
+  text-align: center;
+  margin: auto;
   table {
     max-width: $base-width;
     background-color: $ubcWhite;
-    text-align: center;
     margin: auto;
     margin-top: 10px;
   }

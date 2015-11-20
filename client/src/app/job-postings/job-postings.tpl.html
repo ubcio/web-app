@@ -1,6 +1,6 @@
 <div class="jobPostings">
   <div ng-show="jobPostings.loaded">
-    <table class="pure-table pure-table-bordered">
+    <table class="pure-table pure-table-bordered" ng-hide="jobPostings.jobPostings == null || jobPostings.jobPostings.length == 0">
       <thead>
       <tr>
         <th class="notSort">
@@ -78,5 +78,11 @@
         </td>
       </tr>
     </table>
+     <div class="noEvents" ng-show="jobPostings.jobPostings == null || jobPostings.jobPostings.length == 0">
+      <div class="eventBusy">
+        <ng-md-icon icon="work" size="50px"></ng-md-icon>
+      </div>
+      <p>There are no job postings</p>
+    </div>
   </div>
 </div>
