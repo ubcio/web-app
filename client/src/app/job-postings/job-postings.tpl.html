@@ -1,5 +1,6 @@
 <div class="jobPostings">
   <div ng-show="jobPostings.loaded">
+    <div class="container">
     <table class="pure-table pure-table-bordered" ng-hide="jobPostings.jobPostings == null || jobPostings.jobPostings.length == 0">
       <thead>
       <tr>
@@ -78,6 +79,7 @@
         </td>
       </tr>
     </table>
+  </div>
      <div class="noEvents" ng-show="jobPostings.jobPostings == null || jobPostings.jobPostings.length == 0">
       <div class="eventBusy">
         <ng-md-icon icon="work" size="50px"></ng-md-icon>
