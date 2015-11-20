@@ -350,6 +350,11 @@ input {
   .bottomFrame{
     margin-top: 30px;
   }
+  
+  @media only screen and (max-width: 1020px) {
+    overflow: auto;
+    
+  }
 
 }
 
