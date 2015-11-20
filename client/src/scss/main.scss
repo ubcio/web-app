@@ -350,10 +350,10 @@ input {
   .bottomFrame{
     margin-top: 30px;
   }
-  
+
   @media only screen and (max-width: 1020px) {
     overflow: auto;
-    
+
   }
 
 }
@@ -550,24 +550,25 @@ input {
   .notSort {
     padding-bottom: 12px;
   }
-  
+
   .sort {
      display: inline-block;
     a {
-     color:$ubcBlack; 
+     color:$ubcBlack;
       float: left;
     }
   }
-  
+
   .arrows {
     display: inline-block;
     float: right;
   }
-  
+
   .arrow {
     margin-bottom: -20px;
+    min-height: 30px;
   }
-  
+
 }
 //----------------------------------
 // Resumes and Cover Letters

@@ -11,10 +11,10 @@
             href="#job-postings">Company
             <div class="arrows">
               <div class="arrow">
-                <ng-md-icon icon="keyboard_arrow_up"></ng-md-icon>
+                <ng-md-icon icon="keyboard_arrow_up" ng-show="jobPostings.sortType != 'company' || jobPostings.sortReverse"></ng-md-icon>
               </div>
               <div class="arrow">
-                <ng-md-icon icon="keyboard_arrow_down"></ng-md-icon>
+                <ng-md-icon icon="keyboard_arrow_down" ng-show="jobPostings.sortType != 'company' || !jobPostings.sortReverse"></ng-md-icon>
               </div>
 
             </div>
@@ -28,10 +28,10 @@
             href="#job-postings">Location
             <div class="arrows">
               <div class="arrow">
-                <ng-md-icon icon="keyboard_arrow_up"></ng-md-icon>
+                <ng-md-icon icon="keyboard_arrow_up" ng-show="jobPostings.sortType != 'location' || jobPostings.sortReverse"></ng-md-icon>
               </div>
               <div class="arrow">
-                <ng-md-icon icon="keyboard_arrow_down"></ng-md-icon>
+                <ng-md-icon icon="keyboard_arrow_down" ng-show="jobPostings.sortType != 'location'  || !jobPostings.sortReverse"></ng-md-icon>
               </div>
 
             </div>
@@ -47,10 +47,10 @@
             href="#job-postings">Deadline
             <div class="arrows">
               <div class="arrow">
-                <ng-md-icon icon="keyboard_arrow_up"></ng-md-icon>
+                <ng-md-icon icon="keyboard_arrow_up" ng-show="jobPostings.sortType != 'deadline' || jobPostings.sortReverse"></ng-md-icon>
               </div>
               <div class="arrow">
-                <ng-md-icon icon="keyboard_arrow_down"></ng-md-icon>
+                <ng-md-icon icon="keyboard_arrow_down" ng-show="jobPostings.sortType != 'deadline' || !jobPostings.sortReverse"></ng-md-icon>
               </div>
 
             </div>
