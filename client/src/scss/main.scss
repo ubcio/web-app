@@ -173,11 +173,14 @@ input {
 
 @media only screen and (max-width: 500px) {
   .pure-menu {
-    ul {
-      width: 100% !important;
+    .headerIcon{
+      display: inline !important;
+     }
+    .headerText {
+       display: none;
     }
-    li {
-      display: block !important;
+    .about{
+      background-color: $ubcBlack;
     }
   }
 }
