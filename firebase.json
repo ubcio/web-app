@@ -1,0 +1,9 @@
+{
+  "firebase": "ubcio",
+  "public": "build/dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
