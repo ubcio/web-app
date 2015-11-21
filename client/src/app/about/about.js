@@ -22,9 +22,7 @@
    * @name  AboutCtrl
    * @description Controller
    */
-  function AboutCtrl() {
-    var about = this;
-  }
+  function AboutCtrl() {}
 
   angular.module('about', [])
     .config(config)

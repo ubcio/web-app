@@ -1,12 +1,14 @@
+/* global Firebase */
+
 (function() {
   'use strict';
 
   function degreeRequirementsService(FirebaseUrl , $firebaseArray) {
-    var ref = new Firebase(FirebaseUrl + "degreeRequirements");
+    var ref = new Firebase(FirebaseUrl + 'degreeRequirements');
 
     return {
       getDegrees: function() {
-        return $firebaseArray(ref.child("degrees"));
+        return $firebaseArray(ref.child('degrees'));
       }
     };
   }

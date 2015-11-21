@@ -29,19 +29,21 @@
       tutors.courses = tutorsData.courses;
       tutors.tutors = tutorsData.tutors;
       tutors.loaded = true;
-      tutors.inputText = "enter a course name...";
+      tutors.inputText = 'enter a course name...';
       $scope.$digest();
     };
 
     var init = function() {
       TutorsService.getTutors(postInit);
       tutors.loaded = false;
-      tutors.inputText = "loading data...";
+      tutors.inputText = 'loading data...';
       tutors.selectedCourse = undefined;
       tutors.orderByDate = function(review) {
         return new Date(review.createDate);
-      }
-    }();
+      };
+    };
+
+    init();
   }
 
   angular.module('tutors', [])

@@ -1,9 +1,7 @@
 (function() {
   'use strict';
 
-  function headerCtrl($log) {
-    var header = this; 
-  }
+  function headerCtrl() {}
 
   angular.module('common.header', [])
     .controller('HeaderCtrl', headerCtrl);

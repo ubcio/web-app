@@ -1,13 +1,15 @@
+/* global Firebase */
+
 (function () {
   'use strict';
 
   function seminarsService(FirebaseUrl) {
-    var ref = new Firebase(FirebaseUrl + "seminars");
+    var ref = new Firebase(FirebaseUrl + 'seminars');
 
 
     return {
       getSeminars: function(callback){
-        ref.child("seminars").once("value" , function(snapshot) {
+        ref.child('seminars').once('value' , function(snapshot) {
           callback(snapshot.val());
         });
       }

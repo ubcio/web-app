@@ -33,14 +33,16 @@
 
     var init = function () {
       JobPostingsService.getJobPostings(postInit);
-      jobPostings.sortType = "deadline";
+      jobPostings.sortType = 'deadline';
       jobPostings.sortReverse = false;
 
       jobPostings.tableFilter = function (type, reverse) {
         jobPostings.sortType = type;
         jobPostings.sortReverse = reverse;
       };
-    }();
+    };
+
+    init();
   }
 
   angular.module('job-postings', [])

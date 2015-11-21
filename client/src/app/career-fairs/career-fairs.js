@@ -34,7 +34,9 @@
     var init = function () {
       CareerFairsService.getCareerFairs(postInit);
       careerFairs.loaded = false;
-    }();
+    };
+
+    init();
   }
 
   angular.module('career-fairs', [])

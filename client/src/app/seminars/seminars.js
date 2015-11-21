@@ -34,7 +34,9 @@
     var init = function() {
       SeminarsService.getSeminars(postInit);
       seminars.loaded = false;
-    }();
+    };
+
+    init();
   }
 
   angular.module('seminars', [])

@@ -27,21 +27,22 @@
 
     var initPost = function(companiesData) {
       companies.companies = companiesData;
-      companies.inputText = "enter a company name...";
+      companies.inputText = 'enter a company name...';
       companies.loaded = true;
       $scope.$digest();
-
-    }
+    };
 
     var init = function() {
       CompaniesService.getCompanies(initPost);
-      companies.inputText = "loading data...";
+      companies.inputText = 'loading data...';
       companies.loaded = false;
       companies.selectedCompany = undefined;
       companies.orderByDate = function(review) {
         return new Date(review.createDate);
-      }
-    }();
+      };
+    };
+
+    init();
   }
 
   angular.module('companies', [])

@@ -1,12 +1,14 @@
+/* global Firebase */
+
 (function () {
   'use strict';
 
   function companiesService(FirebaseUrl) {
-    var ref = new Firebase(FirebaseUrl + "companies");
+    var ref = new Firebase(FirebaseUrl + 'companies');
 
     return {
       getCompanies: function (callback) {
-        ref.child("companies").once("value" , function(snapshot) {
+        ref.child('companies').once('value' , function(snapshot) {
           callback(snapshot.val());
         });
       }

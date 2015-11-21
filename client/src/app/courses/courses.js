@@ -26,7 +26,7 @@
     var courses = this;
 
     var postInit = function (coursesData) {
-      courses.inputText = "enter a course name...";
+      courses.inputText = 'enter a course name...';
       courses.courses = coursesData;
       courses.loaded = true;
       $scope.$digest();
@@ -35,12 +35,14 @@
     var init = function () {
       CoursesService.getCourses(postInit);
       courses.loaded = false;
-      courses.inputText = "loading data...";
+      courses.inputText = 'loading data...';
       courses.selectedCourse = undefined;
       courses.orderByDate = function (tip) {
         return new Date(tip.createDate);
-      }
-    }();
+      };
+    };
+
+    init();
   }
 
   angular.module('courses', [])

@@ -1,12 +1,14 @@
+/* global Firebase */
+
 (function () {
   'use strict';
 
   function hackathonsService(FirebaseUrl) {
-    var ref = new Firebase(FirebaseUrl + "hackathons");
+    var ref = new Firebase(FirebaseUrl + 'hackathons');
 
     return {
       getHackathons: function (callback) {
-        ref.child("hackathons").once("value" , function(snapshot) {
+        ref.child('hackathons').once('value' , function(snapshot) {
           callback(snapshot.val());
         });
       }

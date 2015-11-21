@@ -22,9 +22,7 @@
    * @name  TrainingForInterviewsCtrl
    * @description Controller
    */
-  function TrainingForInterviewsCtrl() {
-    var trainingForInterviews = this;
-  }
+  function TrainingForInterviewsCtrl() { }
 
   angular.module('training-for-interviews', [])
     .config(config)

@@ -32,9 +32,11 @@
     };
 
     var init = function () {
-       HackathonsService.getHackathons(postInit);
+      HackathonsService.getHackathons(postInit);
       hackathons.loaded = false;
-    }();
+    };
+
+    init();
   }
 
   angular.module('hackathons', [])

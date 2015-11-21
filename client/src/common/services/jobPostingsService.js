@@ -1,12 +1,14 @@
+/* global Firebase */
+
 (function () {
   'use strict';
 
   function jobPostingsService(FirebaseUrl) {
-    var ref = new Firebase(FirebaseUrl + "jobPostings");
+    var ref = new Firebase(FirebaseUrl + 'jobPostings');
 
     return {
       getJobPostings: function (callback) {
-        ref.child("jobPostings").once("value" , function(snapshot) {
+        ref.child('jobPostings').once('value' , function(snapshot) {
           callback(snapshot.val());
         });
       }

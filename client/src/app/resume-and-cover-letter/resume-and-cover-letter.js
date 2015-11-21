@@ -22,9 +22,7 @@
    * @name  ResumeAndCoverLetterCtrl
    * @description Controller
    */
-  function ResumeAndCoverLetterCtrl() {
-    var resumeAndCoverLetter = this;
-  }
+  function ResumeAndCoverLetterCtrl() { }
 
   angular.module('resume-and-cover-letter', [])
     .config(config)

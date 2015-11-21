@@ -28,7 +28,7 @@
     var postInit = function(professorsData) {
       professors.professors = professorsData;
       professors.loaded = true;
-      professors.inputText = "enter a professor's name...";
+      professors.inputText = 'enter a professor\'s name...';
       $scope.$digest();
     };
 
@@ -36,12 +36,14 @@
       ProfessorsService.getProfessors(postInit);
       professors.selectedProf = undefined;
       professors.loaded = false;
-      professors.inputText = "loading data...";
+      professors.inputText = 'loading data...';
       professors.orderByDate = function(index) {
         var stringDate = professors.selectedProf.reviews[index].createDate;
         return new Date(stringDate);
       };
-    }();
+    };
+
+    init();
   }
 
   angular.module('professors', [])
