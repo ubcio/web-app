@@ -10,7 +10,6 @@ body {
   background-color: $ubcLightBlue;
 }
 .textBox {
-
   padding: 5px 30px 5px 30px;
   background-color: $ubcWhite;
 }
@@ -56,14 +55,20 @@ input {
    border-radius: 5px;
     margin-bottom: 5px;
    .reviewDate {
-    float: right;
+      float: right;
      display: block;
-     margin-bottom: 5px;
+     margin-bottom: 30px;
+     margin-left: 30px;
     }
-   p {
+   
+   .review {
+     text-align: left;
      display: block;
+     margin: auto;
+     width:85%;
    }
   }
+
 .reviewToggle{
   background-color: $ubcBlack!important;
   color: $ubcLightGrey !important;
@@ -84,12 +89,16 @@ input {
    border-radius: 5px;
     margin-bottom: 5px;
    .reviewDate {
-    float: right;
+      float: right;
      display: block;
-     margin-bottom: 5px;
+     margin-bottom: 30px;
+     margin-left: 30px;
     }
-   p {
+   .tip {
+     text-align: left;
      display: block;
+     margin: auto;
+     width:85%;
    }
   }
 
@@ -365,7 +374,7 @@ input {
 // Tutors
 .tutors {
   text-align: center;
-
+  
 
   .active {
     background-color: $ubcBlue;
@@ -389,7 +398,7 @@ input {
   }
 
   @media only screen and (min-width: 769px) {
-  max-width: $base-width;
+    max-width: $base-width;
     margin: auto;
     .tutorBox {
       @include border-box();
@@ -413,6 +422,7 @@ input {
     max-width: 700px;
     margin: auto;
   }
+  
 }
 
 // -------------------------------

@@ -22,7 +22,10 @@
       <div class="reviewDate">
             <strong>{{review.createDate | date: format:'fullDate'}}</strong>
           </div>
-      <p>{{review.review}}</p>
+      <div class="review">
+        <p>{{review.review}}</p>
+      </div>
+      
     </div>
   </div>
 
@@ -46,9 +49,9 @@
           <div class="reviewDate">
             <strong>{{review.createDate | date: format:'fullDate'}}</strong>
           </div>
-
+          <div class="review">
          <p>{{review.review}}</p>
-
+          </div>
         </div>
       </div>
     </div>
@@ -71,7 +74,9 @@
           <div class="reviewDate">
             <strong>{{review.createDate | date: format:'fullDate'}}</strong>
           </div>
+          <div class="review">
           <p>{{review.review}}</p>
+          </div>
          </div>
       </div>
     </div>
