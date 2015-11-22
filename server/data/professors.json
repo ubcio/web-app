@@ -17,6 +17,24 @@
           0
         ]
       }
+    },
+    {
+      "name": "Mike Feeley",
+      "reviews": [
+        {
+          "review": "When I took this course with Mike I had some concerns about parts of the course and so I emailed him and let him know. Later he responded telling me that he would like to meet up and talk about it...I was worried he would be angry. Instead, he listened to me through all my complaints and either told me he didn't agree or he would work on fixing it. It was extremely nice having a professor who actually cared about the students opinions on the course. In class, he always would make sure everyone understands a concept before moving on, which I thought was awesome, if you were confused he would just explain it to you until it made sense. I would highly recommend for anyone to take a class with Mike ",
+          "createDate": "2015-11-22",
+          "course": "CPSC 213"
+        }
+      ],
+      "courses": {
+        "All": [
+          0
+        ],
+        "CPSC 213": [
+          0
+        ]
+      }
     }
   ]
 }
