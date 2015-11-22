@@ -2,7 +2,7 @@
   <div class="pure-form">
     <input type="text" placeholder="{{professors.inputText}}" ng-disabled="!professors.loaded"
            ng-model="professors.selectedProf"
-           typeahead="prof as prof.name for prof in professors.professors | filter:{name:$viewValue} | limitTo:8">
+           typeahead="prof as prof.name for prof in professors.professors | filter:{name:$viewValue} | orderBy:'name' | limitTo:8">
   </div>
   <div class="textBox" ng-if="professors.selectedProf.name">
     <br>
@@ -21,9 +21,9 @@
         <br>
         <span ng-show="professors.selectedProf.reviewFilter == 'All'"> {{professors.selectedProf.reviews[reviewIndex].course}} </span>
       </div>
-      
+
       <div class="review"><p>{{professors.selectedProf.reviews[reviewIndex].review}}</p></div>
-            
+
 
     </div>
 

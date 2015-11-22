@@ -2,7 +2,7 @@
   <div class="pure-form">
     <input type="text" placeholder="{{companies.inputText}}" ng-disabled="!companies.loaded"
            ng-model="companies.selectedCompany"
-           typeahead="company as company.name for company in companies.companies | filter:{name:$viewValue} | limitTo:8">
+           typeahead="company as company.name for company in companies.companies | filter:{name:$viewValue} | orderBy:'name' | limitTo:8">
   </div>
   <div class="textBox" ng-show="companies.selectedCompany.name">
     <h3>{{companies.selectedCompany.name}}</h3>

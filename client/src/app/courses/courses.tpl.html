@@ -2,7 +2,7 @@
   <div class="pure-form">
     <input type="text" placeholder="{{courses.inputText}}" ng-disabled="!courses.loaded"
            ng-model="courses.selectedCourse"
-           typeahead="course as course.name for course in courses.courses | filter:{name:$viewValue} | limitTo:20">
+           typeahead="course as course.name for course in courses.courses | filter:{name:$viewValue} | orderBy:'name' | limitTo:20">
   </div>
   <div class="textBox" ng-show="courses.selectedCourse.name">
     <p>
@@ -38,7 +38,7 @@
         <div class="tip">
           <p>{{tip.tip}}</p>
         </div>
-        
+
 
       </div>
     </div>

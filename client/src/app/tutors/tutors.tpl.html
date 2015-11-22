@@ -2,7 +2,7 @@
   <div class="pure-form">
     <input type="text" placeholder="{{tutors.inputText}}" ng-disabled="!tutors.loaded"
            ng-model="tutors.selectedCourse"
-           typeahead="course as course.name for course in tutors.courses | filter:{name:$viewValue} | limitTo:8">
+           typeahead="course as course.name for course in tutors.courses | filter:{name:$viewValue} | orderBy:'name' | limitTo:8">
   </div>
   <!-- In case there is just one tutor center it-->
   <div class="textBox tutorBox oneTutor" ng-show="tutors.selectedCourse.tutors.length == 1">
@@ -25,7 +25,7 @@
       <div class="review">
         <p>{{review.review}}</p>
       </div>
-      
+
     </div>
   </div>
 
