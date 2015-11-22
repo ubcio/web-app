@@ -14,6 +14,7 @@
   font-size: $base-root-size;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   background-color: $ubcBlack;
+  max-width: 80%;
 
   // Aligns the dropdown menu to right
   //
@@ -31,6 +32,8 @@
     font-weight: normal;
     color: $ubcLightGrey;
     white-space: nowrap; // prevent links from randomly breaking onto new lines
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
