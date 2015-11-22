@@ -2,15 +2,15 @@
   <div class="pure-form">
     <input type="text" placeholder="{{degreeRequirements.inputText}}" ng-disabled="!degreeRequirements.loaded"
            ng-model="degreeRequirements.selected"
-           typeahead="degree as degree.name for degree in degreeRequirements.degrees | filter:{name:$viewValue} | limitTo:8 | orderBy:'name'">
+           typeahead="degree as degree.name for degree in degreeRequirements.degrees | filter:{name:$viewValue} | orderBy:'name' | limitTo:8 ">
   </div>
 
-  <div ng-show="degreeRequirements.selected.websites">
-    <span ng-repeat="requirement in degreeRequirements.selected.websites">
+  <div class="degreeButton" ng-show="degreeRequirements.selected.websites">
+    <button class= "pure-button" ng-repeat="requirement in degreeRequirements.selected.websites">
           <a target="_blank" ng-href="{{requirement.website}}">
             {{requirement.buttonName}}
           </a>
-    </span>
+    </button>
   </div>
 
   <div class="messageBox" ng-hide="degreeRequirements.selected">

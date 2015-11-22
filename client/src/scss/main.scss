@@ -323,51 +323,21 @@ input {
 // Degree Requirements
 .degreeRequirements {
   text-align: center;
+ 
 
   .active {
     background-color: $ubcBlue;
   }
 
-   .requirementBox{
-    width: 1000px;
-    margin: auto;
-     margin-top: 10px;
-  }
-
-  .centerFrame {
-    width: 100%;
-    overflow: auto;
-    overflow-x: hidden;
-  }
-
-  .specificFrame {
-    height: 600px; // height we want iframe to scroll to, keep it around this
-  }
-
-  .generalFrame {
-    height: 450px;
-  }
-
-
-
-  .stripe {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width:100%;
-    background-color: $ubcBlack;
-    color: $ubcLightGrey;
-    margin: auto;
-  }
-
-
-  .bottomFrame{
-    margin-top: 30px;
-  }
-
-  @media only screen and (max-width: 1020px) {
-    overflow: auto;
-
+  .degreeButton {
+    button{
+      background-color: $ubcBlack;
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+    a {
+      color : $ubcLightGrey;
+    }
   }
 
 }
