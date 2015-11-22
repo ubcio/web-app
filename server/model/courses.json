@@ -1,0 +1,25 @@
+{
+  "courses": [
+    {
+      "name": "CNPS 362 Basic Interviewing Skills",
+      "description": "Development of basic interviewing skills for counselling and guidance.",
+      "credits": "3",
+      "prerequisites": null,
+      "corequisites": null,
+      "tips": [
+        {
+          "tip": "DO the HW or suffer",
+          "createDate": "2015-03-12"
+        },
+        {
+          "tip": "Dont buy the textbook, useless...",
+          "createDate": "2013-03-12"
+        },
+        {
+          "tip": "The textbook was essential",
+          "createDate": "2015-03-12"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "companies": [
+    {
+      "name": "Ericsson",
+      "reviews": [
+        {
+          "review": "Arie write a review here",
+          "createDate": "2015-11-17"
+        }
+      ]
+    },
+    {
+      "name": "SMART Technologies",
+      "reviews": [
+        {
+          "review": "B write a review here!",
+          "createDate": "2015-11-17"
+        }
+      ]
+    }
+  ]
+}

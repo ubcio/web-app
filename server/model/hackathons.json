@@ -1,0 +1,18 @@
+{
+  "hackathons": [
+    {
+      "date": "Thursday November 19, 12:30pm – 2pm",
+      "description": "Let's hack a house! Together!",
+      "link": "http://yahoo.ca",
+      "location": "Irving Library",
+      "name": "hack-a-house"
+    },
+    {
+      "date": "Febuary 16th from 8 - 9am",
+      "description": "this is a very important seminar that you have to attend for sure!",
+      "location": "CS room X309",
+      "name": "the other hackathon"
+    }
+  ]
+}
+

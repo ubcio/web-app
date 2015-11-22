@@ -1,0 +1,18 @@
+{
+  "careerFairs": [
+    {
+      "date": "Febuary 20th from 12 - 4pm",
+      "description": "Come work for us! We pay less and work you harder!",
+      "link": "http://google.ca",
+      "location": "CS 139",
+      "name": "make-a-job"
+    },
+    {
+      "date": "April 8th from 8am - 4pm",
+      "description": "Do you like flowers?",
+      "link": "http://fb.com",
+      "location": "Forestry",
+      "name": "the other career fair"
+    }
+  ]
+}
