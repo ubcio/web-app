@@ -1,19 +1,6 @@
 {
   "degrees": [
     {
-      "name": "Computer Science First Year Requirements",
-      "websites": [
-        {
-          "buttonName": "General Requirements",
-          "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,408#18663"
-        },
-        {
-          "buttonName": "Major Requirements",
-          "website": "http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#5297"
-        }
-      ]
-    },
-    {
       "name": "Computer Science Major",
       "websites": [
         {

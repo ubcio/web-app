@@ -1,26 +1,20 @@
 <div class="degreeRequirements">
   <div class="pure-form">
-    <input type="text" placeholder="enter your CS degree name..."
+    <input type="text" placeholder="{{degreeRequirements.inputText}}" ng-disabled="!degreeRequirements.loaded"
            ng-model="degreeRequirements.selected"
-           typeahead="degree as degree.name for degree in degreeRequirements.degrees | filter:{name:$viewValue} | limitTo:8">
-  </div >
-  <div class="requirementBox">
-  <h4 class="stripe">Degree Requirements</h4>
-
-  <iframe class="centerFrame specificFrame"
-          frameborder="0"
-          ng-src="{{degreeRequirements.selected.website}}"></iframe>  
-
-    
-  </div>
-  <div class="requirementBox bottomFrame">
-  <h4 class="stripe ">General Requirements</h4>
-
-    <iframe class="centerFrame generalFrame"
-            frameborder="0" 
-            src="http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,408#18663"></iframe>
-    
-    
-    </div>
+           typeahead="degree as degree.name for degree in degreeRequirements.degrees | filter:{name:$viewValue} | limitTo:8 | orderBy:'name'">
   </div>
 
+  <div ng-show="degreeRequirements.selected.websites">
+    <span ng-repeat="requirement in degreeRequirements.selected.websites">
+          <a target="_blank" ng-href="{{requirement.website}}">
+            {{requirement.buttonName}}
+          </a>
+    </span>
+  </div>
+
+  <div class="messageBox" ng-hide="degreeRequirements.selected">
+    We thought it would be nice if all your requirements for graduation were laid out in front of you in the easiest way
+    possible. Enjoy :) Oh and if you like features like this then join the ubc.io community - we'd love to have you!
+  </div>
+</div>

@@ -22,17 +22,20 @@
    * @name  DegreeRequirementsCtrl
    * @description Controller
    */
-  function DegreeRequirementsCtrl(DegreeRequirementsService) {
+  function DegreeRequirementsCtrl(DegreeRequirementsService , $scope) {
     var degreeRequirements = this;
 
-    var init = function () {
-      degreeRequirements.degrees = DegreeRequirementsService.getDegrees();
+    var postInit = function(degreeData) {
+      degreeRequirements.degrees = degreeData;
+      degreeRequirements.loaded = true;
+      degreeRequirements.inputText = 'enter your degree name...';
+      $scope.$digest();
+    };
 
-      // Default page is first year reqs for CS
-      degreeRequirements.selected = {
-        'name': '',
-        'website': 'http://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421#5297'
-      };
+    var init = function () {
+      DegreeRequirementsService.getDegrees(postInit);
+      degreeRequirements.loaded = false;
+      degreeRequirements.inputText = 'loading data...';
     };
 
     init();
