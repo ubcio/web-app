@@ -338,6 +338,9 @@ input {
     a {
       color : $ubcLightGrey;
     }
+    button:hover{
+      background-color: $ubcGrey;
+    }
   }
 
 }
