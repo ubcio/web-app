@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   /**
@@ -22,23 +22,25 @@
    * @name  TutorsCtrl
    * @description Controller
    */
-  function TutorsCtrl(TutorsService , $scope) {
+  function TutorsCtrl(TutorsService, $scope) {
     var tutors = this;
 
-    var postInit = function(tutorsData) {
-      tutors.courses = tutorsData.courses;
-      tutors.tutors = tutorsData.tutors;
+    var postInit = function (tutorsData) {
+      if (tutorsData !== null) {
+        tutors.courses = tutorsData.courses;
+        tutors.tutors = tutorsData.tutors;
+      }
       tutors.loaded = true;
       tutors.inputText = 'enter a course name...';
       $scope.$digest();
     };
 
-    var init = function() {
+    var init = function () {
       TutorsService.getTutors(postInit);
       tutors.loaded = false;
       tutors.inputText = 'loading data...';
       tutors.selectedCourse = undefined;
-      tutors.orderByDate = function(review) {
+      tutors.orderByDate = function (review) {
         return new Date(review.createDate);
       };
     };
