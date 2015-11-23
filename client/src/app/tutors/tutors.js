@@ -32,7 +32,7 @@
       }
       tutors.loaded = true;
       tutors.inputText = 'enter a course name...';
-      $scope.$digest();
+      $scope.$applyAsync();
     };
 
     var init = function () {

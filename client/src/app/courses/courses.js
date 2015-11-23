@@ -29,7 +29,7 @@
       courses.inputText = 'enter a course name...';
       courses.courses = coursesData;
       courses.loaded = true;
-      $scope.$digest();
+      $scope.$applyAsync();
     };
 
     var init = function () {

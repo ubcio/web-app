@@ -29,7 +29,7 @@
       professors.professors = professorsData;
       professors.loaded = true;
       professors.inputText = 'enter a professor\'s name...';
-      $scope.$digest();
+      $scope.$applyAsync();
     };
 
     var init = function(){

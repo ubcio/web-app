@@ -28,7 +28,7 @@
     var postInit = function (careerFairsData) {
       careerFairs.careerFairs = careerFairsData;
       careerFairs.loaded = true;
-      $scope.$digest();
+      $scope.$applyAsync();
     };
 
     var init = function () {

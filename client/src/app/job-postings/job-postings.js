@@ -28,7 +28,7 @@
     var postInit = function (jobPostingsData) {
       jobPostings.jobPostings = jobPostingsData;
       jobPostings.loaded = true;
-      $scope.$digest();
+      $scope.$applyAsync();
     };
 
     var init = function () {

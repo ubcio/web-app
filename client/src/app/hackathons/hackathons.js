@@ -28,7 +28,7 @@
     var postInit = function(hackathonsData) {
       hackathons.hackathons = hackathonsData;
       hackathons.loaded = true;
-      $scope.$digest();
+      $scope.$applyAsync();
     };
 
     var init = function () {

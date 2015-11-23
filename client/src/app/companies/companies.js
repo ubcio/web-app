@@ -29,7 +29,7 @@
       companies.companies = companiesData;
       companies.inputText = 'enter a company name...';
       companies.loaded = true;
-      $scope.$digest();
+      $scope.$applyAsync();
     };
 
     var init = function() {

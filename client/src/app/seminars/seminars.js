@@ -28,7 +28,7 @@
     var postInit = function(seminarsData) {
       seminars.seminars = seminarsData;
       seminars.loaded = true;
-      $scope.$digest();
+      $scope.$applyAsync();
     };
 
     var init = function() {

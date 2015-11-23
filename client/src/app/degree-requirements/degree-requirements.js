@@ -29,7 +29,7 @@
       degreeRequirements.degrees = degreeData;
       degreeRequirements.loaded = true;
       degreeRequirements.inputText = 'enter your degree name...';
-      $scope.$digest();
+      $scope.$applyAsync();
     };
 
     var init = function () {
