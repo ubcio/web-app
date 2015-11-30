@@ -5,16 +5,16 @@
            typeahead="degree as degree.name for degree in degreeRequirements.degrees | filter:{name:$viewValue} | orderBy:'name' | limitTo:8 ">
   </div>
 
-  <div class="degreeButton" ng-show="degreeRequirements.selected.websites">
-    <button class= "pure-button" ng-repeat="requirement in degreeRequirements.selected.websites">
-          <a target="_blank" ng-href="{{requirement.website}}">
-            {{requirement.buttonName}}
-          </a>
-    </button>
+  <div class="linkBox">
+    <a ng-repeat="requirement in degreeRequirements.selected.websites" class="pure-button" target="_blank"
+       ng-href="{{requirement.website}}">
+      {{requirement.buttonName}}
+    </a>
   </div>
+</div>
 
-  <div class="messageBox" ng-hide="degreeRequirements.selected">
-    We thought it would be nice if all your requirements for graduation were laid out in front of you in the easiest way
-    possible. Enjoy :) Oh and if you like features like this then join the ubc.io community - we'd love to have you!
-  </div>
+<div class="messageBox" ng-hide="degreeRequirements.selected">
+  We thought it would be nice if all your requirements for graduation were laid out in front of you in the easiest way
+  possible. Enjoy :) Oh and if you like features like this then join the ubc.io community - we'd love to have you!
+</div>
 </div>

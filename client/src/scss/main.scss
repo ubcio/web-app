@@ -9,18 +9,20 @@ a:focus {
 body {
   background-color: $ubcLightBlue;
 }
+
 .textBox {
   padding: 5px 30px 5px 30px;
   background-color: $ubcWhite;
 }
 
 input {
-    text-align: center;
-    width: 500px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 17px;
-  }
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+
 @media only screen and (max-width: 600px) {
   input {
     width: 80%;
@@ -28,7 +30,7 @@ input {
 }
 
 .messageBox {
-  background-color:$ubcWhite;
+  background-color: $ubcWhite;
   padding: 30px 30px 30px 30px;
   border-radius: 10px;
   max-width: 900px;
@@ -38,98 +40,95 @@ input {
   font-family: 'Raleway';
 }
 
- .openQuote {
-   transform: rotateY(180deg);
-    display: inline-block;
+.openQuote {
+  transform: rotateY(180deg);
+  display: inline-block;
 
+}
+
+.closeQuote {
+  display: inline-block;
+}
+
+.reviews {
+  padding: 10px;
+  background-color: $ubcWhite;
+  border: 2px solid $ubcBlue;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  .reviewDate {
+    float: right;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 30px;
   }
 
-  .closeQuote {
-    display: inline-block;
+  .review {
+    text-align: left;
+    display: block;
+    margin: auto;
+    width: 85%;
   }
+}
 
- .reviews {
-    padding: 10px;
-    background-color: $ubcWhite;
-    border: 2px solid $ubcBlue;
-   border-radius: 5px;
-    margin-bottom: 5px;
-   .reviewDate {
-      float: right;
-     display: block;
-     margin-bottom: 30px;
-     margin-left: 30px;
-    }
-   
-   .review {
-     text-align: left;
-     display: block;
-     margin: auto;
-     width:85%;
-   }
-  }
-
-.reviewToggle{
-  background-color: $ubcBlack!important;
+.reviewToggle {
+  background-color: $ubcBlack !important;
   color: $ubcLightGrey !important;
   margin: 2px;
   margin-bottom: 20px;
 }
 
 .reviewButton {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: $ubcBlue;
-    color: $ubcWhite;
-  }
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: $ubcBlue;
+  color: $ubcWhite;
+}
+
 .tips {
-    padding: 10px;
-    background-color: $ubcWhite;
-    border: 2px solid $ubcGreen;
-   border-radius: 5px;
-    margin-bottom: 5px;
-   .reviewDate {
-      float: right;
-     display: block;
-     margin-bottom: 30px;
-     margin-left: 30px;
-    }
-   .tip {
-     text-align: left;
-     display: block;
-     margin: auto;
-     width:85%;
-   }
+  padding: 10px;
+  background-color: $ubcWhite;
+  border: 2px solid $ubcGreen;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  .reviewDate {
+    float: right;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 30px;
   }
+  .tip {
+    text-align: left;
+    display: block;
+    margin: auto;
+    width: 85%;
+  }
+}
 
 .tipButton {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: $ubcGreen;
-    color: $ubcWhite;
-  }
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: $ubcGreen;
+  color: $ubcWhite;
+}
 
 .noEvents {
   font-size: 40px;
   margin-top: 25%;
   color: $ubcGrey;
-  p{
+  p {
     display: inline-block;
   }
   .eventBusy {
     display: inline-block;
+  }
 }
-}
-
-
-
-
 
 // -------------------------------
 // Navbar Styling
 
-.header{
-   font-size: 20px;
+.header {
+  font-size: 20px;
 }
 
 .pure-menu {
@@ -184,23 +183,22 @@ input {
 
 @media only screen and (max-width: 470px) {
   .pure-menu {
-    .headerIcon{
+    .headerIcon {
       display: inline !important;
-     }
-    .headerText {
-       display: none;
     }
-    .about{
+    .headerText {
+      display: none;
+    }
+    .about {
       background-color: $ubcBlack;
     }
   }
 }
 
-
 // ---------------------------------
 // About Page
 
-.aboutPage{
+.aboutPage {
   .teamProfile {
 
     h2 {
@@ -303,7 +301,7 @@ input {
       p {
         width: 926px;
       }
-      h5{
+      h5 {
         margin-bottom: -6px;
       }
 
@@ -323,22 +321,21 @@ input {
 // Degree Requirements
 .degreeRequirements {
   text-align: center;
- 
 
   .active {
     background-color: $ubcBlue;
   }
 
-  .degreeButton {
-    button{
-      background-color: $ubcBlack;
+  .linkBox {
+    display: inline-block;
+
+    a {
       margin-top: 10px;
       margin-left: 5px;
+      background-color: $ubcBlack;
+      color: $ubcLightGrey;
     }
-    a {
-      color : $ubcLightGrey;
-    }
-    button:hover{
+    a:hover {
       background-color: $ubcGrey;
     }
   }
@@ -349,7 +346,6 @@ input {
 // Tutors
 .tutors {
   text-align: center;
-  
 
   .active {
     background-color: $ubcBlue;
@@ -361,7 +357,6 @@ input {
   h5 {
     margin: 0;
   }
-
 
   @media only screen and (min-width: 200px) and (max-width: 768px) {
     .tutorBox {
@@ -397,7 +392,7 @@ input {
     max-width: 700px;
     margin: auto;
   }
-  
+
 }
 
 // -------------------------------
@@ -406,20 +401,20 @@ input {
   text-align: center;
   margin: auto;
   max-width: $base-width;
-  .textBox{
-      margin-top: 10px;
+  .textBox {
+    margin-top: 10px;
   }
   .active {
     background-color: $ubcBlue;
   }
-  h3{
+  h3 {
     margin-bottom: 0;
   }
-  h5{
+  h5 {
     margin-bottom: 0;
     margin-top: 0;
   }
-  .requisits{
+  .requisits {
     margin-top: 10px;
   }
 }
@@ -430,31 +425,31 @@ input {
   text-align: center;
   margin: auto;
   max-width: $base-width;
-  .textBox{
-      margin-top: 10px;
+  .textBox {
+    margin-top: 10px;
   }
 
-   h2{
+  h2 {
     margin-bottom: 0;
   }
 
-  h5{
+  h5 {
     margin: 0;
   }
 }
-.active  {
+
+.active {
   background-color: $ubcBlue !important;
   color: $ubcWhite !important;
 }
 
-
 //--------------------------------
 // Training For Interviews
-.trainingForInterviews{
+.trainingForInterviews {
   max-width: $base-width;
   margin: auto;
-  .textBox{
-      margin-top: 10px;
+  .textBox {
+    margin-top: 10px;
   }
   .parTwo {
     margin-top: 20px;
@@ -467,8 +462,8 @@ input {
   text-align: center;
   margin: auto;
   max-width: $base-width;
-  .textBox{
-      margin-top: 10px;
+  .textBox {
+    margin-top: 10px;
   }
 }
 
@@ -478,18 +473,17 @@ input {
   text-align: center;
   max-width: $base-width;
   margin: auto;
-  .textBox{
-      margin-top: 10px;
+  .textBox {
+    margin-top: 10px;
   }
-  h2{
+  h2 {
     margin-bottom: 0;
   }
-  h5{
+  h5 {
     margin-bottom: 0;
     margin-top: 0;
   }
 }
-
 
 //--------------------------------
 // Hackathons
@@ -497,30 +491,31 @@ input {
   text-align: center;
   max-width: $base-width;
   margin: auto;
-  .textBox{
-      margin-top: 10px;
+  .textBox {
+    margin-top: 10px;
   }
-  h2{
+  h2 {
     margin-bottom: 0;
   }
-  h5{
+  h5 {
     margin-bottom: 0;
     margin-top: 0;
   }
 }
+
 //----------------------------------
 // Career Fairs
 .careerFairs {
   text-align: center;
   max-width: $base-width;
   margin: auto;
-  .textBox{
-      margin-top: 10px;
+  .textBox {
+    margin-top: 10px;
   }
-  h2{
+  h2 {
     margin-bottom: 0;
   }
-  h5{
+  h5 {
     margin-bottom: 0;
     margin-top: 0;
   }
@@ -543,9 +538,9 @@ input {
   }
 
   .sort {
-     display: inline-block;
+    display: inline-block;
     a {
-     color:$ubcBlack;
+      color: $ubcBlack;
       float: left;
     }
   }
@@ -559,18 +554,19 @@ input {
     margin-bottom: -20px;
     min-height: 30px;
   }
-  .container{
+  .container {
     overflow: auto;
   }
 
 }
+
 //----------------------------------
 // Resumes and Cover Letters
-.resumeCoverletter{
+.resumeCoverletter {
   max-width: $base-width;
   margin: auto;
-  .textBox{
-      margin-top: 10px;
+  .textBox {
+    margin-top: 10px;
   }
   .parTwo {
     margin-top: 20px;
