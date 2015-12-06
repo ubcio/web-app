@@ -5,7 +5,7 @@
            typeahead="degree as degree.name for degree in degreeRequirements.degrees | filter:{name:$viewValue} | orderBy:'name' | limitTo:8 ">
   </div>
 
-  <div class="linkBox">
+  <div class="linkBox" ng-show="degreeRequirements.selected.websites">
     <a ng-repeat="requirement in degreeRequirements.selected.websites" class="pure-button" target="_blank"
        ng-href="{{requirement.website}}">
       {{requirement.buttonName}}
