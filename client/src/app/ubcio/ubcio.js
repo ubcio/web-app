@@ -7,24 +7,24 @@
    */
   function config($stateProvider) {
     $stateProvider
-      .state('root.about', {
-        url: '/about',
+      .state('root.ubcio', {
+        url: '/ubcio',
         views: {
           '@': {
-            templateUrl: 'src/app/about/about.tpl.html',
-            controller: 'AboutCtrl as about'
+            templateUrl: 'src/app/ubcio/ubcio.tpl.html',
+            controller: 'UbcioCtrl as ubcio'
           }
         }
       });
   }
 
   /**
-   * @name  AboutCtrl
+   * @name  UbcioCtrl
    * @description Controller
    */
-  function AboutCtrl() {}
+  function UbcioCtrl() {}
 
-  angular.module('about', [])
+  angular.module('ubcio', [])
     .config(config)
-    .controller('AboutCtrl', AboutCtrl);
+    .controller('UbcioCtrl', UbcioCtrl);
 })();
