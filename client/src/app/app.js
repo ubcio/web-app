@@ -48,7 +48,7 @@
       'job-postings',
       'seminars',
       'hackathons',
-      'ubcio',
+      'the-project',
       'companies',
       'common.header',
       'common.services.degree-requirements',
