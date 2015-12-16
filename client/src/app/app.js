@@ -49,6 +49,7 @@
       'seminars',
       'hackathons',
       'the-project',
+      'the-team',
       'companies',
       'common.header',
       'common.services.degree-requirements',
