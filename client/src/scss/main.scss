@@ -196,11 +196,23 @@ input {
 }
 
 // ---------------------------------
-// About Page
+// The Project
 
-.aboutPage {
+.theProject {
+  max-width: $base-width;
+  margin: auto;
+
+  .textBox {
+    margin-top: 10px;
+  }
+}
+
+// ---------------------------------
+// The Team
+
+.theTeam {
+
   .teamProfile {
-
     h2 {
       margin-bottom: 0;
       margin-top: 0;
@@ -210,7 +222,6 @@ input {
       margin-top: 0;
     }
     display: inline-block;
-
   }
 
   .title {
@@ -218,7 +229,6 @@ input {
   }
 
   // Media queries
-
   @media only screen and (min-width: 200px) {
     .teamMember {
       img {
@@ -315,6 +325,7 @@ input {
       float: none;
     }
   }
+
 }
 
 // -------------------------------
