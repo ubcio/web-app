@@ -196,124 +196,14 @@ input {
 }
 
 // ---------------------------------
-// About Page
+// The Project
 
-.aboutPage {
-  .teamProfile {
+.theProject {
+  max-width: $base-width;
+  margin: auto;
 
-    h2 {
-      margin-bottom: 0;
-      margin-top: 0;
-    }
-    h5 {
-      font-weight: normal;
-      margin-top: 0;
-    }
-    display: inline-block;
-
-  }
-
-  .title {
-    margin-top: 20px;
-  }
-
-  // Media queries
-
-  @media only screen and (min-width: 200px) {
-    .teamMember {
-      img {
-        display: block;
-        margin-top: 30px;
-        width: 100%;
-        min-width: 100px;
-      }
-      .teamProfile {
-        margin-top: 0px;
-      }
-    }
-  }
-
-  @media only screen and (min-width: 450px) {
-    .ubcIODescription {
-      max-width: 500px;
-      margin: auto;
-      margin-top: 10px;
-    }
-    .teamMember {
-      max-width: 500px;
-      margin: auto;
-    }
-  }
-
-  @media only screen and (min-width: 900px) {
-    .ubcIODescription {
-      max-width: 800px;
-      margin: auto;
-      margin-top: 10px;
-    }
-    .teamMembers {
-
-      max-width: 800px;
-      margin: auto;
-    }
-    .teamMember {
-      display: inline-block;
-      max-width: 372px;
-    }
-    div.teamMember:nth-child(odd) {
-      float: left;
-
-    }
-
-    div.teamMember:nth-child(even) {
-      float: right;
-
-    }
-
-  }
-
-  @media only screen and (min-width: 1280px) {
-    .ubcIODescription {
-      max-width: $base-width;
-      margin: auto;
-      margin-top: 10px;
-    }
-
-    .teamMembers {
-      max-width: $base-width;
-      margin: auto;
-    }
-
-    .teamMember {
-      max-width: $base-width;
-
-      img {
-        width: 247px;
-        float: left;
-      }
-
-      .textBox {
-        margin-top: 30px;
-        max-width: 926px;
-        float: right;
-        height: 237px;
-      }
-      p {
-        width: 926px;
-      }
-      h5 {
-        margin-bottom: -6px;
-      }
-
-    }
-
-    div.teamMember:nth-child(odd) {
-      float: none;
-    }
-
-    div.teamMember:nth-child(even) {
-      float: none;
-    }
+  .textBox {
+    margin-top: 10px;
   }
 }
 
