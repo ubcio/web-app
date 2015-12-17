@@ -28,7 +28,48 @@ you have any questions :)
 
 # Project Setup
 
-TODO
+### Prerequisites
+
+If you have a fresh install of Ubuntu (or another distro) then try and get the following things in the order
+that they are listed (commands are given):
+
+1. nvm
+  - Node Version Manager
+  - Makes dealing with Node versions a lot easier
+  - Instructions to install: [here](https://github.com/creationix/nvm)
+  - nvm may 'disappear' every time you close terminal, it is useful to add the following to your ~/.bashrc file: . ~/.nvm/nvm.sh
+  
+2. node 
+  - easy to install once you have nvm
+  - command: nvm install v4.1.2
+  - command: nvm alias default 4.1.2  (to make it use this version as default)
+  - note that it will be called nodejs and not node, which can cause problems, so add a soft link, command: sudo ln -s /usr/bin/nodejs /usr/bin/node
+  
+3. npm  
+  - Node Package Manager
+  - In this project, used to manage dependencies that are needed for development but not for production
+  - command: sudo apt-get install npm
+  
+4. bower 
+  - In this project, used to manage dependencies that are needed for production
+  - command: sudo npm install -g bower
+  
+5. gulp
+  - Gulp is used to do basic scripts, very useful, such as running tests or hosting the website and watching for file changes
+  - command: sudo npm -g install gulp
+ 
+You should have the following versions:
+  - 'npm -v'   - 2.14.4
+  - 'node -v'  - 4.1.2
+  - 'bower -v' - Both 1.6.2 and 1.7.1 are working 
+
+### Installation 
+
+Now that you have the necessary packages installed, follow the simple steps below. 
+
+1. git clone https://github.com/ubcio/webApp
+2. npm install
+3. bower install
 
 #File Structure 
 
