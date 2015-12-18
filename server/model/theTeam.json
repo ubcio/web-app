@@ -1,0 +1,12 @@
+{
+  "teamMembers": [
+    {
+      "firstName": "Arie",
+      "lastName": "Milner",
+      "github": "https://github.com/amilner42",
+      "imageLocation": "assets/images/arie.jpg",
+      "role": "Co-founder, Front-end Developer",
+      "bio": "Arie is a 3rd year software engineer at UBC who is passionate about computer science and making the world a better place. With a strong interest in web-development due to its ability to reach out and impact so many people, he has spent most of his time learning about cool web technologies, primarily using AngularJS alongside a RESTful API. His programming interests outside of web-development include Java for OOP projects and Linux for all his OS needs, he fucking loves linux and open-source projects in general. He will be working at Google in January 2016 for the winter term and will be doing an internship at Radify.io in the summer. If you are interested in speaking with him, please email him at amilner42@gmail.com"
+    }
+  ]
+}

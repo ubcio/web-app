@@ -1,0 +1,20 @@
+{
+  "teamMembers": [
+    {
+      "firstName": "Arie",
+      "lastName": "Milner",
+      "github": "https://github.com/amilner42",
+      "imageLocation": "assets/images/arie.jpg",
+      "role": "Co-founder, Front-end Developer",
+      "bio": "Arie is a 3rd year software engineer at UBC who is passionate about computer science and making the world a better place. With a strong interest in web-development due to its ability to reach out and impact so many people, he has spent most of his time learning about cool web technologies, primarily using AngularJS alongside a RESTful API. His programming interests outside of web-development include Java for OOP projects and Linux for all his OS needs, he fucking loves linux and open-source projects in general. He will be working at Google in January 2016 for the winter term and will be doing an internship at Radify.io in the summer. If you are interested in speaking with him, please email him at amilner42@gmail.com"
+    },
+    {
+      "firstName": "Banafsheh",
+      "lastName": "Derayat",
+      "github": "https://github.com/banafshehderayat",
+      "imageLocation": "assets/images/banafsheh.jpg",
+      "role": "Co-founder, Designer, Front-end Developer",
+      "bio": "Banafsheh is a 3rd year Computer Science major at UBC who is passionate about User Experience and taking software ideas that are good for the world and breathing life into them by giving them an effective design. She loves the full process, from brainstorming new ideas to making a tacit design for her clients. Outside of her work in web-development, she has interests in Computer Science education, and has been a Teaching Assistant [TA] 2 times where she was awarded the prestigious undergraduate TA award. She has 8 months of experience working at SMART Technologies and is currently looking for work opportunities for Summer. If you are interested in speaking with her, please email her at b.derayat@gmail.com"
+    }
+  ]
+}

@@ -61,6 +61,7 @@
       'common.services.career-fairs',
       'common.services.job-postings',
       'common.services.companies',
+      'common.services.the-team',
       'common.directives.version',
       'common.filters.uppercase',
       'common.interceptors.http',
