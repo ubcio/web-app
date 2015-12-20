@@ -256,6 +256,10 @@ input {
   }
 
   @media only screen and (min-width: 900px) {
+
+    .textBox {
+      height: 510px;
+    }
     .ubcIODescription {
       max-width: 800px;
       margin: auto;

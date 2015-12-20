@@ -15,6 +15,14 @@
       "imageLocation": "assets/images/banafsheh.jpg",
       "role": "Co-founder, Designer, Front-end Developer",
       "bio": "Banafsheh is a 3rd year Computer Science major at UBC who is passionate about User Experience and taking software ideas that are good for the world and breathing life into them by giving them an effective design. She loves the full process, from brainstorming new ideas to making a tacit design for her clients. Outside of her work in web-development, she has interests in Computer Science education, and has been a Teaching Assistant [TA] 2 times where she was awarded the prestigious undergraduate TA award. She has 8 months of experience working at SMART Technologies and is currently looking for work opportunities for Summer. If you are interested in speaking with her, please email her at b.derayat@gmail.com"
+    },
+    {
+      "firstName": "Nathan",
+      "lastName": "Su",
+      "github": "https://github.com/nathanmcsu",
+      "imageLocation": "assets/images/nathan.jpg",
+      "role": "Front-end Developer",
+      "bio": "Nathan is a third year computer science major at UBC who is interested about anything and everything in computer science. He believes that technology is a tool that can help better the world through solving both small and big problems. His current interests are front-end web development and android app development using Java. Outside of computer science, Nathan enjoys hiking beautiful outdoors that B.C has to offer. He is currently looking for internships for the summer. If you are interested in speaking with him, please email him at nathan.mc.su@gmail.com"
     }
   ]
 }
