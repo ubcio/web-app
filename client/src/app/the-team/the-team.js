@@ -32,7 +32,8 @@
       // While there remain elements to shuffle
       while (m) {
         // Pick a remaining element…
-        i = Math.floor(Math.random() * m--);
+        i = Math.floor(Math.random() * m);
+        m = m - 1; 
 
         // And swap it with the current element.
         t = array[m];
