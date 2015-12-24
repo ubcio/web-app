@@ -12,7 +12,7 @@
         views: {
           '@': {
             templateUrl: 'src/app/the-project/the-project.tpl.html',
-            controller: 'TheProject as theProject'
+            controller: 'TheProjectCtrl as theProject'
           }
         }
       });

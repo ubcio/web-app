@@ -33,7 +33,7 @@
       while (m) {
         // Pick a remaining element…
         i = Math.floor(Math.random() * m);
-        m = m - 1; 
+        m = m - 1;
 
         // And swap it with the current element.
         t = array[m];
