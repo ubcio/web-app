@@ -596,13 +596,13 @@ input {
 
   color: $ubcLightGrey;
   position: absolute;
-  top: 0;
-  right: 20px;
-  line-height: 50px;
-  height: 50px;
-  font-size: 50px;
+  top: 5px;
+  right: 10px;
+  line-height: 40px;
+  height: 40px;
+  font-size: 40px;
 
-  @media only screen and (max-width: 622px) {
+  @media only screen and (max-width: 600px) {
     display: none;
   }
 }
