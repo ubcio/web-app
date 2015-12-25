@@ -9,12 +9,8 @@
     $stateProvider
       .state('root.resume-and-cover-letter', {
         url: '/resume-and-cover-letter',
-        views: {
-          '@': {
-            templateUrl: 'src/app/resume-and-cover-letter/resume-and-cover-letter.tpl.html',
-            controller: 'ResumeAndCoverLetterCtrl as resumeAndCoverLetter'
-          }
-        }
+        templateUrl: 'src/app/resume-and-cover-letter/resume-and-cover-letter.tpl.html',
+        controller: 'ResumeAndCoverLetterCtrl as resumeAndCoverLetter'
       });
   }
 

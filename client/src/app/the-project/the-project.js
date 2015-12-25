@@ -9,12 +9,8 @@
     $stateProvider
       .state('root.the-project', {
         url: '/the-project',
-        views: {
-          '@': {
-            templateUrl: 'src/app/the-project/the-project.tpl.html',
-            controller: 'TheProjectCtrl as theProject'
-          }
-        }
+        templateUrl: 'src/app/the-project/the-project.tpl.html',
+        controller: 'TheProjectCtrl as theProject'
       });
   }
 

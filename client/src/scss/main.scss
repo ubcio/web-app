@@ -2,6 +2,7 @@
 
 // -------------------------------
 // Globals
+
 a:focus {
   color: $ubcGrey;
 }
@@ -19,11 +20,10 @@ input {
   text-align: center;
   width: 500px;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 17px;
+  margin-bottom: 20px !important;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 625px) {
   input {
     width: 80%;
   }
@@ -35,7 +35,6 @@ input {
   border-radius: 10px;
   max-width: 900px;
   margin: auto;
-  margin-top: 10px;
   border: 5px solid $ubcBlack;
   font-family: 'Raleway';
 }
@@ -181,7 +180,7 @@ input {
   color: $ubcLightGrey;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 485px) {
   .pure-menu {
     .headerIcon {
       display: inline !important;
@@ -201,16 +200,16 @@ input {
 .theProject {
   max-width: $base-width;
   margin: auto;
-
-  .textBox {
-    margin-top: 10px;
-  }
 }
 
 // ---------------------------------
 // The Team
 
 .theTeam {
+
+  .textBox {
+    margin-bottom: 20px;
+  }
 
   .teamProfile {
     h2 {
@@ -224,16 +223,11 @@ input {
     display: inline-block;
   }
 
-  .title {
-    margin-top: 20px;
-  }
-
   // Media queries
   @media only screen and (min-width: 200px) {
     .teamMember {
       img {
         display: block;
-        margin-top: 30px;
         width: 100%;
         min-width: 100px;
       }
@@ -307,7 +301,6 @@ input {
       }
 
       .textBox {
-        margin-top: 30px;
         max-width: 926px;
         float: right;
         height: 237px;
@@ -334,6 +327,7 @@ input {
 
 // -------------------------------
 // Degree Requirements
+
 .degreeRequirements {
   text-align: center;
 
@@ -359,6 +353,7 @@ input {
 
 // -------------------------------
 // Tutors
+
 .tutors {
   text-align: center;
 
@@ -412,13 +407,12 @@ input {
 
 // -------------------------------
 // Courses
+
 .courses {
   text-align: center;
   margin: auto;
   max-width: $base-width;
-  .textBox {
-    margin-top: 10px;
-  }
+
   .active {
     background-color: $ubcBlue;
   }
@@ -436,13 +430,11 @@ input {
 
 // -------------------------------
 // Professors
+
 .professors {
   text-align: center;
   margin: auto;
   max-width: $base-width;
-  .textBox {
-    margin-top: 10px;
-  }
 
   h2 {
     margin-bottom: 0;
@@ -460,12 +452,11 @@ input {
 
 //--------------------------------
 // Training For Interviews
+
 .trainingForInterviews {
   max-width: $base-width;
   margin: auto;
-  .textBox {
-    margin-top: 10px;
-  }
+
   .parTwo {
     margin-top: 20px;
   }
@@ -473,24 +464,25 @@ input {
 
 //--------------------------------
 // Companies
+
 .companies {
   text-align: center;
   margin: auto;
   max-width: $base-width;
-  .textBox {
-    margin-top: 10px;
-  }
 }
 
 //---------------------------------
 // Seminars
+
 .seminars {
   text-align: center;
   max-width: $base-width;
   margin: auto;
+
   .textBox {
     margin-top: 10px;
   }
+
   h2 {
     margin-bottom: 0;
   }
@@ -502,13 +494,16 @@ input {
 
 //--------------------------------
 // Hackathons
+
 .hackathons {
   text-align: center;
   max-width: $base-width;
   margin: auto;
+
   .textBox {
     margin-top: 10px;
   }
+
   h2 {
     margin-bottom: 0;
   }
@@ -520,13 +515,16 @@ input {
 
 //----------------------------------
 // Career Fairs
+
 .careerFairs {
   text-align: center;
   max-width: $base-width;
   margin: auto;
+
   .textBox {
     margin-top: 10px;
   }
+
   h2 {
     margin-bottom: 0;
   }
@@ -538,6 +536,7 @@ input {
 
 //----------------------------------
 // Job Postings
+
 .jobPostings {
   max-width: $base-width;
   text-align: center;
@@ -577,12 +576,11 @@ input {
 
 //----------------------------------
 // Resumes and Cover Letters
+
 .resumeCoverletter {
   max-width: $base-width;
   margin: auto;
-  .textBox {
-    margin-top: 10px;
-  }
+
   .parTwo {
     margin-top: 20px;
   }
@@ -605,4 +603,13 @@ input {
   @media only screen and (max-width: 600px) {
     display: none;
   }
+}
+
+//----------------------------------
+// Content
+
+.content {
+  margin-top: 20px;
+  margin-left: 17px;
+  margin-right: 17px;
 }

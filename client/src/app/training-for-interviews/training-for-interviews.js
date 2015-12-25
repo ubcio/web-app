@@ -9,12 +9,8 @@
     $stateProvider
       .state('root.training-for-interviews', {
         url: '/training-for-interviews',
-        views: {
-          '@': {
-            templateUrl: 'src/app/training-for-interviews/training-for-interviews.tpl.html',
-            controller: 'TrainingForInterviewsCtrl as trainingForInterviews'
-          }
-        }
+        templateUrl: 'src/app/training-for-interviews/training-for-interviews.tpl.html',
+        controller: 'TrainingForInterviewsCtrl as trainingForInterviews'
       });
   }
 

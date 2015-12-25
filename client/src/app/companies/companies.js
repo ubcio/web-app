@@ -9,12 +9,8 @@
     $stateProvider
       .state('root.companies', {
         url: '/companies',
-        views: {
-          '@': {
-            templateUrl: 'src/app/companies/companies.tpl.html',
-            controller: 'CompaniesCtrl as companies'
-          }
-        }
+        templateUrl: 'src/app/companies/companies.tpl.html',
+        controller: 'CompaniesCtrl as companies'
       });
   }
 

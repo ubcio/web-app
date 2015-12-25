@@ -9,12 +9,8 @@
     $stateProvider
       .state('root.job-postings', {
         url: '/job-postings',
-        views: {
-          '@': {
-            templateUrl: 'src/app/job-postings/job-postings.tpl.html',
-            controller: 'JobPostingsCtrl as jobPostings'
-          }
-        }
+        templateUrl: 'src/app/job-postings/job-postings.tpl.html',
+        controller: 'JobPostingsCtrl as jobPostings'
       });
   }
 

@@ -12,17 +12,15 @@
       'http://www.calendar.ubc.ca/**'
     ]);
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('app/');
     $logProvider.debugEnabled(true);
     $httpProvider.interceptors.push('httpInterceptor');
     $stateProvider
       .state('root', {
-        views: {
-          'header': {
-            templateUrl: 'src/common/header.tpl.html',
-            controller: 'HeaderCtrl as header'
-          }
-        }
+        url: "/app",
+        templateUrl: 'src/common/header.tpl.html',
+        controller: 'HeaderCtrl as header',
+        abstract: true
       });
   }
 

@@ -9,12 +9,8 @@
     $stateProvider
       .state('root.hackathons', {
         url: '/hackathons',
-        views: {
-          '@': {
-            templateUrl: 'src/app/hackathons/hackathons.tpl.html',
-            controller: 'HackathonsCtrl as hackathons'
-          }
-        }
+        templateUrl: 'src/app/hackathons/hackathons.tpl.html',
+        controller: 'HackathonsCtrl as hackathons'
       });
   }
 

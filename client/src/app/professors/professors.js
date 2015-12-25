@@ -9,13 +9,10 @@
     $stateProvider
       .state('root.professors', {
         url: '/professors',
-        views: {
-          '@': {
-            templateUrl: 'src/app/professors/professors.tpl.html',
-            controller: 'ProfessorsCtrl as professors'
-          }
+        templateUrl: 'src/app/professors/professors.tpl.html',
+        controller: 'ProfessorsCtrl as professors'
         }
-      });
+      );
   }
 
   /**

@@ -9,12 +9,8 @@
     $stateProvider
       .state('root.degree-requirements', {
         url: '/degree-requirements',
-        views: {
-          '@': {
-            templateUrl: 'src/app/degree-requirements/degree-requirements.tpl.html',
-            controller: 'DegreeRequirementsCtrl as degreeRequirements'
-          }
-        }
+        templateUrl: 'src/app/degree-requirements/degree-requirements.tpl.html',
+        controller: 'DegreeRequirementsCtrl as degreeRequirements'
       });
   }
 

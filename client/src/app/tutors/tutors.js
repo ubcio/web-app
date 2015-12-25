@@ -9,12 +9,8 @@
     $stateProvider
       .state('root.tutors', {
         url: '/tutors',
-        views: {
-          '@': {
-            templateUrl: 'src/app/tutors/tutors.tpl.html',
-            controller: 'TutorsCtrl as tutors'
-          }
-        }
+        templateUrl: 'src/app/tutors/tutors.tpl.html',
+        controller: 'TutorsCtrl as tutors'
       });
   }
 

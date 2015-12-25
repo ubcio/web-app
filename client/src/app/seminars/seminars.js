@@ -9,12 +9,8 @@
     $stateProvider
       .state('root.seminars', {
         url: '/seminars',
-        views: {
-          '@': {
-            templateUrl: 'src/app/seminars/seminars.tpl.html',
-            controller: 'SeminarsCtrl as seminars'
-          }
-        }
+        templateUrl: 'src/app/seminars/seminars.tpl.html',
+        controller: 'SeminarsCtrl as seminars'
       });
   }
 

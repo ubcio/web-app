@@ -9,12 +9,8 @@
     $stateProvider
       .state('root.career-fairs', {
         url: '/career-fairs',
-        views: {
-          '@': {
-            templateUrl: 'src/app/career-fairs/career-fairs.tpl.html',
-            controller: 'CareerFairsCtrl as careerFairs'
-          }
-        }
+        templateUrl: 'src/app/career-fairs/career-fairs.tpl.html',
+        controller: 'CareerFairsCtrl as careerFairs'
       });
   }
 

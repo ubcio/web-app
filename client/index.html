@@ -21,10 +21,8 @@
 </head>
 
 <body>
-  <header class="header"  ui-view="header"></header>
-  <div class="content">
-    <div ui-view class="l-page island"></div>
-  </div>
+  <!--This where the header view goes (it has content view nested in it) -->
+  <div ui-view></div>
 
   <!-- build:js assets/js/vendor.js -->
   <script type="text/javascript" src="src/vendor/angular/angular.js"></script>

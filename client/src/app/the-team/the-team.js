@@ -9,12 +9,8 @@
     $stateProvider
       .state('root.the-team', {
         url: '/the-team',
-        views: {
-          '@': {
-            templateUrl: 'src/app/the-team/the-team.tpl.html',
-            controller: 'TheTeamCtrl as theTeam'
-          }
-        }
+        templateUrl: 'src/app/the-team/the-team.tpl.html',
+        controller: 'TheTeamCtrl as theTeam'
       });
   }
 
