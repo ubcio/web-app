@@ -382,8 +382,10 @@ input {
     margin: auto;
     .tutorBox {
       @include border-box();
+      border-width: 0 5px 10px 5px;
+      border-style: solid;
+      border-color: $ubcLightBlue;
       width: 100%;
-      border: 5px solid $ubcLightBlue;
       display: inline-table;
       margin-top: 5px;
     }

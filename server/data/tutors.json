@@ -1,0 +1,67 @@
+{
+  "courses": [
+    {
+      "name": "CPSC 110",
+      "tutors": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "CPSC 121",
+      "tutors": [
+        0
+      ]
+    },
+    {
+      "name": "ENG 112",
+      "tutors": [
+        0
+      ]
+    },
+    {
+      "name": "ENG 110",
+      "tutors": [
+        0
+      ]
+    },
+    {
+      "name": "MATH 100",
+      "tutors": [
+        0
+      ]
+    },
+    {
+      "name": "MATH 101",
+      "tutors": [
+        0
+      ]
+    },
+    {
+      "name": "MATH 200",
+      "tutors": [
+        0
+      ]
+    },
+    {
+      "name": "MATH 220",
+      "tutors": [
+        0
+      ]
+    },
+    {
+      "name": "MATH 221",
+      "tutors": [
+        0
+      ]
+    }
+  ],
+  "tutors": [
+    {
+      "name": "Chris Scholl",
+      "bio": "Chris is an undergraduate math major who enjoys learning about a wide range of topics, going all the way from ethics to matrix algebra. He has more than 3 years of tutoring experience for university students, with more than 20 students this past year. He absolutely loves working with students one-on-one and in groups. If you are interested in talking to him, do not hesitate to email him and inquire.",
+      "email": "cmscholl.tutoring@gmail.com",
+      "price": 40
+    }
+  ]
+}
