@@ -17,7 +17,7 @@
     $httpProvider.interceptors.push('httpInterceptor');
     $stateProvider
       .state('root', {
-        url: "/app",
+        url: '/app',
         templateUrl: 'src/common/header.tpl.html',
         controller: 'HeaderCtrl as header',
         abstract: true
