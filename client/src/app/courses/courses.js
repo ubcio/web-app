@@ -21,7 +21,11 @@
   function CoursesCtrl(CoursesService , $scope) {
     var courses = this;
 
-    var postInit = function (coursesData) {
+    var postInitFailure = function() {
+      courses.inputText = 'sorry could not load data';
+    }
+
+    var postInitSuccess = function (coursesData) {
       courses.inputText = 'enter a course name...';
       courses.courses = coursesData;
       courses.loaded = true;
@@ -29,7 +33,7 @@
     };
 
     var init = function () {
-      CoursesService.getCourses(postInit);
+      CoursesService.getCourses(postInitSuccess , postInitFailure);
       courses.loaded = false;
       courses.inputText = 'loading data...';
       courses.selectedCourse = undefined;

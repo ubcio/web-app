@@ -1,15 +1,18 @@
-/* global Firebase */
-
 (function () {
   'use strict';
 
-  function coursesService(FirebaseUrl) {
-    var ref = new Firebase(FirebaseUrl + 'courses');
+  function coursesService($http , DigitalOceanUrl) {
 
     return {
-      getCourses: function (callback) {
-        ref.child('courses').once('value', function(snapshot) {
-          callback(snapshot.val());
+      getCourses: function (callbackSuccess , callbackFailure) {
+      $http({
+        method: 'GET',
+        url: DigitalOceanUrl + 'courses'
+      }).then(function successCallback(response) {
+          callbackSuccess(response.data);
+        }, function errorCallback(response) {
+          console.log(response.data);
+          callbackFailure();
         });
       }
     };

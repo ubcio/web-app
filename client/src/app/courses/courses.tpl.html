@@ -27,7 +27,7 @@
     </div>
 
 
-    <div ng-hide="courses.selectedCourse.tips == null">
+    <div ng-hide="courses.selectedCourse.tips == null || courses.selectedCourse.tips.length == 0">
       <button class="pure-button tipButton" ng-click="courses.selectedCourse.showTips = !courses.selectedCourse.showTips">
         Tips
       </button>

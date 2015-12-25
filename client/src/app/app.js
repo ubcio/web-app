@@ -70,5 +70,6 @@
     .run(run)
     .controller('MainCtrl', MainCtrl)
     .constant('FirebaseUrl', 'https://ubcio.firebaseio.com/')
+    .constant('DigitalOceanUrl', 'http://104.236.130.91:3000/data/')
     .value('version', '1.1.0');
 })();
