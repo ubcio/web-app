@@ -653,8 +653,12 @@ input {
     background-color: $ubcLightGrey;
   }
 
-
-
+  .mainTab {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    font-size: 75px;
+  }
 
 }
 
