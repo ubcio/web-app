@@ -7,7 +7,7 @@
    */
   function config($stateProvider) {
     $stateProvider
-      .state('root.training-for-interviews', {
+      .state('root.sub-bar.training-for-interviews', {
         url: '/training-for-interviews',
         templateUrl: 'src/app/training-for-interviews/training-for-interviews.tpl.html',
         controller: 'TrainingForInterviewsCtrl as trainingForInterviews'

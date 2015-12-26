@@ -7,7 +7,7 @@
    */
   function config($stateProvider) {
     $stateProvider
-      .state('root.career-fairs', {
+      .state('root.sub-bar.career-fairs', {
         url: '/career-fairs',
         templateUrl: 'src/app/career-fairs/career-fairs.tpl.html',
         controller: 'CareerFairsCtrl as careerFairs'

@@ -7,7 +7,7 @@
    */
   function config($stateProvider) {
     $stateProvider
-      .state('root.job-postings', {
+      .state('root.sub-bar.job-postings', {
         url: '/job-postings',
         templateUrl: 'src/app/job-postings/job-postings.tpl.html',
         controller: 'JobPostingsCtrl as jobPostings'

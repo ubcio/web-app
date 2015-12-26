@@ -7,7 +7,7 @@
    */
   function config($stateProvider) {
     $stateProvider
-      .state('root.resume-and-cover-letter', {
+      .state('root.sub-bar.resume-and-cover-letter', {
         url: '/resume-and-cover-letter',
         templateUrl: 'src/app/resume-and-cover-letter/resume-and-cover-letter.tpl.html',
         controller: 'ResumeAndCoverLetterCtrl as resumeAndCoverLetter'

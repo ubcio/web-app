@@ -18,7 +18,7 @@
     $stateProvider
       .state('root', {
         url: '/app',
-        templateUrl: 'src/common/header.tpl.html',
+        templateUrl: 'src/common/header/header.tpl.html',
         controller: 'HeaderCtrl as header',
         abstract: true
       });
@@ -50,6 +50,7 @@
       'the-team',
       'companies',
       'common.header',
+      'common.sub-bar',
       'common.services.degree-requirements',
       'common.services.tutors',
       'common.services.courses',
