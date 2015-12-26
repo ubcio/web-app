@@ -7,7 +7,7 @@
    */
   function config($stateProvider) {
     $stateProvider
-      .state('root.sub-bar.hackathons', {
+      .state('root.sub-bar-hackathons.hackathons', {
         url: '/hackathons',
         templateUrl: 'src/app/hackathons/hackathons.tpl.html',
         controller: 'HackathonsCtrl as hackathons'

@@ -7,7 +7,7 @@
    */
   function config($stateProvider) {
     $stateProvider
-      .state('root.sub-bar.tutors', {
+      .state('root.sub-bar-tutors.tutors', {
         url: '/tutors',
         templateUrl: 'src/app/tutors/tutors.tpl.html',
         controller: 'TutorsCtrl as tutors'

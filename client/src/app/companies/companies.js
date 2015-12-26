@@ -7,7 +7,7 @@
    */
   function config($stateProvider) {
     $stateProvider
-      .state('root.sub-bar.companies', {
+      .state('root.sub-bar-companies.companies', {
         url: '/companies',
         templateUrl: 'src/app/companies/companies.tpl.html',
         controller: 'CompaniesCtrl as companies'

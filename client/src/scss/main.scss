@@ -20,7 +20,7 @@ input {
   text-align: center;
   width: 500px;
   margin: auto;
-  margin-bottom: 20px !important;
+  margin-bottom: 30px !important;
 }
 
 @media only screen and (max-width: 625px) {
@@ -612,7 +612,50 @@ input {
 // Content
 
 .content {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 17px;
   margin-right: 17px;
 }
+
+//----------------------------------
+// SubBar
+
+.subBar {
+  width: 100%;
+  height: 100px;
+  background-color: $ubcWhite;
+  border-bottom: 2px solid $ubcBlack;
+
+  .tower1 {
+    position:absolute;
+    top:60px;
+    left:20px;
+    width:30px;
+    height: 80px;
+    background-color: $ubcBlue;
+  }
+
+  .tower2 {
+    position:absolute;
+    top:80px;
+    left:55px;
+    width:30px;
+    height: 60px;
+    background-color: $ubcBlack;
+  }
+
+  .tower3 {
+    position:absolute;
+    top:100px;
+    left:90px;
+    width:30px;
+    height: 40px;
+    background-color: $ubcLightGrey;
+  }
+
+
+
+
+}
+
+
