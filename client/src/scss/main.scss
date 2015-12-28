@@ -29,6 +29,18 @@ input {
   }
 }
 
+
+textarea {
+  width: 500px;
+}
+
+@media only screen and (max-width: 625px) {
+  textarea {
+    width: 80% !important;
+    margin: auto;
+  }
+}
+
 .messageBox {
   background-color: $ubcWhite;
   padding: 30px 30px 30px 30px;
@@ -122,6 +134,13 @@ input {
   .eventBusy {
     display: inline-block;
   }
+}
+
+
+.longText {
+  height: 300px;
+  width: 500px;
+  word-wrap: normal;
 }
 
 // -------------------------------
@@ -622,34 +641,34 @@ input {
 
 .subBar {
   width: 100%;
-  height: 100px;
+  height: 70px;
   background-color: $ubcWhite;
   border-bottom: 2px solid $ubcLightGrey;
 
   .tower1 {
     position:absolute;
-    top:60px;
+    top:55px;
     left:20px;
     width:30px;
-    height: 80px;
+    height: 60px;
     background-color: $ubcBlue;
   }
 
   .tower2 {
     position:absolute;
-    top:80px;
+    top:75px;
     left:55px;
     width:30px;
-    height: 60px;
+    height: 40px;
     background-color: $ubcBlack;
   }
 
   .tower3 {
     position:absolute;
-    top:100px;
+    top:95px;
     left:90px;
     width:30px;
-    height: 40px;
+    height: 20px;
     background-color: $ubcLightGrey;
   }
 
@@ -659,14 +678,59 @@ input {
     font-size: 50px;
     margin-left: 140px;
     display: inline-block;
-    margin-top: 37px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border-bottom: 3px solid $ubcBlack;
+    margin-top: 12px;
+
+  }
+
+  .actionTab {
+    float: right;
+    margin-top: 32px;
+    margin-right: 5px;
+    height: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    color: $ubcBlack;
   }
 
   @media screen and (max-width: 640px) {
     display: none;
+  }
+
+  a {
+    color: $ubcBlack;
+  }
+
+  .activeMain {
+    border-bottom: 3px solid $ubcBlack;
+  }
+
+  .activeAction {
+    border-bottom: 3px solid $ubcBlue;
+  }
+
+}
+
+//----------------------------------
+// Review Page
+
+.reviewPage {
+
+  max-width: $base-width;
+  margin: auto;
+  text-align: center;
+
+  label , input , textarea {
+    margin: auto !important;
+  }
+
+  .submitButton {
+    background-color: $ubcGreen;
+    color: $ubcWhite;
+    margin-top: 30px;
+  }
+
+  label {
+    margin-top: 20px !important;
   }
 
 }

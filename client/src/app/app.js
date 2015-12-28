@@ -38,6 +38,7 @@
       'ui.bootstrap',
       'courses',
       'professors',
+      'professors.add-review',
       'tutors',
       'degree-requirements',
       'resume-and-cover-letter',
