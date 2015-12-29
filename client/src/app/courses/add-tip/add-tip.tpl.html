@@ -1,0 +1,19 @@
+<div class="tipPage">
+  <form class="pure-form pure-form-stacked">
+
+    <label for="class">Course *</label>
+    <input ng-model="addTip.course" id="class" type="text" placeholder="ENGL 110" required>
+
+    <label for="tip">Tip *</label>
+    <textarea ng-model="addTip.tip" id="tip" class="longText" placeholder="A helpful tip ..."
+              required></textarea>
+
+    <label
+      title="In case there are problems with your tips we will need to email you, all tips will be kept anonymous"
+      for="email">Your Email</label>
+    <input ng-model="addTip.email" id="email" type="email" placeholder="example@gmail.com">
+
+    <button class="pure-button submitButton" type="submit" ng-click="addTip.submitTip()">Submit tip</button>
+
+  </form>
+</div>

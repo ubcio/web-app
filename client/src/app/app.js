@@ -38,6 +38,7 @@
       'ui.bootstrap',
       'courses',
       'courses.add-review',
+      'courses.add-tip',
       'professors',
       'professors.add-review',
       'tutors',
