@@ -1,0 +1,19 @@
+<div class="contribPage">
+  <form class="pure-form pure-form-stacked">
+
+    <label for="suggestion">Suggestion *</label>
+    <textarea ng-model="leaveASuggestion.suggestion" id="suggestion" class="longText"
+              placeholder="Please leave any suggestions you have, we highly appreciate your feedback. Keep in mind that we are a non-profit organization here only to make UBC more kick-ass!"
+              required></textarea>
+
+    <label
+      title="In case we want to email you to ask for more details about your suggestions"
+      for="email">Your Email</label>
+    <input ng-model="leaveASuggestion.email" id="email" type="email" placeholder="example@gmail.com">
+
+    <button class="pure-button submitButton" type="submit" ng-click="leaveASuggestion.submitSuggestion()">
+      Submit Suggestion
+    </button>
+
+  </form>
+</div>

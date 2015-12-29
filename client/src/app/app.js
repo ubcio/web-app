@@ -55,6 +55,7 @@
       'hackathons',
       'hackathons.add-hackathon',
       'the-project',
+      'the-project.leave-a-suggestion',
       'the-team',
       'companies',
       'companies.add-review',
