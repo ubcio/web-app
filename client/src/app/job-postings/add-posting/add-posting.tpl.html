@@ -19,6 +19,11 @@
     <label for="term">Term</label>
     <input ng-model="addPosting.term" id="term" type="text" placeholder="2016 January - August">
 
+    <label
+      title="In case there are problems with your posting we may need to email you"
+      for="email">Your Email</label>
+    <input ng-model="addPosting.email" id="email" type="email" placeholder="example@gmail.com">
+
     <button class="pure-button submitButton" type="submit" ng-click="addPosting.submitPosting()">Submit Posting</button>
 
   </form>

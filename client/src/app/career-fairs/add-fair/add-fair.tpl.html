@@ -16,6 +16,11 @@
     <label for="description">Description</label>
     <textarea ng-model="addFair.description" id="description" class="longText" placeholder="An informative description ..."></textarea>
 
+    <label
+      title="In case there are problems with the event details we may need to email you"
+      for="email">Your Email</label>
+    <input ng-model="addFair.email" id="email" type="email" placeholder="example@gmail.com">
+
     <button class="pure-button submitButton" type="submit" ng-click="addFair.submitCareerFair()">Submit Career Fair</button>
 
   </form>
