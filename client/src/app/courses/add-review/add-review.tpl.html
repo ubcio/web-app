@@ -1,0 +1,19 @@
+<div class="reviewPage">
+  <form class="pure-form pure-form-stacked">
+
+    <label for="class">Course *</label>
+    <input ng-model="addReview.course" id="class" type="text" placeholder="ENGL 110" required>
+
+    <label for="review">Review *</label>
+    <textarea ng-model="addReview.review" id="review" class="longText" placeholder="A thoughtful review ..."
+              required></textarea>
+
+    <label
+      title="In case there are problems with your review we will need to email you, all reviews will be kept anonymous"
+      for="email">Your Email</label>
+    <input ng-model="addReview.email" id="email" type="email" placeholder="example@gmail.com">
+
+    <button class="pure-button submitButton" type="submit" ng-click="addReview.submitReview()">Submit review</button>
+
+  </form>
+</div>

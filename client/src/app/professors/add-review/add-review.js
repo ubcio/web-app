@@ -10,16 +10,16 @@
       .state('root.sub-bar-professors.add-review', {
         url: "/professors/add-review",
         templateUrl: 'src/app/professors/add-review/add-review.tpl.html',
-        controller: 'AddReviewCtrl as addReview'
+        controller: 'AddReviewProfessorsCtrl as addReview'
         }
       );
   }
 
   /**
-   * @name  AddReviewCtrl
+   * @name  AddReviewProfessorsCtrl
    * @description Controller
    */
-  function AddReviewCtrl() {
+  function AddReviewProfessorsCtrl() {
     var addReview = this;
 
     addReview.submitReview = function() {
@@ -30,5 +30,5 @@
 
   angular.module('professors.add-review', [])
     .config(config)
-    .controller('AddReviewCtrl', AddReviewCtrl);
+    .controller('AddReviewProfessorsCtrl', AddReviewProfessorsCtrl);
 })();

@@ -37,6 +37,7 @@
       'firebase',
       'ui.bootstrap',
       'courses',
+      'courses.add-review',
       'professors',
       'professors.add-review',
       'tutors',
