@@ -54,6 +54,7 @@
       'the-project',
       'the-team',
       'companies',
+      'companies.add-review',
       'common.header',
       'common.career-fairs.sub-bar',
       'common.companies.sub-bar',
