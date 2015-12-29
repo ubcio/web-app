@@ -48,6 +48,7 @@
       'training-for-interviews',
       'career-fairs',
       'job-postings',
+      'job-postings.add-posting',
       'seminars',
       'hackathons',
       'the-project',

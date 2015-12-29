@@ -1,0 +1,25 @@
+<div class="contribPage">
+  <form class="pure-form pure-form-stacked">
+
+    <label for="link">Link *</label>
+    <input ng-model="addPosting.link" id="link" type="text" placeholder="https://www.company.com/posting" required>
+
+    <label for="title">Title</label>
+    <input ng-model="addPosting.title" id="title" type="text" placeholder="Front-end Software Developer">
+
+    <label for="company">Company</label>
+    <input ng-model="addPosting.company" id="company" type="text" placeholder="Comapany Inc.">
+
+    <label for="location">Location</label>
+    <input ng-model="addPosting.location" id="location" type="text" placeholder="City, State/Province, Country">
+
+    <label title="the deadline to apply" for="deadline">Deadline</label>
+    <input ng-model="addPosting.deadline" id="deadline" type="date">
+
+    <label for="term">Term</label>
+    <input ng-model="addPosting.term" id="term" type="text" placeholder="2016 January - August">
+
+    <button class="pure-button submitButton" type="submit" ng-click="addPosting.submitPosting()">Submit Posting</button>
+
+  </form>
+</div>
