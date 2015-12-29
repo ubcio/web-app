@@ -50,6 +50,7 @@
       'job-postings',
       'job-postings.add-posting',
       'seminars',
+      'seminars.add-seminar',
       'hackathons',
       'the-project',
       'the-team',
