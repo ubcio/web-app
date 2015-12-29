@@ -1,0 +1,23 @@
+<div class="contribPage">
+  <form class="pure-form pure-form-stacked">
+
+    <label for="name">Name *</label>
+    <input ng-model="addTutor.name" id="name" type="text" placeholder="John Smith" required>
+
+    <label for="email">Email *</label>
+    <input ng-model="addTutor.email" id="email" type="email" placeholder="example@gmail.com">
+
+    <label for="price">Hourly Price *</label>
+    <input ng-model="addTutor.price" id="price" type="number" required>
+
+    <label title="What courses are you interested in tutoring?" for="courses">Courses *</label>
+    <input ng-model="addTutor.courses" id="courses" type="text" required placeholder="CPSC 110, CPSC 121, MATH 100">
+
+    <label for="bio">Bio *</label>
+    <textarea ng-model="addTutor.bio" id="bio" class="longText" placeholder="A little bit about you ..." required></textarea>
+
+
+    <button class="pure-button submitButton" type="submit" ng-click="addTutor.submitTutor()">Become Tutor</button>
+
+  </form>
+</div>

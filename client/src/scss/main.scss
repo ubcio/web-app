@@ -715,35 +715,9 @@ textarea {
 }
 
 //----------------------------------
-// Review Page
+// Contrib Page
 
-.reviewPage {
-
-  max-width: $base-width;
-  margin: auto;
-  text-align: center;
-
-  label , input , textarea {
-    margin: auto !important;
-  }
-
-  .submitButton {
-    background-color: $ubcGreen;
-    color: $ubcWhite;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  label {
-    margin-top: 20px !important;
-  }
-
-
-}
-
-//----------------------------------
-// Tip Page
-.tipPage {
+.contribPage {
 
   max-width: $base-width;
   margin: auto;

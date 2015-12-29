@@ -42,6 +42,7 @@
       'professors',
       'professors.add-review',
       'tutors',
+      'tutors.offer-service',
       'degree-requirements',
       'resume-and-cover-letter',
       'training-for-interviews',
