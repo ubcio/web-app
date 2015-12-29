@@ -1,0 +1,22 @@
+<div class="contribPage">
+  <form class="pure-form pure-form-stacked">
+
+    <label for="link">Link *</label>
+    <input ng-model="addHackathon.link" id="link" type="text" placeholder="https://www.website.com/event" required>
+
+    <label for="name">Name</label>
+    <input ng-mode="addHackathon.name" id="name" type="text" placeholder="Hack 4 Life">
+
+    <label for="time">Time</label>
+    <input ng-model="addHackathon.time" id="time" type="text" placeholder="January, Monday 5th, 8:00am - Tuesday 6th, 9:00pm">
+
+    <label for="location" title="The location should be close to UBC (< 1 hour bus)">Location</label>
+    <input ng-model="addHackathon.location" id="location" type="text" placeholder="Street, Vancouver, B.C">
+
+    <label for="description">Description</label>
+    <textarea ng-model="addHackathon.description" id="description" class="longText" placeholder="An informative description ..."></textarea>
+
+    <button class="pure-button submitButton" type="submit" ng-click="addHackathon.submitHackathon()">Submit Hackathon</button>
+
+  </form>
+</div>
