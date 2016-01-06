@@ -23,7 +23,7 @@
 
     var postInitFailure = function() {
       courses.inputText = 'sorry could not load data';
-    }
+    };
 
     var postInitSuccess = function (coursesData) {
       courses.inputText = 'enter a course name...';

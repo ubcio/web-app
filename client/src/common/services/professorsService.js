@@ -1,15 +1,20 @@
-/* global Firebase */
+
 
 (function () {
   'use strict';
 
-  function professorsService(FirebaseUrl) {
-    var ref = new Firebase(FirebaseUrl + 'professors');
+  function professorsService($http, DigitalOceanUrl) {
 
     return {
-      getProfessors: function (callback) {
-        ref.child('professors').once('value' , function(snapshot) {
-          callback(snapshot.val());
+      getProfessors: function (callbackSuccess, callbackFailure){
+        $http({
+          method: 'GET',
+          url: DigitalOceanUrl + 'professors'
+        }).then(function seccessCallback(response){
+          callbackSuccess(response.data);
+        }, function errorCallback(response) {
+          console.log(response.data);
+          callbackFailure();
         });
       }
     };

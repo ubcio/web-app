@@ -22,7 +22,11 @@
   function ProfessorsCtrl(ProfessorsService , $scope) {
     var professors = this;
 
-    var postInit = function(professorsData) {
+    var postInitFailure = function() {
+     professors.inputText = 'sorry could not load data';
+    };
+
+    var postInitSuccess = function(professorsData) {
       professors.professors = professorsData;
       professors.loaded = true;
       professors.inputText = 'enter a professor\'s name...';
@@ -30,7 +34,7 @@
     };
 
     var init = function(){
-      ProfessorsService.getProfessors(postInit);
+      ProfessorsService.getProfessors(postInitSuccess, postInitFailure);
       professors.selectedProf = undefined;
       professors.loaded = false;
       professors.inputText = 'loading data...';
