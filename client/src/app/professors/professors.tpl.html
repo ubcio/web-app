@@ -7,7 +7,7 @@
   <div class="textBox" ng-if="professors.selectedProf.name">
     <br>
 
-    <!— Filter Toggle-->
+    <!-- Filter Toggle-->
     <div ng-init="professors.selectedProf.reviewsFilter = 'All'">
       <label ng-repeat="course in professors.selectedProf.courses" class="pure-button reviewToggle"
              ng-model="professors.selectedProf.reviewsFilter" btn-radio="course.courseName">{{course.courseName}}</label>
@@ -29,7 +29,7 @@
 
   </div>
 
-  <!— If no professors selected, display contribution message —>
+  <!-- If no professors selected, display contribution message -->
   <div class="messageBox" ng-hide="professors.selectedProf">
     <div class="openQuote">
       <ng-md-icon icon="format_quote"></ng-md-icon>
