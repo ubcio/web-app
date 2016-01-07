@@ -7,19 +7,19 @@
   <div class="textBox" ng-if="professors.selectedProf.name">
     <br>
 
-    <!-- Filter Toggle-->
-    <div ng-init="professors.selectedProf.reviewFilter = 'All'">
-      <label ng-repeat="(name , reviewIndexes) in professors.selectedProf.courses" class="pure-button reviewToggle"
-             ng-model="professors.selectedProf.reviewFilter" btn-radio="name">{{name}}</label>
+    <!— Filter Toggle-->
+    <div ng-init="professors.selectedProf.reviewsFilter = 'All'">
+      <label ng-repeat="course in professors.selectedProf.courses" class="pure-button reviewToggle"
+             ng-model="professors.selectedProf.reviewsFilter" btn-radio="course.courseName">{{course.courseName}}</label>
     </div>
 
-    <!-- Reviews -->
+    <!— Reviews —>
     <div class="reviews"
-         ng-repeat="reviewIndex in professors.selectedProf.courses[professors.selectedProf.reviewFilter] | orderBy:professors.orderByDate:true">
+         ng-repeat="reviewIndex in professors.getReviewIndexes(professors.selectedProf) | orderBy:professors.orderByDate:true">
       <div class="reviewDate">
         <strong>{{professors.selectedProf.reviews[reviewIndex].createDate | date: format:'fullDate'}}</strong>
         <br>
-        <span ng-show="professors.selectedProf.reviewFilter == 'All'"> {{professors.selectedProf.reviews[reviewIndex].course}} </span>
+        <span ng-show="professors.selectedProf.reviewsFilter == 'All'"> {{professors.selectedProf.reviews[reviewIndex].course}} </span>
       </div>
 
       <div class="review"><p>{{professors.selectedProf.reviews[reviewIndex].review}}</p></div>
@@ -29,12 +29,12 @@
 
   </div>
 
-  <!-- If no professors selected, display contribution message -->
+  <!— If no professors selected, display contribution message —>
   <div class="messageBox" ng-hide="professors.selectedProf">
     <div class="openQuote">
       <ng-md-icon icon="format_quote"></ng-md-icon>
     </div>
-      Read insightful reviews and find the professor that best matches your needs
+    Read insightful reviews and find the professor that best matches your needs
     <div class="closeQuote">
       <ng-md-icon icon="format_quote"></ng-md-icon>
     </div>

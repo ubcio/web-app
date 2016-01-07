@@ -1,16 +1,14 @@
-
-
 (function () {
   'use strict';
 
-  function professorsService($http, DigitalOceanUrl) {
+  function professorsService($http , DigitalOceanUrl) {
 
     return {
-      getProfessors: function (callbackSuccess, callbackFailure){
+      getProfessors: function (callbackSuccess , callbackFailure) {
         $http({
           method: 'GET',
           url: DigitalOceanUrl + 'professors'
-        }).then(function seccessCallback(response){
+        }).then(function successCallback(response) {
           callbackSuccess(response.data);
         }, function errorCallback(response) {
           console.log(response.data);
