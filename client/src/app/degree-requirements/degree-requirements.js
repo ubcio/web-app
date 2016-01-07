@@ -21,7 +21,11 @@
   function DegreeRequirementsCtrl(DegreeRequirementsService , $scope) {
     var degreeRequirements = this;
 
-    var postInit = function(degreeData) {
+    var postInitFailure = function (){
+      degreeRequirements.inputText = 'sorry could not load data';
+    }
+
+    var postInitSuccess = function(degreeData) {
       degreeRequirements.degrees = degreeData;
       degreeRequirements.loaded = true;
       degreeRequirements.inputText = 'enter your degree name...';
@@ -29,7 +33,7 @@
     };
 
     var init = function () {
-      DegreeRequirementsService.getDegrees(postInit);
+      DegreeRequirementsService.getDegrees(postInitSuccess, postInitFailure);
       degreeRequirements.loaded = false;
       degreeRequirements.inputText = 'loading data...';
     };

@@ -1,15 +1,19 @@
-/* global Firebase */
 
 (function () {
   'use strict';
 
-  function degreeRequirementsService(FirebaseUrl) {
-    var ref = new Firebase(FirebaseUrl + 'degreeRequirements');
+  function degreeRequirementsService($http, DigitalOceanUrl) {
 
     return {
-      getDegrees: function (callback) {
-        ref.child('degrees').once('value', function (snapshot) {
-          callback(snapshot.val());
+      getDegrees: function (callbackSuccess, callbackFailure) {
+        $http({
+          method: 'GET',
+          url: DigitalOceanUrl + 'degreeRequirements'
+        }).then (function successCallback(response){
+          callbackSuccess(response.data);
+        }, function errorCallback(response){
+          console.log(response.data);
+          callbackFailure();
         });
       }
     };
